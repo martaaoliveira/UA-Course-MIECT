@@ -1,0 +1,182 @@
+--//Introducao a seguranca//--
+
+
+/-Network Access Control-/
+
+Firewall
+	Ponto unico de defesa entre a networks, protegendo uma das outras.
+
+	E um sistema/grupo de sistemas que enforca politicas de controlo entre duas ou mais networks
+
+	Gateway de network que enforca regras relativas a seguranca da network
+
+	Minimiza vulnerabilidades locais
+
+	Avalia cada pacote que chega com as suas politicas de seguranca
+
+	Monitoriza todo o trafego e alerta para tentativas de dar bypass a estas segurancas
+
+	Pode ser hardware ou software based
+
+	Pode oferecer servicos de gateway (NAT ; Proxing ; ...)
+
+	Tecnologias:
+		Sistemas de filtragem de pacotes 
+			- Route packets entre hosts internos e externos seletivamente
+			-Problemas:
+				Packets nao desejados podem obedecer a uma packet rule criteria, logo passar pelo filtro
+
+				Packets podem passar pelo filtro ao serem fragmentados
+
+				Conjunto de regras complexas sao dificeis de manter
+
+		Proxy Servers
+			-Aplicacoes especialziadas ou programas de servidores que recebem os pedidos por servicos de internet (como FTP!) dos utilizadores e dao forward para os servicos respetivos
+
+			-Providenciam um coneccoes replacement e agem como servicos de gateway
+
+			-Problemas:
+				Sao um unico point of failure
+				Sao dificeis de adicionar novos servicos a firewall
+				Sao CPU intensive
+
+	Bastion Host
+		-Computador exposto a ataques localizado na zona publica desmilitarizada.
+		-Application level gateway pois redireciona o trafego para servidores DMZ
+		-Devem ser designed e configurados para minimizar chances de penetracao
+		-Servicos,protocolos,programas, and so on, desnecessarios sao disabled e removidos
+
+
+
+Firewalls Pessoais
+	Protegem de ataques externos ao limitar acesso a portas
+
+	Reduzem efeitos de computadores ja comprumetidos ou infetados ao limitar o acesso a outbound doors
+
+	Pode ser user unfriendly
+		
+
+-/-ACL - Cisco's Access Control Lists-/-
+
+ 	Colecao sequencial de condicoes de permit e deny
+
+ 	Software testa packets contra as condicoes numa lista de acesso um por um
+
+ 	A PRIMEIRA MATCH determina se o software aceita ou nao o packet.
+
+ 	Se nenhuma condicao e met, o software rejeito o packet
+
+ 	Types!!!:
+ 		Standard
+ 			Controla trafego analisando o destino source dos IP packets
+ 			Ex: access-list 1 permit 10.1.1.0 0.0.0.255
+
+ 		Extended
+ 			Controla trafego analsiando o source e destino e o protocolo dos IP Packets
+ 			Ex: access-list 101 permit ip any 10.1.1.0 0.0.0.255
+
+ 		CBAC
+ 			Inspeciona trafego para descobrir e managear informacao de estado de sessoes TCP e UDP
+ 			Usado para criar aberturas temporarias na firewall access list
+ 		(Outras nos Sl 10.10 E 10.11)
+
+
+ 	Uso
+ 		Deve haver uma lista de acesso por protocolo por direcao
+
+ 		Listas Standard devem ser aplicadas o mais PERTO POSSIVEL DO DESTINO
+
+ 		Extended Lists devem ser aplicadas o mais PERTO POSSIVEL DA SOURCE
+
+ 		Ha um deny implicito no final de cada lista de acesso
+
+ 		Listas de acesso devem filtrar de mais especifico para mais geral
+
+ 		O router manda ICMP Host Unreachables para o sender do packet rejeitado e descarta o packet
+
+
+ /-Linux IPTables-/
+ 	Ferramenta de espaco usada por administradores para criar regras para filtragem de pacotes e Modulos NAT
+
+ 	Usado para dar set up, manter e inspecionar tabelas de IP packet filtering rules com o kernel do linuxs
+
+ 	Ver Slides Sl 10.15 a 10.17
+
+Limitacoes da Firewall:
+	Inifeciente contra ataques de dentro
+
+	So consegue controlar trafego aberto no ponto de entrada de network
+
+	Dificil de managear com varias networks
+
+
+/-IPSec-/
+	Framework de protocolos e algoritmos de seguranca usado para segurar data numa camada de network
+
+	Authentication Header
+		Assegura integridade dos dados
+		Nao da confidencialidade
+		Da autenticacao da origem
+	Encapsulating Security Payload
+		Da confidencialidade dos dados (encriptacao)
+		Integridade de dados
+		Nao protege o IP header
+
+
+	MODOS:
+		Tunnel
+			IPSec gateways dao um IPSec services a outros hosts num peer to peer tunnel
+
+			End hosts nao sabem que o IPSec esta a ser usado para proteger o seu trafego
+
+			IPSec gateways dao protecao transparente sobre untrusted networks
+
+		Transport
+			Cada end host faz IPSec encapsulation da sua propria data
+
+			IPSec tem de ser implementado nos end hosts
+
+			A aplicacao endpoint tem de ser IPSec endpoitn
+
+
+	Associacoes de Seguranca
+		SAs representam contratos de politicas entre dois peers ou hosts
+
+		Descrebem como e que os peers vao usar a IPSec para proteger o seu trafego de network
+
+		Um SA contem os seguintes parametros:
+			-Authentication/encryption algorithm, key lenght e outros parametros de encriptacao
+			-Session keys for authentication
+			-Specification of network traffic 
+			-IPSec AH or ESP encapsulation protocol and tunnel or transport mode
+
+	IKE
+		Ike modes controla uma eficiency vs security trade off durante o IKE key exchange inicial
+
+		Main mode:
+			Requere seix packets ack and forth
+
+		Agressive mode
+			Usa metade das exchanges
+
+
+		Aumenta o IPSec ao dar features adicionais e flexibilidade
+
+		Providencia autenticacao de IPSec peers, negociacoes de IPSec keys, ...
+
+		!!!O tunel IKE protege negociacoes SA. Depois das SAs estarem no seu lugar o IPSec protege a transferencia de protocolos!
+
+
+		Advantages 
+			+Eliminates the need to manually specify IPSec security parameters at both peers
+			+Allows administrators to specify a lifetime for the IPSec security association 
+			+Allows encryption keys to change during IPSec sessions 
+			+Allows IPSec to provide anti-replay services +Permits certication authority (CA) support for a manageable, scalable IPSec implementation 
+			+Allows dynamic authentication of peers 
+
+		IKE provides three methods for two-way authentication:
+		 Authentication using a pre-shared secret (PSK) 
+		 Authentication using RSA encrypted nonces 
+		 Authentication using RSA signatures
+
+-/-VPN - Virtual Private Network-/-

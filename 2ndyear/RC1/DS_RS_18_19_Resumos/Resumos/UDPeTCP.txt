@@ -1,0 +1,119 @@
+ --//Modelos de Transporte//--
+
+Porto:
+	Um endereco IP identifica uma ligacao de uma estacao a uma rede IP.
+	O numero de porto identifica uma aplicacao em execucao dentro dessa estacao!
+
+	Existem ja alguns numeros de porto pre atribuidos de forma a preencher um standard. Foram atribuidos a estes servicos existentes nas redes IP devido as suas grandes utilidades. Pex, HTTP utiliza normalmente o porto 80
+
+
+Servicos de transporte de dados:
+-/-UDP- User Datagram Protocol-/-
+	Proporciona um servico de transporte de dados com as caracteristicas de desempenho oferecidas pela rede IP
+
+	Permite a troca de dados entre aplicacoes e nao apenas entre estacoes atraves da introducao no seu cabecalho de um campo identificador do porto !!!
+
+	Permite envio de dados para multiplos destinos !!!
+
+	Formato do Datagrama UDP:
+		Source Port - Porto da aplicacao origem (opcional, fica a 0 se nao usado)
+		Destination Port - Porto da aplicacao destino
+		Datagram Length - Octetos do datagrama (cabecalho+dados)
+		Checksum - Detecao de erros e validacao dos extremos (opcional)
+
+	PORTO UDP FECHADO !!!:
+		Quando um pacote UDP chega a um terminal destino mas o porto UDP do destino nao esta aberto, o terminal responde com um pacote ICMP Port Unreachable !!!
+
+
+-/-TCP - Transmission Control Protocol-/-
+
+	Proporciona um servico de transporte de dados fiavel onde os dados sao recebidos pela aplicacao destino sem falhas e pela ordem enviada
+
+	!!E orientado a ligacao
+		Estacoes estabelecem um canal logico
+	!!E bidirecional 
+		Sao estabelecidos DOIS CANAIS LOGICOS INDEPENDENTES, um em cada sentido
+
+	Suporta apenas ligacoes ponto a ponto
+
+	O emissor secciona os dados de forma independente dos blocos de informacao que lhe sao entregues para envio da aplicacao origem
+
+	Proporciona o estabelecimento e a terminacao da ligacao transparente
+		As aplicacoes pedem para estabelecer ligacoes sendo que o TCP responde com mensagens de sucesso para avisar que existe conectividade e que a aplicacao destino esta preparada para comunicar 
+		As aplicacoes pedem tambem para as terminar sendo que o TCP assegura que se houver info por enviar ela e transmitida antes de terminar a ligacao
+
+
+	Exemplo:
+	 Suponha que acede, a partir de um terminal da VLAN 1, a um servidor de FTP localizado no Datacenter. Considere que efetua duas operações, executa o comando DIR e descarrega um ficheiro localizado no servidor, e seguidamente termina a sessão FTP. Que ligações TCP existiram durante este processo? (1.5 valores)
+
+	 R: São criadas 3 ligações TCP: uma ligação de controlo para o porto 21 do servidor de FTP e duas ligações de dados para o porto 20 do servidor, cada uma delas será iniciada quando se efetua o pedido de transferência de dados e encerrada logo que termina a transferência. A ligação de controlo mantém-se ativa desde o inicio até ao fim da sessão FTP (até ao logout).
+
+	Formato de um segmento TCP:
+		Importantes:
+			ACK - Campo Acknowledgement valido
+			SYN - Sincronizar Sequence Number
+			FIN - Origem terminou o envio da informacao
+
+	Exemplos de ligacoes
+		Ver Imagens Sl 7.10 a 7.13 (isto sao Diagramas Temporais)
+
+	Cabecalho TCP
+		Tem tamanho variavel porque ha coisas que podemos ter ou nao no campo Options
+
+		1-Hlen - Tamanho do cabecalho em multiplo de 4 octetos (com padding)
+
+		2-Sequence Number - Sinaliza os dados enviados
+
+		3-Acknowledge Number - Sinaliza os dados recebidos
+
+		4-Window - Permite ao recetor informar o emissor de quantos octetos ele consegue receber
+
+		O 2 diz respeito ao controlo do fluxo no sentido da transmissao enquanto que o 1,3 e 4 dizem respeito ao controlo de fluxo no sentido contrario
+
+
+	Controlo de Congestao
+		O TCP inclui algoritmos que permitem reagir a situacoes de congesta e/ou falha temporaria de conectividade<:
+			Gestao do tempo de retransmissao de pacotes:
+				Emissor estima RTT com base nos ACK recebidos.
+				Considera um timeout com base no RTT estimado
+
+			Gestao da janela de transmissao de pacotes
+				...
+
+	Gestao da Janela de Transmissao de Pacotes
+		Em qualquer instante a transmissao de segmentos TCP e restringida por:
+			awnd = min(credit,cwnd)
+			awnd - allowed window, em segmentos
+			credit - credito nao utilizado que foi autorizado pelo ACK mais recente em segmentos
+			cwnd - Congestion window, em segmentos. Usada pelo TCP durante o start up e em periodos de congestionamento
+
+		Procedimento Slow Start de uma nova ligacao TCP
+
+			E feito cwnd = MSS
+			para que o atraso ate ser atingida uma taxa de transmissao razoavel nao seja muito elevado o TCP aumenta a janela mais rapidamente nesta fase (cada vez que um ACK e recebido o valor de cwnd e incrementado de um segmento de tamanho maximo, ate um valor maximo)
+			Neste procedimento cwnd cresce exponencialmente
+
+
+		Este procedimento e demasiado agressivo em situacoes de recuperacao de timeout
+
+		Regras para gestao de janela quando ocorre um timeut:
+			Colocar o limiar de slow start ssthresh igual a metade da janela atual
+
+				ssthresh = awnd/2
+
+			Fazer cwnd = MSS
+
+			Efetuar o procedimento slow start ate que cwnd = ssthresh. Nesta fase awnd e incremnetado de MSS de cada vez que e recebido um ACK
+
+			Para cwnd >= ssthres incrementar cwnd linearmente (incrementar cwnd de MSS em cada RTT)
+
+
+P:Quando e que UDP e preferivel sobre TCP?
+R:Serviços que não tenham requisitos rígidos de perda de pacotes mas em que o baixo atraso seja um fator fundamental; serviços em que existe um emissor e muitos recetores ou muitos emissores e muitos recetores. Por exemplo, serviços de difusão de vídeo, videoconferência.
+
+
+
+P:Ao monitorizar a rede do Datacenter observou-se um muito grande número de pacotes TCP com a flag RESET ativa do servidor B para o mesmo endereço IPv4 externo. Explique a origem do problema e proponha uma solução para o mesmo. (2.5 valores) 
+
+R:Um pacote TCP com a flag RESET ativa é enviado em resposta a um pacote TCP com a flag SYN ativa recebido num porto TCP fechado (o porto TCP 81 está fechado, só o 80 está aberto!). O número elevado de pacotes com a flag RESET ativa indica que está a ser tentado o estabelecimento de muitas sessões TCP para portos (serviços) fechados no servidor. Para resolver o problema é preciso bloquear os pacotes TCP (com flag SYN ativa) que vêm de fora da rede ativando na firewal da rede (ou no Router 1) uma regra (ACL) que negue a passagem de tráfego proveniente do endereço IP exterior em questão.
+Nota: Isto pode ser o resultado de um ataque de negação de serviço para bloquear o servidor ou um portscan (procura ativa de serviços nos servidores).

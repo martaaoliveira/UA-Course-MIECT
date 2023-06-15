@@ -1,0 +1,12 @@
+FTP:
+DOWNLOAD:
+FTP request retr filename
+
+ativo: servidor que abre a sessão de dados tcp
+	cliente faz ftp request do port
+
+passivo: cliente abre a sessaao de dados
+	server manda informação ipv4 e ports a que pode ligar.
+
+upload:
+request store

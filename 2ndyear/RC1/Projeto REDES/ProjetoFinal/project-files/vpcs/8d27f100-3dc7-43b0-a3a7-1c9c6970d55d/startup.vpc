@@ -1,0 +1,3 @@
+set pcname Internet
+ip 203.0.0.2 203.0.0.1 24
+ip 2300:a:a:a:a::2/64

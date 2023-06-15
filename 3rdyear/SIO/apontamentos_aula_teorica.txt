@@ -1,0 +1,56 @@
+Controlo de acesso:
+
+Sujeito(processo) ->(acção)-> Monitor controlo de acesso->objeto(recurso)
+
+Sujeito/processo: UID(real vs esfetivo) USER ID GID(nrs) -> pedido ao nucleo para aceitar a sua ação
+
+Efetivo:é o que conta para o SO 
+Real: do criador,  o efetivo pode passar para o real. é usado para quando se muda para a password. Para saber quem executa quando se quer mudar a pass
+
+ 
+
+Para que serve SO:abstrair o hardware,interface homogenea 
+
+SUDO->funciona como superuser temporariamente
+ROOT
+
+Principio privlegio minimo
+
+RWX: DONO(UID) GRUPO(GID) Outros
+(do mais para o menos especifico)
+
+3bits(SET-UID,SETGID,StickyBit) 3bits(RWX) 3bits(RWX) 3bits(RWX)
+
+BIT SETUID ATIVO entao muda o UID do processo para o UID do dono do ficheiro
+muda o "dono"do comando
+(por exemplo para mudar as passwords
+- processo cujo ID vai ser ROOT)
+mas SETUID não tem nada a ver com root 
+
+SUDO-> muda para root -> BITSETUID
+ 
+
+SH(UID)->fork->EXEC(ls)(UID) 
+UID são iguais
+GID são iguais
+...
+
+SO:
+
+.Serviços(interface gráfica x11,servidor ssh...)->Núcleo
+.Aplicações(sujeitas(com base no processo*) a controlo de acesso pelo núcleo) -> Núcleo
+--------------------Modelo computacional(pelo nucleo)
+.Recursos(disco,rede...físico)
+
+Sincronização-> para nao haver destruição
+
+*processo -> define o universo de trabalho (espaço de endr,ficheiros abertos,dono do processo...)paraa tomar decisoes em relação à atividade. 
+
+---------------------------------------
+caminho absoluto vs relativo
+/....               ?....
+inode raiz           inode cwd
+
+
+Root jail 
+CHRoot (ignorar ficheiros que nao sao necessarios) acessivél ao root/superUser. Arrancam como root e posteriormente UID!=ROOT

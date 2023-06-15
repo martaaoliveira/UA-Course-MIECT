@@ -1,0 +1,100 @@
+IPv6
+
+Representation:
+IPv4 - 4Bytes / 32 bits
+IPv6 - 16Bytes / 128 bits
+
+Representacao hexadecimal, numeros separados por ":" 
+Abreviacoes sao possiveis (zeros num bloco contiguo podem ser representaods por ::)
+
+Ex:
+	2001:0db8:0000:130F:0000:0000:087c:140B
+	(cada numero = 4 bits; 4*4 = 16 ; 16*8 = 128 bits ;128/8 = 16 bytes)
+	=
+	2001:0db8:0:130F::87C:140B
+
+Adressing Model:
+	Interfaces tem multiplos enderecos
+	Enderecos tem scope:
+		Link Local - Valido dentro da mesma LAN ou Link
+		Unique Local - Valido no mesmo dominio privado ; noa pode ser usado na internet
+		Global
+
+	Tem lifetime:
+		Valid
+		Preferred
+
+Types of Adressing:
+	Unicast
+	Multicast
+	Anycast
+
+	Em contraste com o IPv4 NAO TEMOS BROADCAST ADDRESSES!
+
+
+Link Local Address:
+	Usado para:
+		 Comunicacao local entre duas maquinas com IPv6
+		 Next-Hop calculation nos Protocolos de Routing
+	Automaticamente atribuido quando o IPv6 e enabled
+
+Unique Local Address
+	Usado para:
+		Comunicacoes Locais
+		Inter-Site VPNs
+	Nao pode ser usado na Internet
+
+Global Unicast Address:
+	Uhm.
+
+
+IPv6 Interface Identifier:
+	64 Bits de menor ordem de qualquer endereco!
+	Ex:
+		2001:0db8:0000:130F | :0000:0000:087c:140B
+		Rede | Interface
+
+Resolucao de Enderecos Fisicos:
+	Ja nao temos ARP
+	Temos agora NDP - Neighbor Discovery Protocol
+
+	Mantem uma lista de vizinhos conhecidos (IPv6 addresses and Mac Addresses)
+
+	Usa mensagens de: Neighbor Solicitaion e Neighbor Advertisement
+
+	Para saber o endereco, manda se uma Neighbor Solicitation para o Solicited-Node multicast address da maquina destino (IPv6 address)
+
+	Resposta e feita em unicast usando um Neighbor Advertisement Message
+
+Neighbor Discovery:
+	Usa mensagens ICMPv6 originadas de um node num link local com um hop maximo de 255
+
+	Mensagens:
+		Router Solicitation: Mandada para todos os enderecos multicast dos routers pelo Host para perguntar sobre a presenca de um router num link
+
+		Router Advertisement: Mandado peridociamente pelos routers ou em resposta a um Router Solicitation
+
+		Neighbor Solicitation: Mandado para descobrir o Link Local Address de um node IPv6
+
+		Neighbor Advertisement: Reposta a uma Neighbor Solicitation Message
+
+		Redirect: Usado por um router para assinalar o reroute de um packet para um router melhor
+
+Auto Configuration:
+	Stateless:
+		Um node num link pode automaticamente configorar enderecos IPv6 globais ao dar append do seu interface identifier (64 bits) aos prefixes (64 bits) incluidos nos Router Advertisement Messages
+
+	Stateful
+		Addresses obtidos usando DHCPv6
+
+	O defulat gateway pode mandar 2 flags configuraveis num Router Advertisemnt (ver slides 26)
+
+Multicast Listener Discovery (MLD)
+	MLD permite a criacao/management de grupos de multicast
+	Usado por um router IPv6 para:
+		Descobrir a presence de ouvintes multicast em links diretamente ligados
+		Descobrir quais enderecos multicast sao de interesse aos nodes vizinhos
+		Reportar interesse em router specific multicast addresses
+
+IPV6 Subnetting/Aggregation
+	Mesmos principios que o IPV5

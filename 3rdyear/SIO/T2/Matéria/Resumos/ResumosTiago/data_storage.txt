@@ -1,0 +1,230 @@
+Data Storage
+
+PROBLEMAS:
+CERTEZA: os dispositivos avariam, falta saber quando 
+
+Acesso a informaçao armaenada é lento (HDD)
++ informaçao -> + estrangulamento
+SSD possuem número de escritas reduzidas (2k-3k com MLC)
+Existem eventos que levam a perda dos dados (incendios, roubos, "picos" de energia")
+pode ser necessario distribuir os dados: maximizar desempenho, reduzir custos
+
+SOLUÇOES:
+Backups (locais ou remotos)
+Armazenamento redundante
+Discos mais caros, ambientes mais controlados
+Infraestruturas dedicadas ao armazenamento
+
+
+Backups:
+Cópias periódicas dos dados
+	-Por vezes cifradas
+	-Permitem repor ficheiros para versoes anteriores
+	
+Comletos: Imagem completa da informaçao
+	-Fast Recovery
+	-Precisa de muito espaço
+	
+Diferenciais:
+	-Slow recovery mas ocupa menos espaço
+	-Diferenciais vao aumentando de tamanho progressiamente
+	
+Incrementais:
+	-Very slow recovery
+	-Grande eficiencia de espaço
+	 
+Nao é armazenar informaçao num disco adicional (externo/remoto), sao necessarias politicas, mecanismos e processsos para realizar, manter e recuperar copias de informaçao que resistam a varias siuaçoes
+
+Do ponto de vista legal é necessario um cuidado especial, podem existir dados pessoais. Necessario uma politica de retençao(backups têm de expirar)
+
+Backups: Compressao
+Compressao sem perdas
+Copias seletivas da informaçao (apenas ficheiros diferenciados incremento ou differencial) 
+Deduplicaçao
+	-Armazenar apenas ficheiros/blocos unicos
+	-Copias totais com processo de reduçao posterior
+		(de blocos usando formato de imagens adequados)
+		(de ficheirso através de ligaçoes)
+		
+Backups: Níveis
+	Aplicacional
+		Extraçao dos dados da aplicaçao (mysqldump)
+		Representa uma vista consistente para a aplicaçao
+		Necessario repetir para todas as aplicaçoes existentes
+		
+	Ficheiros
+		Copia individual dos ficheiros
+		Permite copiar qualquer aplicaçao
+		Estado guardado pode ser inconsistente
+		
+	File System
+		Mecanismos prorpios do system
+		Criaçao de registos de alteraçoes periodicos
+		Pode permiter recuperar ficheiros ou nao
+		
+	Blocos
+		Copia dos vlocos de suporte de armazenamento
+		agnosticos do sistema de ficheiros e SO
+		Pode ser realizado pela infraestrutura de armazenamento
+		
+	Local da Copia
+		No mesmo sistema (ou armazenamento)
+		Recuperar rapidamente a informaçao
+		Nao protege contra avarias do armazenamento
+		
+		Na mesma infraestrutura:
+		Acesso rápido
+		Protege contra falhas isoladas do armazenamento
+		Nao protege contra eventos externos 
+		
+		Remotos
+		Realizados para um sistema distante
+		Permitem recuperar infroamçao em caso de eventos que danifiquem equipamento
+		Recuperaçao de infromaçao mais lenta
+		
+RAID
+Garantir a integridade da informaçao
+	Os dados so se perdem se falharem mais que X discos do RAID
+	O valor de X depende do RAID
+
+Soluçao de baixo custo e eficiente
+	Permite usar hardware barao e falivel
+	Acelarar o desempenho nas leituras e escritas
+	
+Raid nao substitui backup
+	Nao tolera erros dos utentes do sistema
+	
+NOTA: Raid pode aumentar a prob de falha do sistema
+
+RAID0 (STRIPING)
+Obj: acelarar acesso a informaçao
+Aprox: acesso a discos em paralelo, Striping
+Pros: Acelaraçao dos acessos aos discos ate N vezes
+Contras:Aumento do n de dispositivos, aumento da prob de perda de informaçao
+
+RAID1 (MIRRORING)
+Obj: tolerar falha de discos
+Aporx: Duplicaçao de informaçao (mirroring)
+Pros: Diminuiçao da prob perda de informaçao
+COntras: Desperdicio cap. de armazenamento, aumento numero de dispositivos
+
+RAID0+1
+Obj: beneficios raid 0 e 1
+Aprox: Mirrorign de volumes striped
+COntras: desperdicio de cap de armazenamento e + dispositivos necessarios
+
+RAID4
+Obj: proteçao do raid 1, desempenho e eficiencia de espaço do RAID0
+Aprox: Armazenamento de dados em N-1 discos, armazenamento de paridade num disco
+Contras: Necessita 3 ou + discos, atualizaçao de paridade é demorada e complexa, recuèraçao demorada
+
+RAID5
+Obj: similar ao raid4 mas + eficiente na escrita
+Aprox: Blocos de paridade espalhados pelos discos, desperdicio igual ao raid4, concorrecia nas escritas é melhorada
+Problemas: mais complec que raid4
+
+RAID6
+Obj: Mais fiavel que raid5
+Aprox: 2 blocos de paridade espelhados em todos os discos, > desperdicio de espaço que raid5
+concorrencia na escrita pior que raid5
+Contras:Mais complexo que raid5
+Pros: Permite falha simultanea de 2 discos
+
+NAS E SAN
+NAS:Network Attached Storage
+	Sistema disponivel na rede
+	Frequentemente com varios discos de raid
+	custo: centena de milhares de euros
+
+SAN:Storage Area Network
+	Conjunto de sistemas disponiveis de rede
+	Pode implementar qualquer esquema de redundancia
+	custo: centena de milhares a milhoes de euros
+	
+PROS:
+	Permitem centralizar politicas de armazenamento
+	Fornecem interface normalizado independente do armazenamento real
+	Utilizados para armazenar copias
+	
+CONFIDENCIALIDADE NO ARMAZENAMENTO
+Proteçao Fisica
+	Sistema de ficheiros é confinado num dispositivo
+Proteçao Logica
+	Controlo de acesso é aplicado
+	Faz-se uso de ACL e outros mecanismos
+	
+Problema
+Esta proteçao é irrelevante no caso:
+	Acesso fisico 
+	Acesso nao etico pelos administradores
+	Personificaçao de utilizadores
+	
+Prevalencia de armazenamento distribuido
+	Necessario confiança em vários administradores (por vezess anon)
+	Autentificaçao é feita de modo remoto
+	Informaçao é transmitida na rede
+	
+Soluçao: Cifra de informaçao
+
+Cifra/decifra do conteudo dos ficheiros
+	Permite disponibilizaçao segura sobre um ambiente inseguro
+	Permite armazenamento em meios inseguros
+	
+Problemas: 
+	Acesso a informaçao(utentes nao podem perder chaves)
+	Partilha de ficheiros
+	Possivel interferencia com tarefas comuns de administraçao
+	
+Nivel Aplicacional
+	Informaçao é transformada em por aplicaçoes autonomas
+	Apresentam janelas de vulnerabilidade(dados extraidos para serem acedidos por aplicaçoes)
+	Infrormaçao pode ser transformada por algoritmos/aplicaçoes diferentes
+	Dificil partilhar ficheiros internos ao pacote cifrado
+	
+Nivel Aplicaional: TrueCrypt
+ Cria ficheiro no FS que contem varios volumes
+ Suporta Negaçao Pausivel (FS internos nao possuem cabeçalhos)
+ 
+Nivel dos FS
+	Informaçao é transformada entre a memoria e a escrita no volume
+	Dispositivo Fisisico-> Cacge em memoria-> Memoria das aplicaçoes 
+	
+Nivel dos Volumes
+	Transforma informaçao a nivel do controlador 
+		Transparente para aplicaçoes e quase para o SO
+		Granularidade do acesso ao nivel do volume inteiro
+	Politicas de cifra definidas ao nivel da aplicaçao ou controlador
+		Agnostico do FS
+		Nao permite diferenciaçao entre diferentes users
+	Nao resolver questoes com sistemas distribuidos mas sim dispositivos moveis
+	
+BitLocker(windows)
+	Cria um volume inteiro
+	Armazena a chave 
+	Processo de cifra 
+	
+Nível do Dispositivo
+	Dispositivo aplica politica de segurança internamente
+		No boot, dispositivo tem de ser desbloqueado
+		CIfras implementadas em hardware
+	Pros: 	Sem perda de performance
+		Possive lde coordenar o processo com aplicaçoes
+	Contras:Quando o dispositivo é desbloqueado, dados ficam desprotegidos
+		Segurança é limitada ao algoritmos presentes
+		
+	Dispositivos possuem 2 áreas
+		Shadow disk ROM, possui o software de desbloqueio
+		Real disk, comtém dados, protegido
+		
+	Duas Chaves:
+		KEK 
+		MEK
+		
+	Boot Process:
+		Bios ve shadow disk e utiliza-o para iniciar o sistema
+		Aplicaçao pede senhao, decifra usando KEK e verifica o HASH(kek)
+		Sucesso: decifra-se MEK para a memoria e geometria é atualizada
+		
+	
+
+	

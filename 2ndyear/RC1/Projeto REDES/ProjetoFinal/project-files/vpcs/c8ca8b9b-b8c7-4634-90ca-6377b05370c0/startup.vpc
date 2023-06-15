@@ -1,0 +1,4 @@
+set pcname PcDesignPriv
+ip 10.113.0.2 10.113.0.1 24
+ip 2001:77::2/64
+ip auto

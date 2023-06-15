@@ -1,0 +1,73 @@
+Spanning Tree
+
+Equaçoes de Bellman:
+	Comprimento do percurso minimo de um no para A =
+	   Comprimento do arco que une esse no ao no que se lhe segue no percurso minimi 
+	   + 
+	   Comprimento do percurso minimo desse no para o no A
+
+	   Distribuido e Asincrono: Cada no transmite de tempo a tempo uma estimativa do custo do percurso entre este e o no destino ; Cada no recalcula a estimativa do custo ate ao no destino somando as estimativas recebidas dos vizinhos ao custo de ligacao por onde receberam o anuncio do vizinho e escolhendo o menor valor possivel!
+
+
+Numa Spanning Tree:
+	Escolhemos um switch como no origem/raiz -> Root Bridge = Switch com o menor ID (ID - prioridade + MAC)
+
+	Os restantos, utilziando um algoritmo de bellman ford asincrono e distribuido, calculam o vizinho no percurso de custo minimo para o no origen/raiz
+
+	As ligacoes compostas pelos percursos de custo minimo entre todos os outros switches ara a raiz definem uma arvore abrangente
+
+	As portas ativas sao as das ligacoes que compoem a arvore abrangente
+
+	Root Bridge -Switch com menor ID
+	Designated Bridge - Switch com: Menor Root Path Cost (desempate: Menor ID ; desempate 2x: Ligada a LAN pela porta de menor ID) -> Nas LAN que fazem parte dos percursos de custo minimo, a bridge designada e aquela que fornece o menor percurso ate a raiz! (Em todas as LANS a que a raiz esta ligada (esta diretamente ligada), esta sera a designated bridge)
+
+
+	Funçoes:
+		Designated Bridge - Bridge que, numa LAN e responsavel pelo envio de pacotas da LAN para a raiz e vice versa.
+
+		Designated Port - Porta que numa LAN e responsavel pelo envio de pacotes da LAN para a raiz e vice versa
+
+		Root Port - Porta responsavel pela rececao/transmissao de pacotes de e para a root bridge
+
+		As portas ativas sao: Porta Raiz + Porta Designada APENAS (para cada bridge). As restantes ficam inativas(BLOCKING)
+
+BPDU - Bridge Protocol Data Units
+	
+	Existem 2 tipos: 
+		Configuration - Configuracao da Spanning Tree
+						Campos: Root ID
+								Root Path Cost
+								Bridge ID - Bridge que envia a mensagem de configuracao
+								Port ID - Porta que envia a mensagem de configuracao (Prioridade + Numero de porta)
+
+						As bridges enviam periodicamente, pelas portas designadas, Conf-BPDUs (Periodicidade = hello time)
+
+						Comparacao:
+							Uma conf-BDPU C1 diz-se melhor que outra, C2 se:
+								Root ID C1 < C2, else if C1=C2:
+								R.Path Cost C1 < C2, else,...:
+								Bridge ID C1 < C2, else,...:
+								Port ID C1 < C2
+
+		Topology Change Notification
+
+
+Construcao da Spanning Tree:
+	Inicialmente cada bridge assume que e a Root e envia conf-BDPU por todas as suas portas. A melhor mensagem recebida vai determinar qual a bridge raiz/porta raiz/and all dat shit
+
+Alteração da topologia da rede:
+	Se uma porta estava inativa e ainda nao se apercebeu que devera estar ativa pode existir uma PERDA TEMPORARIA DE CONECTIVIDADE
+	Por outro lado, se um aporta que estava ativa na topologia antiga ainda nao se apercebeu que devera estar inativa na nova topologia podem existir CICLOS TEMPORARIOS
+
+	Para evitar ciclos temporarios, as bridges sao obrigadas a esperar algum tempo antes de permitirem que uma das suas portas passe do estado inativo para o ativo - Parametro Forward Delay
+
+Estados:
+	Blocking - Recebe e processa mensagens de configuracao mas os processos de aprendizagem e envio de pacotes estao inibidos
+
+	Listening - Transita para estado learning apos um tempo de permanencia neste igual ao forward delay. Recebe e processa mensagens de configuracao mas processos de aprendizagem e expedicao de pacotes estao enibidos
+
+	Learning - Processo de aprendizagem esta ativo mas de expedicao de pacotes esta inibido. Transita para o estado forwarding apos permancer neste estado durante tempo igual ao forward delay. Recebe e processa mensagens de configuracao
+
+	Forwarding - Estado ativo. Processo de aprendizagem e expedicao de pacotes ativos. Recebe e processa mensagens de configuracao
+
+	Disabled - Processos de aprendizagem e expedicao de pacotes inibidos, nao participa na spanning tree

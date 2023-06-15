@@ -1,0 +1,242 @@
+SO
+
+Funçoes de um SO
+	Boot
+	Virtualizar Hardware
+	Fornecer mecanismos de proteçao( erros de utilizadores e atividades ñ autorizadas)
+	Fornecer FS virtual
+	
+Niveis de execuçao
+	Diferentes niveis de privilégio
+	Os processadores atuais tem 4 niveis
+	A transferencia de controlo entre aneis requer mecanismos de passagem especiais (system calls)
+	
+Execuçao de maquinas virtuais
+(mais comum)Aprox:Virtuañizar por software
+		Execuçao direta de codigo em modo do utilizador (nivel 3)
+		Traduçao  binaria de codigo priveligiado (nivel 0)
+	Aprox por Virtualizaçao assistida por hardware:
+		Virtualizaçao completa (nivel -1)
+		Pode virtualizar hardware para varios nucles do anel 0
+		
+Maquinas virtuais implementam mecanismo essencial para a segurança: Confinamento
+	Implementam um dominio de segurança restrito para um conjunto de aplicaçoes
+Fornecem mecanismos adicionais:
+	Controlo de recursos
+	priotirizaçao de acesso a recursos
+	criaçao de imagens para analise
+	reposiçao rapida do estado esperado
+	
+Modelo Computacional 
+
+Entidades geridos pelo nucleo do SO
+
+Identificadores de utilizadores (UID)
+Para um SO um utilizador é um numero
+	é estabelecido durante a operaçao de logn
+	
+Atividades executadas fazem-se sempre associadas ao UID
+	Linux e android: UID == 0 -> GOD MODE
+	macOS: UID==0 gestao
+	Windows: conceito de privilégios, nao existe um identificador padrao para um administrador
+	
+Identificadores de Grupos (GID)
+	Um grupo pode ser definido a custa de outros grupos
+	
+Um utilizador pode pertencer a varios grupos
+Em linux, atividades executam associadas a um conjunto de grupos
+1 grupo primario: definir pertencia de ficheiros
+Varios grupos: utilizados para acesso condicional
+
+Processos
+Contextualiza atividades
+	Atividades = operaçoes RWX sobre recursos
+	decisoes de segurança e gestao
+	Identificados por um processo ID (PID)
+	Associado à entidade que o lançou
+	
+	Contexto na segurança:
+		Identidade efetiva (eUID eGID), pode ser igual a identidade que lançou o processo
+		Recusos atualmente em uso
+		
+Memoria Virtual 
+Espaço de memoria onde tem lugar açoes efetuadas por uma atividade
+A memorial virtual nao precisa de ser usada na integra (pode ser usada so uma parcela, processos acedem apenas a memoria. endereços virtuais)
+A memoria virtual é mapeada em na RAM quando é necessário ler ou escrever
+	num dado instante a RAM possui partes das varias memorias virtuais
+	A escolha dessas partes é uma das funçoes mais importantes de um SO
+	
+
+Virtual File System
+Fornecem método para representar pontos de montagem, diretorios, ficheiros e links
+Ponto de montagem: um accesso à raiz de um FS específico
+
+Ficheiros: servem para armazenar dados de forma permanente
+sao sequencias ordenadas de bytes associadas a um nome
+o seu conteudo pode ser alterado, removido ou acrescentado
+possuem proteçao que controla o seu uso
+
+Mecanismos de Segurança dos Ficheiros e Diretórios
+	Mecanismos de proteção mandatórios 
+	– Dono
+	– Utilizadores e Grupos permitidos 
+	– Permissões: Leitura, Escrita, Execução
+	
+	Mecanismos de proteção discricionários 
+	– Regras específicas definidas pelo utilizador
+	
+	Mecanismos adicionais 
+	– Compressão implícita 
+	– Indireção para recursos remotos (ex, para OneDrive) 
+	– Assinatura 
+	– Cifra
+	
+Canais de COmunicaçao
+Permitem trocas de dados entre atividades 
+Essenciais em qualquer sistema atual
+Processos do mesmo SO/maquina
+Processos em maquinas distinttas (TCP/IP UDP/IP)
+
+Controlo de acessos
+O nucleo de um SO é um monitor de controlo de acesso
+	Controla todas as intereçoes com o hradware
+	Controla todas as interaçoes ente entidades do modelo computacional
+	
+Sujeitos
+	Tipicamente os processos locais
+		API de system calls (syscall ñ é um chamada ordinária)
+	Mensagens de outras máquinas
+	
+Controlo de Acesso Obrigatoria
+Existem inumeros casos de controlo de acesso obrigatorio num SO
+	Fazem parte da logica do modelo computacional
+	Nao sao moldaveis oelos utentes e admins
+	
+Linux:
+	root pode fazer tudo
+	Sinais a processos só podem ser enviados pelo root ou dono
+	Raw sockets śo podem ser criados pelo root ou por processos com essa capacidade
+	
+macOS:
+	root pode fazer quase tudo
+	ñ pode alterar os ficheiros/dir assinados pela apple
+	
+Controlo de Acesso Discricionario
+Utilizadores podem definir regras para controlo de acesso
+	Podem ser definidas pelo dono/utilizador
+	
+EX: ACL, Linux Apparmor, macOS sandbox
+
+Proteçao com ACL
+Cada objeto possui uma ACL
+ACL pode ser obrigatoria ou discriminatoria (discriminatoria altera, obrigatoria ñ seconseguemod)
+É verificada quando uma atividade pretende manipular o objeto
+	
+Proteçao de Files: ACL de dim fixa
+Cada elemento do sistema possui uma ACL
+	3 tipos de direitos a 3 entidades
+	Apenas o dono pode mudar ACL
+	
+Direitos sobre files e dirs: R W X
+
+Proteçao de Files: ACL dim variavel
+Cada elemento do FS possui uma ACL e um dono
+Dono pode ser utilizador ou grupo
+Dono nao possui direitos especiais por ser dono
+
+Windows: Cada recurso possui uma CAL e um dono
+
+Elevaçao de privilégios: Set-UID
+Effective UID / Real UID
+real -> uid do processo criador
+effective -> uid do processo
+
+Alteraçao do UID:
+Mormal: eUID = rUID = UID do processo que executou o exec, eUID ñ pode ser alterado (unless = 0)
+Aplicaçao: eUID = UID da aplicaçao exec'd, rUID = UID inicial do processo, eUID pode ser mudado para rUID
+rUID ñ pode ser alterado
+
+Permite que alterem identificadores dos processos quando carregados de ficheiros especificos
+u+s: eUID do processo é igual ao dono do ficheiro
+g+s: eUID do processo é igual ao grupo do ficheiro
+
+Permitem aos utilizadores a realizaçao de tarefas administrativas
+ping, sudo, alteraçoes de senhas
+
+Login
+Nao é uma operaçao do nucleo
+Um op de login privilegiada apresenta uma interface d elogin para obter credenciais
+A o pde login valida as credenciais e obtem os UID e GIDS do uentos
+Dai em diante todos os processos criados pelo utentes têm os seus identificadores
+
+Processo de login tem de ser priveligiado
+processo de login (uid = 0) -> novo processo (uid = 1000) -> aplicação de logi(uid = 1000)
+
+Processo de validaçao da senha
+O nome do utente é usado para encontrar o par UID/GID no ficheiro /ect/passwd
+A senha é transformada usando uma funçao de sintese (atualmente configuravel)
+Resutlado é verificado face a um valor guardado no ficheiro shadow
+Proteao de ficheiros
+
+Ferramento sudo
+Administraçao pelo root nao é adequada
+Aprox melhor: vários users podem ser admins temporarios
+
+sudo é um aplicaçao Set-UID com UID=0
+
+Mecanismo chroot
+Reduz a visibilidade do sistema de ficheiros
+chrrot premite mudar o numero do inode que refere a raiz do processo para referir o inode de outra diretoria arbitraria
+
+É usado para proteger o FS de aplicaçoes potencialmente perigosas
+
+Confinamento: Apparmor
+Mecanismo para restringir aplicaçoes com base num modelo de comportamento 
+Requer suport do nucleo: Linux Security Modules
+Foco nas syscalls
+Pode funcionar nos modos complain e enforcement
+Gera entradas no registo do sistema para auditar o comportamento
+
+Ficheiros de configuraçao definem que atividades podem ser invocadas
+
+Confinamento: Namespace
+Permite o particionamento dos recursos em vstas
+Processos num namespacee possuem vista restrta do sistema
+Ativado atraves de syscalls por um processo simples
+
+Tipo de namespaces:
+mnt: aplicado a pontos de montagem
+process id: primeiro processo tem id 1
+network:stack de rede independente
+IPC: metodos de comunicaçao entre processos
+uts: independencia de nomes (DNS)
+user id: segraçao de permissoes
+cgroup: limitaçao dos recursos utilizados
+	
+COnfinamento Containers:
+Explora namespaces para fornecer uma vista virtual do sistema
+Processos sao executados no ambito do container
+	Contruçao aplicacional e nao do nucleo
+	Consiste num ambiente por composiçao de namespaces
+	Requer criaçao de pontes com o sistema real
+	
+Aprox:
+	Linux Containers: foco num ambiente completamento virtualizado
+	Docker: Foco em executar aplicaçoes isoladas segundo um pacote portavel entre sistemas
+	Singularity: semelhante ao docker, foco em HPC e partilha por varios utilizadores		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+

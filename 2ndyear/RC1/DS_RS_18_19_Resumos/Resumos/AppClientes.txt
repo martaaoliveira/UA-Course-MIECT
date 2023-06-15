@@ -1,0 +1,279 @@
+-//-Aplicacoes Cliente Servidor-//-
+
+Arquitetura:
+	Servidor:
+		Sempre ligado
+		IP permanente ou associacao peranente entre nome e IP dinamico
+	Cliente
+		Comunicam com o servidor
+		Podem estar ligados apenas durante operacao
+		Podem ter enderecos dinamicos 
+		Nao comunicam entre si
+
+
+-/-TFTP - Trivial File Transfer Protocol-/-
+	Servico simples de transferencia de ficheiros que NAO PERMITE LISTAR DIRETORIO
+
+	Corre sobre UDP
+
+	Pacote inicial e enviado para o servidor para o numero de porto 69
+
+	Implementa mecanismos de controlo de fluxo
+
+	Baseado em 5 primitivas:
+		Read Request	RRQ
+		Write Request	WRQ
+		Data
+		Acknowledgement	ACK
+		Error			ERR
+
+	Formato das Mensagens
+		FILENAME - Especifica o ficheiro a ler ou escrever
+		MODE - Especifica modo da mensagem
+		BLOCK - no ACK e igual ao numero de bloco da mensagem recebida. O servidor usa ACK para confiramr a rececao dos blocos de dados e o cliente usa os blocos de dados para confirmar a rececao dos ACK excepto no caso de ACKs duplicados e de um ACK que termina a ligacao
+		ACK
+		ERROR
+		ERROR MESSAGE
+		ERROR CODE
+
+	Ver Diagramas Temporais Sl9.7 e Sl9.8
+
+-/-FTP - File Transfer Protocol-/-
+
+	Servico de transferencia de ficheiros
+
+	Corre sobre TCP
+
+	Servidor usa dois numeros de portos !!!
+		Porto 21 - Controlo
+		Porto 20 - Ligacao de dados
+
+	Possui mecanismos de autenticacao
+
+	Numa sessao FTP
+		Cliente estabelece ligacao de controlo com o servidor por onde sao trocados os comandos FTP
+
+		A ligacao de controle mantem se activa ate terminar a sessao FTP
+
+		Sempre que e necessario uma transferencia de dados o servidor estabelece uma ligacao de dados do seu numero de porto 20 para o numero de porto previamente anunciado pelo cliente pelo comando PORT
+
+		No fim da transferencia de dados o servidor temrina a ligacao de dados
+
+
+	Exemplo:
+	 	Suponha que acede, a partir de um terminal da VLAN 1, a um servidor de FTP localizado no Datacenter. Considere que efetua duas operações, executa o comando DIR e descarrega um ficheiro localizado no servidor, e seguidamente termina a sessão FTP. Que ligações TCP existiram durante este processo? (1.5 valores)
+
+	 	R:  São criadas 3 ligações TCP: uma ligação de controlo para o porto 21 do servidor de FTP e duas ligações de dados para o porto 20 do servidor, cada uma delas será iniciada quando se efetua o pedido de transferência de dados e encerrada logo que termina a transferência. A ligação de controlo mantém-se ativa desde o inicio até ao fim da sessão FTP (até ao logout).
+
+-/-HTTP - Hyper Text Transport Protocol/-
+
+	Define as interacoes entre Web Browsers e Web servers e os formatos das mensagens necessarias
+
+	!!!Cada interacao e constituida por 2 acoes:
+		Cliente envia uma mensagem request identificando um ficheiro que quer receber
+
+		Servidor envia mensagem response com resposta negativa ou positiva
+
+		E efetuado um pedido por cada ficheiro mesmo em paginas Web com varios fecheros
+
+	Modos de uso das ligacoes TCP
+		Persistentes
+			Cliente estabelece ligacao TCP para enviar o request com o pedido expresso para oservidor nao terminar a ligacao TCP depois de enviar o response
+
+			Servidor espera um tempo de timeout para terminar ligacoes que nao sao usadas
+
+			Cliente pode usar ligacoes previamente estabelecidas com pipelining ou sem pipelining
+
+		Nao Persistentes
+			Cliente estabelece ligacao TCP para enviar o request e o servidor termina a ligacao quando envia a o response
+
+			Desempenho penalizado pelo tempo de estabelecimento de cada ligacao TCP
+
+	-Uniform Resource Locater (URL)-
+		http://www.someschool.edu:1024/somedir/page.html
+
+		http:// 
+			Protocolo usado para comunicar com o servidor 
+			Outros métodos tipicamente suportados: file, ftp, mailto 
+
+		www.someschool.edu 
+			Nome DNS do endereço IP da estação do servidor Web Pode ser o próprio endereço IP (193.136.173.5 ou www.ua.pt) 
+
+		:1024/ 
+			Indica o número de porto do servidor Web (opcional) Se não existir, o browser usa o número de porto 80 por omissão 
+
+		somedir/ 
+			Caminho para o documento pretendido (opcional) Se não existir, o documento está no directório principal 
+
+		page.html 
+			Nome do ficheiro pretendido (a extensão indica um ficheiro HTML)
+
+	HTTP Request:
+		Mensagens compostas em formato ASCII
+		Comecam por uma linha de pedido
+		Inclui numero variavel de linhas de cabecalho
+
+	HTTP Response:
+		Comecam por uma linha de resposta
+		Inclui numero variavel de linhas de cabecalho
+		Termina com o conteudo do ficheiro pedido
+
+		Linhas de resposta:
+			200 OK
+			301 Moved Permanently
+			400 Bad Request
+			404 Not found
+			505 HTTP version not supported
+
+	Processo de autenticacao
+		HTTP inclui processo que permite limitar o acesso a ficheiros com base num username e password
+
+		Uma mensagem request enviada por um browser para um ficheiro protegido e respondida pelo servidor com uma mensagem response em que a linha de resposta e
+			401 Authorization Required
+
+		Esta resposta inclui uma linha de cabecalho do tipo
+			WWW-Authenticate
+			Indicando o metodo de autenticacao a usar
+
+		O novo pedido inclui uma linha de cabecalho do tipo Authorization com a informacao do username e password gerada pelo metodo pedido pelo servidor
+
+		Tipicamente o browser guarda a info de username e password em memoria para ser usada em futuras mensagens
+
+
+	COOKIES!!:
+		Forma do servidor identificar um terminal em diferentes pedidos feitos no tempo
+
+		Permite ao servidor diferenciar a info a disponibilizar por terminal
+
+		Funcionamento
+			A primeira vez que um terminal envia um request a um servidor, este inclui na resposta uma linha de cabecalho Set-Cookie
+
+			Se o browser for configurado para aceitar cookies ele guarda este numero juntamente com o identificador do servidor
+
+			Em futuros pedidos o browser incui na linha de cabecalho: Cookie:
+
+
+	Mensagem GET condicional
+		Se o browser suportar Web Caching permite minimizar os tempos de resposta e o trafego de rede
+
+		Se um ficheiro esta em cache no terminal o browser faz um pedido com uma linha de cabecalho do tipo lf-modified-since
+
+	SERVIDORES PROXY HTTP!!!
+		Atua como um elemento itnermedio entre o cliente e o servidor.
+		
+		O cliente interage com o Servidor Proxy como se ele fosse o servidor Web
+
+		O servidor proxy interage com os servidores web em nome dos clientes (para o servidor web o proxy E o cliente)
+
+		Armazena todos os ficheiros epdidos pelos clientes
+
+		Quando o cliente pede um ficheiro ja existente no servidor Proxy nao e preciso voltar a pedi lo ao servidor Web (envia apenas um GET condicional)
+
+		UTILIDADES:
+			Diminuem os tempos de itneracao
+			Reduzem o trafego para a rede publica
+
+			Nos ISPs:
+				Permitem uma infraestrutura de distribuicao automatica dos conteudos WEB mais solicitados por elementos de rede que esta topologicamente perto dos clientes
+
+-/-E-mail-/-
+
+	User Agents: 
+		Aplicacao em que o utilizador escreve, envia, recebe e le mensagens de correio eletronico.
+		Troca mensagens com o seu mail server
+
+	Mail Server:
+		Servidor de correio que envia e recebe as mensagens DE e PARA os seus clientes
+
+		Inclui:
+			Caixa de correio por cada cliente
+			Fila de mensagens de saida com as mensagens dos clientes que ainda nao foram enviadas
+
+
+	Vamos agora falar dos protocolos de Email:
+
+	-/-SMTP-Simple Mail Transfer Protocol-/-
+		Envio de mensages entre mail servers
+		Envio de mensagens de correio eletronico do user agent para o mail server do emissor
+
+		Corre sobre TCP e o numero de porto do servidor e o 25
+
+		Comunicacao estabelecida pela entidade que quer enviar a informacao (push protocol)
+
+		Comunicacoes diretas 
+			Por omisaso o mail server do emissor envia as mensagens diretamente para o mail server dos recetores
+
+		Segue filosofia cliente/servidor
+			Cliente emite comandos
+			Servidor responde a comandso
+			Cada resposta e formada por um codigo de 3 algarismos seguido de uma frase opcional	
+
+		Formato das mensagens Enviadas:
+			Formato ASCII
+			Comecam por um conjunto de linhas de cabecalho seguido de uma linha vazia seguido do corpo da mensagem
+
+			Ver Imagem Sl9.34
+
+		MIME
+			Permite enviar mensagens de diferentes tipos de info (imagens and shit)
+
+			No user agent do recetor o conteudo da mensagem e descodificado pelo algoritmo base64 para obter o conteudo original.
+
+		Formato das mensagens Recebidas
+			Cada mail server insere uma linha de cabecalho do tipo Received que identifica o servidor que enviou, o servidor que recebeu e o instante de tempo em que a mensagem foi recebida
+
+			Ver Imagem Sl9.38
+
+	-/-POP3 - Post Office Protocol v3-/-
+		Acesso a caixa de correio eletronico (envio do mail server para o user agent)
+
+		Corre sobre TCP e o numero de porto 110
+
+		Comunicacao estabelecida pela entidade que pretende receber a informacao (pull protocol)
+
+		Transferencia das mensagens e feita num de dois modos:
+			Envio e Remocao: Mensagens removidas da caixa de correio do servidor apos serem enviadas
+
+			Envio e Armazenamento: Mensagens sao mantidas na caixa de correio apos serem enviadas
+
+		Executado em 3 fases:
+			Autenticacao
+				User agent envi o username e password
+			Transacao
+				Mail erver envia as mensagens que estao na caixa de correio do user
+				User agent indica para cada mensagem se deve ser ou nao removida da caixa de correio
+			Atualizacao
+				O mail server remove da caixa de correio as mensagens indicadas pelo user agent para remocao
+
+
+	-/-IMAP-Internet Mail Access Protocol-/-
+		Acesso a caixa de correio eletronico (envio do mail server para o user agent)
+
+		Corre sobre TCP e o numero de porto e o 143
+
+		Relativamente ao POP3, o IMAP permite:
+			Criar e gerir sistema de diretorios de mensagens no servidor 
+			Fazer operacoes de procura no sistema de diretorios
+			Solicitar envio de partes das mensagens de correio
+
+		Numa sessao o servidor esta num de 4 estados:
+			Nao Autenticado
+				Estado inicial antes do user agent enviar username e password
+
+			Autenticado
+				User agent deve identificar um diretorio antes de enviar qualquer comando que afte as mensagens de correio
+
+			Selecionado
+				User agent pode enviar comandos de gestao das mensagens
+
+			Estado de saida
+				Quando a sessao termina
+
+
+	Exemplo
+	-Na configuração do seu programa de e-mail prefere configurar o protocolo POP ou IMAP? Justifique. (2.0 valores)
+
+	R:É preferível o IMAP porque permite (i) criar e gerir um sistema de diretórios de mensagens no servidor; (ii) fazer operações de procura no sistema de directórios – útil para utilizadores que usem o serviço de múltiplos terminais; (iii) solicitar o envio de partes das mensagens de correio – útil quando o terminal está ligado à rede através de ligações de baixo débito.
+
+
+

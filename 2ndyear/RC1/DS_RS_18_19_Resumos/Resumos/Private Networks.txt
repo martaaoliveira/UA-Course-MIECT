@@ -1,0 +1,2 @@
+NAT - Network Address Translation
+NAPT - Network Address Port Translation

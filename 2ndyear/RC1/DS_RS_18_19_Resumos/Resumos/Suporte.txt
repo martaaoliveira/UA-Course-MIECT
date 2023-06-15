@@ -1,0 +1,272 @@
+ --//Protocolos de Suporte//--
+
+ Protocolos usados por outros processos em determinadas situacoes
+
+-/-DHCP - Dynamic Host Configuration Protocol-/- 
+	-Servico usado na ATRIBUIÇAO DINAMICA de enderecos IP a terminais !
+
+	-Segue filosofia cliente servidor
+
+	-Permite o aluguer de enderecos
+
+	-Usado pelos IPv6 na configuracao Stateful ! (ou Stateless usando um stateless DHCPv6 server)
+
+	
+	Configuracao de um servidor DHCP
+		Definem-se:
+			Gamas de enderecos
+				Conjunto de IP definido por um inicial e um final
+			Gamas de exclusao
+				Conjunto de enderecos IP que se querem excluir
+			Enderecos Reservados
+				Enderecos IP atribuidos de forma permanente a certos MAC
+			Duracao dos alugueres
+
+	BOOTP
+		Extensao Bootstrap Protocol
+
+		Corre sobre UDP
+
+		Permite que um terminal sem disco descubra o seu IP, um endereco de um servidor e o nome de um ficheiro a pedir ao servidor para ser copiado para memoria e executado localmente.
+
+
+	Fases de Aluguer
+		4 Fases:
+			Discover
+				Mensagem DHCP Discover encapsulada no BootP Request.
+
+				Usado para descobrir os servidores de DHCP existentes na rede
+	
+				O cliente pode indiar qual o endereco IP que quer alugar
+
+			Offer
+				Mensagem DHCP Offer encapsulada num pacote BootP Reply.
+
+				Cada servidor indica um endereco IP para ser alugado, respeitando, se possivel, a preferencia do cliente
+
+			Request
+				Mensagem DHCP Request encapsulada num pacote BootP Request
+
+				Usado para o cliente indicar qual o endereco IP que desja apos ter escolhido entre as varias opcoes recebidas na Offer
+
+			Acknowledge
+				Mensagem DHCP Ack encapsulada num pacote BootP Reply
+
+				Servidor identifica positivamente o aluguer do endereco IP indicado fornecendo tambem as outras informacoes de interesse
+
+			Ver Imagem Sl 6.12 (possui o processo de pedido de um IP de um DHCP Client a um DHCP Server)
+
+
+	O aluguer de enderecos e feito em 3 tempos:
+		T1 Time - Tempo ao fim do qual o terminal deve tentar renovar o aluguer
+		T2 Time - Tempo ao fim do qual o terminal deve tentar NOVAMENTE renovar o aluguer se a primeira tentavia nao for bem sucedida
+		
+		Lease Time - Tempo ao fim do qual o terminal deve deixar de usar o IP se o aluguer nao for renovado (T1 - 50% lease time ; T2 - 85 % Lease time)
+
+	Uso de varios Servidores DHCP
+		A existencia de multiplos servidores DHCP evita redundancia a falhas de funcionamente mas obriga a existencia de gamas disjuntas de enderecos nos diferentes servidores
+
+	Redes Complexas & Relay Agent
+		Em ambientes de rede complexos onde um ou mais servidores DHCP fornece enderecos a multiplas redes locais
+		O gateway de cada rede local deve ser configorado como BootP Relay Agent
+		O router vai redirecionar todos os pacotes DHCP recebidos em broadcast para o servidor DHCP usando unicast
+		Isto faz com que, para o cliente, o router aja como um servidor DHCP
+
+	Outras Mensagens DHCP:
+		DHCP Decline
+			Cliente rejeita a oferta e reinicia processo de aluguer
+		DHCP Nack
+			Servidor informa que nao pode satisfazer pedido (enviado atraves de DHCP Request)
+		DHCP Release
+			Cliente informa que quer terminar o aluguer
+		DHCP Inform
+			Cliente solicita apenas alguns parametros
+
+	DHCPv6:
+		Similar ao DHCP para IPv4
+		Um terminal que queira receber quaisquer parâmetros de configuração irá enviar um pedido para detetar os servidores de DHCPv6 disponíveis. 
+
+		Usando a mensagem “Solicit”. O endereço de destino da mensagem “Solicit” é um endereço de multicast específico do DHCPv6. As respostas virão em mensagens “Advertise”. 
+
+		De seguida, o cliente DHCPv6 irá enviar um pedido usando uma mensagem ”Request”. O servidor de DHCPv6 irá responder com a informação pedida usando uma mensagem “Reply”.
+
+		O relay em DHCPv6 funciona de forma distinta do que no DHCP para IPv4:
+			O Relay Agent encapsula completamente as mensagens DHCPv6 do cliente numa nova mensagem do tipo RELAY-FORW message. 
+			Reencaminha esta nova mensagem para o servidor de DHCPv6. 
+			A resposta é feita igualmente usadndo uma nova mensagem (RELAY-REPL message) que contem encapsulada a mensagem a enviar ao cliente DHCPv6 pelo Relay Agent.
+
+
+	/-Exemplos-/
+
+	1)Suponha que o Terminal B se encontra em modo de auto-configuração stateless, ao passo que o Terminal C se encontra em modo de auto-configuração stateful. Explique como é que os dois terminais auto-configuram os seus endereços IPv6. 
+
+	R-(...) Em modo stateful, o terminal interage com um servidor DHCP no sentido de receber uma configuração básica de rede.
+-------------------------------------------------------------------------------------------------------------------------------
+	2). Explique as diferenças de funcionamento do mecanismo Relay do DHCP em IPv4 e IPv6.
+
+	R-Em IPv4, o gateway de cada rede local deverá ser configurado como “BootP Relay Agent”. O router irá redirecionar todos os pacotes DHCP (recebidos em broadcast) para o servidor DHCP usando unicast. Adiciona informação na mensagem com a indicação da rede/interface onde recebeu o pedido. As respostas do servidor são reenviadas para o cliente. O mecanismo de relay em DHCPv6 funciona de forma distinta do que no DHCP para IPv4. O Relay Agent encapsula completamente as mensagens DHCPv6 do cliente numa nova mensagem do tipo RELAY-FORW message. Reencaminha esta nova mensagem para o servidor de DHCPv6. A resposta é feita igualmente usadndo uma nova mensagem (RELAY-REPL message) que contém encapsulada a mensagem a enviar ao cliente DHCPv6 pelo Relay Agent.
+-------------------------------------------------------------------------------------------------------------------------------
+
+	3)Assumindo que um servidor DHCP (localizado no Datacenter) foi devidamente configurado e todas as configurações de rede relacionadas foram igualmente realizadas, descreva o processo de aquisição de um endereço IPv4 por um terminal ligado à VLAN 2 no Switch 1. (1.5 valores)
+
+	R-Como o servidor de DHCP está no Datacenter então todos os routers/SWL3 vão ter de redirecionar os pedidos para o servidor (servindo de intermediários). Para esse efeito é preciso configurar todos os routers como BOOTP Relay Agents. Um terminal que deseje obter um endereço IP irá enviar um pacote DHCP DISCOVER em broadcast, que chegará a um router o qual incluirá no pacote o endereço IPv4 onde recebeu o pacote (para o servidor DHCP poder identificar a rede de origem) e reenviará em unicast o DISCOVER para o servidor, o servidor perante este pedido identifica a rede de origem e procurará na gama de endereços dessa rede um disponível, reenviará a oferta num pacote DHCP OFFER já com o endereço via routers para o terminal, o terminal responderá com um DHCP REQUEST ao qual o servidor (se tudo estiver de acordo com o oferecido) enviará um DHCP ACKNOWLEDGEMENT.
+
+
+-/-DNS - Domain Name System-/-
+	
+	Sistema de base de dados distribuida que facilita a traducao e resolucao entre nomes de Hosts e enderecos de IP (permite tambem a traducao/resolucao entre enderecos IP e os Host names)
+
+	Organiza os nomes dos dominios de acordo com uma estrutura hierarquica
+
+	Cada DNS define uma ou mais zonas sobre as quais tem autoridade de rosolucao!
+
+	Estrutura Hierarquica dos nomes de Dominios:
+		Ex: / - Root Domain
+			.pt - Top Level Domain
+			.ua.pt - 2nd Level Domain
+			.det.ua.pt - 3rd Level domain 
+
+	Top Level Domains - TLD:
+		Generic TLDS (gTLDs):
+			.com, .edu, .gov, ...
+		Country Code TLDS (ccTLDs)
+			.pt, .es, .fr, ...
+		New gTLDs (under approvel)
+			.google, .amazon, .apple, ...
+
+	Domain Management Model:
+		Autoridade e Delegacao estao no centro da hierarquia DNS
+
+		ICANN:
+			A autoridade que se encarga do Root Domain e a ICANN (Internet Corporation for Assigned Numbers and Names)
+
+			Os gTLDs sao administrados pela ICANN e delegados por uma serie de entidades
+
+			Os ccTLDs sao delegados por paises individuais para administracao
+
+		Registry
+			Entidade responsavel por um dominio especifico (responsavel por manter o Zone File de um TLD)
+
+		Registries
+			Normalmente delegam num Registrar o manageamento e marketing de um dominio
+
+			Um Registry pode delegar multiplos Registrars
+			Um Registrar guarda e managea a informacao e estado do dominio
+
+		Resellers
+			Um Registrar pode aceitar Resellers que vao vender os dominios de um Registrar.
+			Nao ficam, porem, responsaveis pelo management dos dominios
+
+		Registrant
+			Qualquer entidade que queira registar um dominio
+
+	Domain Name Life Cycle
+		Um dominio pode estar registado de 1 a 10 anos (depois disso tem de ser renovado)
+
+		Caso nao haja renovacao, o apagamento do DN e iniciado pela DNS Database
+		(Nowadays, the Registrars do not release the domain immediately after the redemption period, they initiate a reselling mechanism (usually some kind of auction) of the domain on the secondary market.)
+
+	WHOIS Service and Information
+		Contem informacao sobre o Registrant de um dominio
+			-Name Servers
+			-Status do Dominio
+			-Last Updates
+			-Criacao
+			-Contactos:
+				--General
+				--Administrative
+				--...
+			-...
+
+		Servico executa queries recursivas as databases da Registry e Registrant
+
+	Name Servers Registration
+		Para dar SET UP de um DNS Server fora do Registrar e necessario:
+			Registar o nome do servidor e IP (explicitamente)
+			Definir pelo menos 2 server names para o dominio registado no Registrar
+
+	Name Resolution
+		Respostas recebidos a resolucao de um nome podem ser temporariamente guardades em Cache
+
+		Elimina queries externas desnecessarias
+
+	Resolucao Recursiva vs Iterativa
+		Iterativa:
+			Menos eficiente pois aumenta o tempo medio entre uma query DNS e a sua resposta
+
+			Servidor com menos carga pois cada servidor tem de responder imediatamente a uma query, logo nao precisa de guardar info temporaria nem interacoes com outros servidores DNS
+
+		Recursiva:
+			Mais eficiente pois minimiza o tempo medio entre um Query DNS e a sua resposta
+
+			Servidores com mais carga pois cada server tem de managear o stado de multiplas DNS queries
+
+		Configuracao de Zonas & Zone Files
+			Uma zona e definida por:
+				Declaracao - Guarda o tipo de zona, ponteiro para o zone file e tipo especifico de configuracao (opcionalmente)
+
+				Zone File - Guarda os DNS resource records para todos os nomes de dominios associados com a zona. 
+						  - Tem toda a data servida por um DNS server
+
+						  - Formato base e um campo TTL seguido de Start of Authority Records
+
+		Zone Types
+			Master - Servidor le a data da zona diretamente de um local storage (zone file) e providencia authoritative answers para a zona
+
+			Slave - Replica de uma Master Zone e obtem a data atraves de Zone Transfer Operations
+
+			Forward - Forma de configurar forwarding numa per-domain ou per-zone basis
+
+			Stub - Similar a slave zone mas replica apenas os NS Records da master zone em vez de a zona toda
+
+			Delegation-Only - ???
+
+		Zone Files
+			Contem Resource Records que descrevem um dominio ou sub dominio
+
+			Conteudos !!!!:
+				Data que indica topo da zona e propriedades gerais (SOA Record)
+
+				Authoitative data para todos os nodes ou hosts na zona:
+					A para ipv4
+					AAAA para ipv6
+
+				Data que descrebe informacao global para a zona
+					Mail MX Records
+					Name Server NS Records
+
+				No caso de delegacao de sub dominio os name servers responsaveis pelo subdominio:
+					Um ou mais NS Records
+					Um ou mais A ou AAAA Records
+
+		Name Server records
+			Ver Image Sl 6.40
+
+
+		Reverse DNS
+			Para fazer a Reverse Resolution usando queries recursivas e/ou iterativas normais foi definido um Special Domain Name:
+				IN-ADDR.ARPA for IPv4 addresses
+				IP6.ARPA for IPv6 addresses. 
+
+			Usa o Pointer Record
+
+			Ver Imagens Sl6.48 e Sl6.49
+
+
+		/-Exemplo-/
+		 Assuma que a empresa adquiriu o domínio maisvalor.pt e possui um servidor de DNS, um servidor de email e dois servidores HTTP (maisvalor.pt, www.maisvalor.pt) numa rede com suporte IPv4 e IPv6. Apresente uma configuração genérica da zona DNS (com todos os registos necessários) para o domínio maisvalor.pt. 
+
+		 NS 	ns1.maisvalor.pt
+		 MX 10  mail1.maisvalor.pt
+
+		 ns1	A 		endIPv4_DNS   (Servidor DNS)
+		 ns1	AAAA	endIPv6_DNS
+		 mail1  A 		endIPv4_mail1 (Servidor Mail)
+		 mail1	AAAA 	endIPv6_mail1
+		 http1  A 		endIPv4_http1 (Servidor HTTP 1)
+		 http1  AAAA	endIPv6_http1
+		 http2  A 		endIPv4_http2 (Servidor HTTP 2)
+		 http2  AAAA	endIPv6_http2
+
+		 masivalor.pt 	  CNAME http1
+		 www.maisvalor.pt CNAME http2

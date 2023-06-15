@@ -1,0 +1,71 @@
+**Porta,services and protocols**
+2 protocolos de transporte: TCP e UDP
+UDP: transporte simples de pacotes - nao se importa se se perdeu ou nao
+	Transporte instantaneo
+TCP: tem garantias de que chegou
+	usado em ficheiros. Nao fica nada perdido
+	repartição das mensagens
+	emissor: fornece o tamanho da mensagem + mensagem (depois)
+	receptor: recebe o tamanho da mensagem e so depois a mensagem + tamanho da mensagem +mensagem
+
+
+(NAT VS PAT:
+PAT=> endereços e portes
+portes => associam/diferenciam a serviços
+port 80: http)
+
+Como se distingue:
+
+
+slide multiplexing/demultiplexing
+pacotes => de serviços que podem ser de ligações diferentes.
+
+host2: recebe pacotes de ambos hosts => é um servidor. Ligação com clientes. Cada uma das ligações tem um port origem(host1 9157) e destino(host1 6428).o Destino dos ambos clientes sao iguais pq as mensagens vao para o mesmo servidor.
+
+Forma para o servidor distinguir utilizadores/clientes:de acordo com port origem 
+
+
+
+distinguir processsos: nao é possivel so atraves do IP + ports (origem, destino) para direcionar pacotes que chegam para a aplicação correta
+
+discord,skype,slack... => cada aplicação associada a um port diferente. 0's e 1's
+
+
+Connection oriented demux: nao é so apenas port origem vs destino + IPS 
+
+exemplo: servidor discord + whatsapp 
+ligacao discord com port destino 
++ ligação servidor whatsapp => os ips sao os mesmos(mesmos servidores) => aplicações diferentes => destingue se no ip/port origem 
+
+Client IP A: port 80 => comunicações web 
+Cliente IP B => ao mesmo servidor (2 ligações) ao port 80(http). Port origem do B e do A sao o mesmo. a forma de destinguir é o IP origem. Se o ip origem for o mesmo distingue -se pelo port
+Servidor: a forma de destinguir pacotes é o ip origem
+
+ips => destinguem terminais (computador p.e)
+port's=>destingue serviços
+
+Thread's =>varios processos simultaneo mas em paralelo 
+
+
+Connect Machines:
+pc => internet  => pc 
+Cliente vs servidor
+Camada de transporte
+se quisermos enviar uma mensagem precisamos:
+
+Aplicação:
+O pc precisa de saber o endereço Ip do servidor + port destino do servidor (pq o servidor pode  ter muitas aplicações) + versao protocolo IP + tipo de transporte (udp,TCP,...recuperação de percas de pacotes ou nao) => o que colocamos no socket 
+
+Se a aplicação estiver no nosso terminal (comunicação connosco mesmo):localhost 127.0.0.1 ou nosso proprio endereço IP 
+
+Se a aplicação estiver disponivel para todos os terminais: ip tudo 0's
+
+Sockets IO/blocking: 
+bloqueantes pq: enquanto aquelas açoes nao sao realizadas o servidor nao faz mais nada
+
+
+
+UDP: associar pacotes às aplicações (ports) => a unica coisa que ele serve => muito serviços ao mesmo terminal => se o pacote é do discord,slack...
+TCP:é garantido nos serviços mensagens(ficheiros)
+
+

@@ -1,0 +1,350 @@
+--//Comunicaçao entre Redes//--
+
+2 tipos de encaminhamento: Estatico e Dinamico
+
+ESTATICO:
+	Feito por configuracao estatica.
+	Define se next hop para atingir uma determinada rede (proximo router do caminho, TEM de pertencer a uma rede que o router ja conheca)
+	E necessaria a definicao de uma rota estatica para cada rede que se quer conectividade, mas podemos usar uma rede 0.0.0.0/0 para representar todas (ROTA POR OMISSAO)
+
+DINAMICO:
+	Adapta se automaticamente a mudancas na topologia. 
+	Os routers trocam informacao sobre as redes existentes e estado dos diferentes links/redes entre si (trocando informacao apenas com routers a correr o mesmo protocolo de encaminhamento)
+
+
+Sistemas Autonomos:
+	Conjunto de routers com uma politica de encaminhamento propria sob a responsabilidade de uma unica administracao.
+	A comunicacao entre routers dentro das ASs e realizado por INTERIOR GATEWAY PROTOCOLS (IGPs).
+	A comunicacao entre ASs e feita por EXTERIOR GATEWAY PROTOCOLS (EGPs)
+
+
+-/-IGPs - RIP e OSPF-/-
+
+/-RIP - ROUTING INFORMATION PROTOCOL-/
+	E um protocolo IGP do tipo Distance Vector:	
+		Cada router mantem um vetor distancia constituido por uma lista das redes IP que conhece e para cada rede a estimativa atual do melhor custo. Cada router envia periodicamente o seu vetor distancia para os vizinhos sendo que estes usam a informacao para atualziar os seus distance vectors.
+
+	O custo de um percurso e dado pelo numero de routers intermedios, sendo que no maximo temos 15 (16 representa infinito)
+
+	!!!Para cada rede existente o router inclui na sua tabela de encaminhamento uma netrada para cada um dos seus vizinhos que lhe proporcionam um percurso de custo minimo!!!
+
+	Ver Imagem Slide 5.11
+
+
+	PACOTES:
+		*RIP Request*
+			Enviado por um router ligado recentemnete ou quando a validade da informacao relativamente a determinado destino expira.
+			Pode pedir informacao relativamente a um destino especifico ou a todos os destinos
+
+		*RIP Response*
+			Contem um vetor distancia
+			Enviado:	
+				1)Periodicamente
+				2)Quando a informacao e alterada (opcional)
+				3)Em resposta a um RIP Request
+
+				1 e 2 sao mandados em broadcast (RIPv1) ou multicast Routers RIP (RIPv2)
+
+			Quando um link falha na metrica do RIP response, teremos a distancia 16
+
+			Campos (no RIPv2):
+				-SubnetMask - Torna o RIPv2 um protocolo classless
+				-Route Tag - Atributo dado a uma rota que deve ser preservado e re-anunciado com a rota. Fornece metodo de separar rotas para redes dentro do dominio de encaminhamento RIP de rotas importadas do exterior
+				-Next Hop - Endereco IP para onde os pacotes devem ser enviados (0.0.0.0 indica que devem ser enviados para o rotuer que enviou esta mensagem)
+
+	SPLIT HORIZON:
+		O Distance Vector normalmente pode operar em 2 modos:
+			Sem Split Horizon - Cada router anuncia e envia o vetor distancia completo para todas as interfaces
+
+			Com Split Horizon - Em cada interface o router anuncia apenas as redes destino para as quais essa interface nao e usada no encaminhamento dos pacotes de dados
+
+			O split horizon diminui o tempo de convergencia das tabelas quando ha alteracoes de tupologia!
+
+		Ver Imagem Slide 5.14
+
+/-OSPF - OPEN SHORTEST PATH FIRST-/
+
+	E um protocolo do tipo Link State:
+		-Cada Router contem uma base de dados com a topologia completa da rede e atraves de um algoritmo centralizado determinam os percursos de custo minimo para cada destino possivel. Esta informacao e obtida por FLOODING.
+		-No caso do OSPF o algoritmo para calcular os percursos de custo minimo e o de Dijkstra (custo de um percurso de um router para uma rede e dado pela soma dos custos das interfaces de saida no sentido do router para a rede)
+
+		Ver Image Slide 5.19
+
+	A informacao topologica e enviada em Link State Advertisements, contidos nos pacotes Link State Update (ver "PACOTES" e "Troca de Informacao de Topologia")
+
+	Adjacencia:
+		*-Um router a correr OSPF tem de establecer adjacencias com os seus vizinhos trocando mensagens OSPF Hello
+		*-2 routers OSPF ligados ponto a ponto formam adjacencia entre si, porem routers OSPF em redes broadcast elegem um Designated Router e um Backup Designated Router, sendo que todos os outros routers vao formar adjacencia com estes 2
+
+	DR e BDR:
+		*-Primeiro router a ser ligado torna se o DR
+			--Se muitos arrancarem em simultaneo o DR sera o router de entre os ligados a LAN, que tiver maior prioridade (valor definido administritvamente)
+			--Se houver empate na prioridade e escolhido o que tiver maior RouterID (valor definido administritivamente ou o que tiver endereco IPv4 mais elevado de todas as interfaces do router no momento da ativacao do OSPF)
+		*-Segundo router a ser ligado torna se o BDR
+
+		Nenhum router pode usurpar a posicao de DR a nao ser que este avarie (nesse caso o BDR passa a ser o novo DR e sera eleito novo BDR)
+
+	Bases de Dados OSPF:
+		Temos 2 tabelas:
+			1-Informacao relativa aos routers (Router Link States), identificadas pelo ROUTER ID (valor definido administritivamente ou o que tiver endereco IPv4 mais elevado de todas as interfaces do router no momento da ativacao do OSPF)
+			 -Cada router armazena info relativa as varias redes que lhe estao diretamente ligadas
+
+			2-Informaca relativa as redes intermedias (Net Link States), identificadas pelo Ñetwork ID (IP da interface do seu DR)
+			 -Cada rede intermedia armazean info relativa aos varios routers que lhe estao diretamente ligados
+
+		Ver Image Slide 5.26
+
+	PACOTES:
+		*Hello*
+			Usado para a descoberta de vizinhos, construcao de adjacencias com eles e eleicao do DR/BDR
+
+			Enviados por omissao de 10 em 10 segundos para DETETAR FALHA DE CONECTIVIDADE
+
+			Nao tranpsportam info de encaminhamento (rececao nao altrera base de dados)
+
+		*Database Description*
+			Usado para a verificacao do conteudo e sincronizacao das bases de dados
+
+			Incluem um sumario da base de dados OSPF
+
+			Os routers usam um numero de sequencia para determinar qual a informacao de link state mais recente
+
+			Ver "Troca de Informacao de Topologia"
+
+		*Link-State Request*
+			Usado para pedir um Link State Advertisement especifico a outro router
+
+		*Link State Update*
+			Usado para enviar os Link State Advertisements
+
+		*LSack*
+			Confirma a correta rececao dos pacotes
+
+	Troca de Informacao de Topologia
+		-Entre cada router e o DR (e BDR) adjacente e criada uma relacao mestre/escravo, ou seja, apenas o DR troca info e sincroniza informacao de link-states com os routers (pacotes LSA LSack LSU e DBD(not sure - Confirmar)), ou seja, nos seguintoes passos, os pacotes sao enviados primeiro para o DR (e BDR) e este e que os reencaminhará respetivamente.
+
+		-Routers trocam um ou mais pacotes DBD
+
+		-Usando LSack os routers confirmam rececao dos DBD
+
+		-Se DBD indicam que ha info mais recente, router envia LSR para pedir essa nova info
+
+		-Router responde com LSU que contem toda a info pedida
+
+		-Usa LSack para confirmar a rececao do LSU
+
+		//Ex de Propagacao de LSA em LANs//
+
+			1)R3 tem um LSA para ser enviado para a LAN (pacote LSU)
+
+			2)R3 envia LSA usando endereco multicast allDRouters (para o DR)
+
+			3) DR e BDR recembe o LSA (no pacote LSU)
+
+			4) DR envia LSA para endereco multicast allOSPFRouters 
+
+			5) Se todos os routers adjacentes receberm o LSA corretamente, eles (todos menos o proprio DR) enviam um LSack usando o endereco multicast allDRouter (DR)
+
+			6) Se o DR nao receber LSAck dentro de certos routers dentro de um timeout, transmitira o LSA (pelo pacote LSU) 3 vezes para estes
+
+	Areas no OSPF:
+		-Tornam o protocolo escalavel para SAs grandes.
+		-Um router interior conhece APENAS a topologia (completa) da sua area
+		-Todas as areas tem de estar fisica ou virtualmente ligads a area 0
+		-Um Router fronteira entre areas e cha,ado de Area Border Router (ABR) - Conhece a topologia de todas as areas a que esta ligado
+
+		-Um router fronteira do dominio OSPF e chamado de AUTONOMOUS SYSTEM BORDER ROUTER (ASBR)
+
+
+/-RIP vs OSPF-/
+	RIP:
+		+ Mais simples
+		+ Encaminhamento baseado em numero de saltos
+		- Nao escalavel (maximo = 16)
+		- Processamento continuo de tabelas de encaminhamento (pois os vetores distancia sao enviados periodicamente nos RIP Response)
+
+	OSPF:
+		- Complexo (pois tem de sincronizar bases de dados distribuidas)
+		+ Escalavel (para redes grandes usando o encaminhamento hierarquci)
+		+ Flexibilidade de encaminhamento baseada em custos configuraveis
+		+ Processamento pontual das tabelas de encaminhamento (apeanas sao atualizadas as bases de dados, usando LSR e LSU, quando o DBD afirma haver nova informacao)
+		+ Uso intenso da rede apenas quando ha alteracoes da topologia de rede (por causa do FLOODING)
+		+ Proesso de convergencia das tabelas rapido
+
+/-RIPng & OSPFv3-/
+	IGPs de IPv6:
+		RIPng:
+			Similar ao RIPv2 em tudo menos...
+
+			...Usa IPv6 para o transporte
+			...Anuncia prefixos de rede IPv6 e o next Hop e um endereco IPv6
+			...Usa endereco multicast IPv6 allRIPRouters como endereco destino dos anuncios RIP (pois broadcast nao existe em IPv6)
+
+		OSPFv3
+			Baseado em OSPFv2 mas...
+
+			...Usa IPv6 para o transporte
+			...Distribui prefixos de rede IPv6
+			...Usa endereco multicast IPv6 OSPF IGP e OSPF IGP Designated Routers		
+
+			A base de dados com a descrição da topologia não e especifica do IPv6. 
+
+			Router ID, Area ID, Link ID continua a ser um identificador de 4 bytes.
+
+			Os vizinhos são identificados por um Router ID de 4 bytres. Apenas existe uma tabela adicional na base de dados que mapeia um identificador de rede (link) num determinado prefixo e máscara de rede IPv6 
+
+			São usados os endereços IPv6 Link-Local com origem dos anúncios
+
+			Ha novos tipos de LSA:
+				Link LSA
+					Contem info sobre IPv6 Link Local e prefixos IPv6
+
+				Intra Area Prefix LSA
+					Associa um prefixo IPv6 com uma rede ou router
+
+
+-/-EGPs - BGP-/-
+
+/-BGP - BORDER GATEWAY PROTOCOL-/
+	Usado no encaminhamento entre diferentes Sistemas Autonomos
+
+	Usa protocolo TCP (Transmission Control Protocol) como protoclo de transporte
+
+	Relacoes de vizinhanca podem ser establecidads entre routers da mesma SA (IGBP) ou de diferentes SA (EBGP)
+
+	Ver Imagem Sl 5.42
+
+	SA Single Homed:
+		Possuia APENAS UM ROUTER FRONTEIRA para chegar a redes fora do seu SA
+
+	SA Non Transit Multi Homed:
+		Possui MAIS DO QUE UM ROUTER FRONTEIRA para o mundo exterior nao permitindo que o trafego de transito o atravesse
+
+	SA Transit Multi Homed:
+		Possui MAIS DO QUE U MROUTER FRONTEIRA para o mundo exterior suportando trafego de transito
+
+	PACOTES:
+		*Open*
+			Pacotes trocados aquando do establecimento das relacoes de vizinhanca.
+			
+			Declaram, p.ex, o numero do seu AS
+
+		*Update*
+			Informacao de encaminhamento transportada nestas mensagens
+
+			Inicialmente sao trocadas TODAS AS ROTAS BGP
+
+			Withdrawn Routes - Lista de redes IP que ja nao podem ser atingidas
+
+			!!!!Path Atributes - Permite implementar politicas de encaminhamento (IMPORTANTE, falamos mais a frente)!!!!
+
+			Network Layear Reachability Information - Listagem das redes destino anunciadas
+
+		*KeepAlive*
+			Trocados quando NAO HA ALTERACAO DE ROTAS sendo enviadas peridociamente entre vizinhos BGP para manter a relacao de vizinhanca viva
+
+		*Notification*
+			Transmitidas para reportar situacoes de erro e terminar uma ligacao
+
+	Agregacao:
+		Importante aspeto do BGP, ver Imagem no Slide 5.50
+
+		Quando uma rede da agregacao fecha nao e enviada Notification nem Update !
+
+	Atributos BGP
+		Metrica usada para descrever as caracteristicas de um caminho BGP
+
+		Incluidos, como vimos nas mensagens Update trocadas pelso vizinhos BGP para anunciar rotas
+
+		Temos 4 + 1 categorias de atributos:
+			-Well-Known Mandatory - Incluidos nos updates BGP (AS-Path, NextHop,Origin)
+			
+			-Well-Known Discretionary - Incluidos OU NAO nos updates BGP (Local Preference, Atomic Aggregate)
+
+			-Optional Transitive - Includos OU NAO nos updates BGP (Aggregator, Community, AS4_Aggregator, AS4_Path)
+
+			-Optional Non Transitive - Nem sempre suportadas por todas as implementacoes BGP (Multi Exit Discriminator) - Apagado caso o vizinho nao suporte
+
+			-Cisco Defined - Local ao router, nao anunciado (Weight)
+
+		Vamos agora falar mais em detalhe destes atributos
+
+		OBRIGATORIOS:
+		*AS-Path*
+			Quando o anuncio de uma rota passa atraves de um SA, o numero do SA e adicionado a uma lista ordenada de numeros de SAs correspondente aos sistemas que o anuncio ja atravessou
+		
+		*Origin*
+			Indica como e que o BGP apredneu a info relativa a uma rota (IGP ; EGP ; Incomplete)
+
+		OPCIONAIS:
+		*Next Hop*
+			Atributo next hop do EBGP e o endereco IP usado para alcancar o router anunciante. E o endereco IP da ligacao entre os peers (vizinhos)
+			Para IBGP o endereco next Hop EBGP e transportado para dentro do SA local
+
+		*!Local Preference!*
+			Usado para ESCOLHER PONTO DE SAIDA DO SA LOCAL
+			E propagado por todo o SA local
+			Se existirem multiplos pontos de saida do SA o atributo local preference e usado para SELECIONAR O PONTO DE SAIDA PARA UMA ROTA ESPECIFICA!!!
+
+		*Atomic Aggregate*
+			Usado para alertar os routers que certas rotas especificas foram agregadas a uma menos especifica. (Quando isto acontece sao perdidas rotas mais especificas)
+
+		*Aggregator*
+			Da info relativa ao SA que realizou a agregacao. E o endereco IP do router que originou o agregado
+
+		*Community*
+			Usado para agregar rotas que partilha propriedades comuns de forma a que possam ser aplicadas politicas ao nivel do agregado
+			Atributos community pre definidos sao:
+				-No Export (nao anunciar essa rota aos vizinhos EBGP)
+				-No Advertise (nao anunciar essa rota a nenhum peer)
+				-Internet (Anunciar essa rota a comunidade internet ; todos os routers da rede pretencem a ela)
+
+		*!Multi Exit Discriminator!*
+			Usado como SUGESTAO A DAR A UM SA EXTERNO
+			O SA externo que esta a receber os MEDs pode estar a usar outros atributos BGP para selecao de rotas.
+			O valor mais baixo da metrica e preferido !!!
+			Idealizado para influenciar o trafego de entrada
+
+		*!Weight!*
+			Definido pela Cisco e local a um router
+			Nao anunciado aos vizinhos
+			Se o route raprender mais do que uma rota para o memso destino a rota com o weight MAIS ELEVADO e preferida
+
+
+		Ver iagens Sl5.53 a 5.59 !!!
+
+	Selecao de Caminhos BGP:
+		BGP pode receber multiplos anuncios para uma mesma rota a partir de varias fontes, mas vai selecionar apenas um caminho como o melhor colocando o na tabela de encaminhamento e propagando o aos seus vizinhos.
+		Ordem de criterios de selecao (por ordem):
+			Maior Weight
+			Maior Local Preference
+			Caminho originado localmente
+			Shortest Path
+			Menor tipo de origem (IGP < EGP < Incompleto)
+			Menor atributo MED
+			Caminho Externo > Interno
+			Vizinho IGP mais proximo
+
+		/-Exemplos-/
+		c) Se pretender que a saída do SA 1111 se faça preferencialmente pelo Router 1, que configurações poderia fazer para o conseguir? Justifique. (1.0 valores) 
+		--Poderíamos configurar o atributo Local Preference nos routers 1 e 2, colocando um valor mais elevado no Router 1.
+
+
+
+		d) Se pretender que a entrada no SA 1111 se faça preferencialmente pelo Router 2, que configurações poderia fazer para o conseguir? Justifique (1.0 valores)
+		--Poderíamos configurar o atributo Multi-Exit Discriminator nos routers 1 e 2, colocando um valor mais baixo no Router 2. Este atributo é usado como sugestão a dar ao SA 2222.
+
+	Filtragem BGP e Route Maps
+		Envio e rececao de updates BGP pode ser controlado usando metodos de filtragem com base em:
+			-Informacao da rota
+			-Info do caminho
+			-Comunidades
+
+		Route maps sao usados com BGP para
+			Controlar e modificar a info de encaminhamento
+			Definir as condicoes de acordo com as quais as rotas sao redistribuidas entre dominios de encaminhamento
+
+	Sincronizacao BGP
+		A sincronização diz que, se o seu SA encaminha tráfego de outro SA para um terceiro SA, o BGP não deve anunciar uma rota antes que todos os routers do seu SA tenham aprendido essa rota via IGP.
+
+		O BGP espera até que o IGP tenha propagado a rota no interior do SA. Então, anuncia a rota aos peers externos.

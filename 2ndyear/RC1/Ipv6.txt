@@ -1,0 +1,56 @@
+IPV6:
+128 bits.
+40 bytes fixos.
+No ipv4 é 20 bytes.
+hexadecimais e não decimais.
+1 digito hexadecimais => 4 digitos
+zeros à esquerda podem ser comprimidos.
+0000 0000 => ::
+Cabeçalho fixo.
+IPv6 headers: Checksum desaparece.
+TTL => hop limit
+Mais eficiente no router apesar de ter mais bits.
+
+Addressing:
+no ipv6 nao ha broadcast!!
+4 primeiros bytes definem o tipo.
+
+Link local=> maquinas falam para vizinhos sem router => same Lan/same link
+Unique local=>para privates domains - nao se usa na net
+Global
+addresses have life time => como os ipv4 Têm com os ips dados pelo dhcp
+
+-------------------------------------------------------------------------------
+link-local:Fe80         54bits interfaceID => comunicação direta entre 2 devices
+	   1111 1110 10 54bits ID
+----------------------------------------------------------------
+Unique-local: FC00::/7 ou FD00::/7 globalID 40bits subnetID 16bits interfaceID => comunicação local
+----------------------------------------------------------
+unicast=>0010
+--------------------------------------------------
+local unicast=>FE80::/10
+--------------------------------------------------------------
+Multicast address: FF00::/16 (usado para dominios, para empresas p.e)
+
+-------------------------------------------------------------------
+global unicast=> 001 globalRoutingPrefix(45bits) SLA(16bits) InterfaceID(64bits)
+
+SLA=>site
+Interface ID=> hosts(4 maneiras de definir:
+1.Auto configuração EUI-64 baseado np MAC
+2. pseudo aleatorio
+3.DHCP
+4. Manualmente
+)
+----------------------------------------
+Anycast
+interfaceID a 0
+---------------------------------------------------
+ICMPv6
+ARP=> NDP table: ipv6 and mac
+Neighbor solicitation(request por multicast) and neighbor advertisement(reply)
+
+
+Nr de endereços para host:
+2^32-M
+2^128-M

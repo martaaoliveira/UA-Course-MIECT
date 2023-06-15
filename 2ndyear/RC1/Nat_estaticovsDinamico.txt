@@ -1,0 +1,3 @@
+quando têm NAT estático, além de o IP do servidor não estar exposto diretamente, o router pode usar aquele IP para vários servidores, desde que diferencie pelo porto
+[12:10]
+e sim, a segurança é um facto

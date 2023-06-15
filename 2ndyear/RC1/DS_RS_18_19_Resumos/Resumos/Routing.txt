@@ -1,0 +1,16 @@
+
+
+RIP - Routing Information Protocol
+
+	E um protocolo do tipo distance vector:
+		-Cada router mantem um vetor distancia construido por uma lista de redes IP que conhece e, para cada rede, a sua estimativa atual do melhor custo possivel
+		-Cada rouer envia periodicamente o seu vetor distancia para os seus vizinhos
+		-Cada router usa a informacao enviada pelos vizinhos para atualizar o seu vetor distancia
+	O custo do percurso de um router para uma rede e dado pelo numero de routers intermedios - CUSTO MAXIMO = 15 (16 == infinito)
+
+	Split Horizon:
+		Em cada interface, o router anuncia apenas as redes para as quais esse interface nao e usado no encaminhamento dos pacotes de dados! 
+		
+		Ex: A - B - C O router A manda pacotes para C atraves de B
+
+		Com split horizon, o node A nao vai anunciar a sua rota para C (A to B to C) pois seria redundante o B usar a rota (B to A to B to C) para mandar pacotes para o node C!

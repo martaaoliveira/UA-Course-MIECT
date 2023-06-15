@@ -1,0 +1,37 @@
++-BPDU - Bridge Protocol Data Units-+
+->Usado para construir e manter a spanning tree. Brdiges trocam estes protocolos entre si periodicamente
+->BPDU Configuration:
+	:Usado para a configuracao da Spanning Tree (quando e iniciada e quando ha avarias). Enviado periodicamente (hello time, recomendado 2 segundos) pelas portas designadas das bridges.
+	:Possui: Root ID(estimativa atual do endereco da bridge raiz) ; Root Path Cost (estimativa atual do custo para a bridge raiz) ; Bridge ID (endereco da bridge que envia a mensagem de configuracao) ; Port ID (identificacao da porta que envia a mensagem de configuracao)
+
+->BPDU Topology Change Notification:
+	:Usado quando uma bridge passa de um estado para outro. P.ex se uma porta passa ao estado blocking a bridge vai enviar TCN-BPDU periodicamente (e as outras bridges vao enviar BPDU-conf ate deixarem de receber o BPDU-TCN)
+
++-ARP - Address Resolution Protocol-+
+->Usado quando pretendemos contactar uma entidade da qual so conhecemos o IP e nao o MAC (utilizado no IPv4).
+->A entidade envia um ARP Request em broadcast. A maquina que possuir um ip igual ao existente no ARP Request vai enviar um ARP Reply APENAS para o source do Arp Request e atualizar a sua ARP Table que fara corresponder o IP e o MAC de onde veio o ARP Request. A maquina que enviou o ARP Request vai receber entao o ARP Reply e atualizar a sua ARP Table
+
++-ICMP - Internet Control Message Protocol-+
+->Usado para transmiassao de mensagens com a operacao de uma rede
+->Tem um cabecalo de tamanho fixo (8 bytes)
+
+
++-NDP - Neighbor Discovery Protocol-+
+
++-ICMPv6 - Internet Control Message Protocol IPv6-+
+
++-RIP - Routing Information Protocol-+
+->IGP do tipo Distance Vector (cada route rconhece a informacao que os routers vizinhos lhe enviam periodicamente e, baseando se na versao assincrona e distribuida do algoritmo de BelmmanFord determina os percursos minimo para todos os destinos)
+->Custo de um percurso para uma rede e dado pelo numero de routers intermedios (Tamanho maximo = 15, sendo que 16 simboliza tamanho infinito)
+->As entradas da sua tabela de encamenhamento sao criadas com base nos vetores distancia recebidos dos vizinhos (Para cada rede existente, o router inclui na sua tabela de encaminhamento uma entrada para cada um dos vizinhos que lhe proporcionam um percurso de custo mínimo)
+->RIP Request:
+	:Pacote opcional que e enviado por um router ligado recentemente ou quando a validade da informacao relativamente a determinado destino espira. Pode pedir informacao relativamente a um destino especifico ou a todos
+->RIP Response:
+	:Pacote que contem um vetor distancia enviado em 3 situacoes:
+		-Periodicamente (30 segundos no maximo) - Enviado em broadcast	(RIPv1)/Multicast(RIPv2)
+		-Quando a informacao e alterada (opcionalmente) - Enviado em broadcast	(RIPv1)/Multicast(RIPv2)
+		-Em resposta a um RIP Request - Enviado para a source do RIP Request
+
+
++-OSPF-+
+->IGP do tipo Link State (os routers conhecem a topologia COMPLETA DA REDE e usam um algoritmo para determinar os percursos de custo minimo para cada destino sendo que a informacao necessaria para construir e manter em cada router a topologia de rede e obtida por um processo de Flooding)

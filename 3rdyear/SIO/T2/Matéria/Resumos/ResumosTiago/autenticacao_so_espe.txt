@@ -1,0 +1,172 @@
+Autenticação em sistemas específicos
+
+Dispositivos operam com base na identificaçao de um sujeito
+	Podem suportar vários sujeitos
+	Cada dispositivo utilizad mecanismos e processos especificos
+	
+Validaçao de entidade é feita atraves de credenciais
+	Credenciais podem ser locais/remotas
+	Podem fazer uso de ambientes de execuçao seguros
+	
+Normalmente fornecem mecanismos de autenticaçao local
+
+Dispositivos moveis: Smartphone
+ 	Dispositivos pessoais usam autenticaçao de 2 fatores
+ 	Podem fazer uso de cartao SIM ou outro hardware
+ 	Pode fazer uso de vários métodos de autenticaçao
+ 	Composto por vários elementos distintos
+	
+Smartphones: Android
+	TEE:
+		Execute em SO distinto
+		Implementado num sub-sistema isolado ou virtualizado 
+		Composto por Trustlets
+		
+	Gateway de Segurança:
+		Gatekeeper: para PINs/Passwords e Padroes
+		Fingerprint
+		
+	Credenciais associadas a um sujeito
+	
+	GATEKEEPER:
+		Necessário aprovisionamento inicial 
+		Gatekeeperd( no REE)
+			Envia credenciais para o gatekeeper (no TEE)
+			Obtem um AuthToken para o SID, com HMAC
+			Usa AuthToken para aceder ao Keystore
+			Keystore verifica se AuthToken é recente e valido
+			
+			Fingerprintd(no REE)
+				age de forma semelhante mas com modelo
+				
+	Android - Keymaster
+		Fornece acesso ao armazenamento (keystore)
+			Baseado em chamadas API (nao é RW)
+	Gatekeeper- Authn 
+		Pin
+		Senha
+		Padrao
+			menos seguro que pin
+			
+	Smartphone- Impressao Digital
+		TEE armazena vários modelos para impressao digital
+			armazenados de forma cifrada 
+			associados a um SID
+			removidos se a conta tambem for removida
+			
+		Perfil é obtido pelo sensor e validado no TEE
+			Modelo nao pode ser extraido
+			Perfil enviado para TEE para validaçao
+			
+			
+	Impreçoes digitais:
+		Lietores Oticos:
+			Imagens 2d, sao merda, absoletos
+			
+		Leitores Capacitivos
+			Vulneravel a modelos fisicos
+			Interferencia de suor e agua
+			
+		Leitores Ultrassonicos:
+			Sao OPs
+			
+	Reconhecimento Facial
+		Aprovisionamento inicial para treinar modelo
+		Problemas:
+			Falhas com gemeos
+			Nem sempre robusto a alteraçoes de luminosidade
+			Nao robusto a alteraçoes da cara do sujeito (levar porrada na foça)
+			
+	Computadores Portateis
+		Dispositivos Partilhados
+		Autenticaçao Nativa e depois delegada ao OS
+		Sem suporte universal para armazenamento generalizado de chaves
+		
+	Sensores adicionais para reconhecimento facial
+		Camara comun + de infravermelhos
+		
+	Podem interagir com outros dispositivos
+	
+	OS: Windows
+		Suporta varios metodos de autenticaçao
+		Credenciais aramzenadas no Security Account Manager
+		
+		Senhas: validaçao direta de um valor
+		Validaçao:
+			PEdir id e senha
+			Calcular a sintese e comparar com o valor armazenado
+			
+		PIN:
+			Suportado por um módulo seguro TPM
+				Semelhante ao TEE
+				Mais simples e pouco robusto
+				
+	OS: Windows Hello
+		Autenticaçao Facial usando uma camara de infravermelho
+		Vulnerabilidades:
+			busto impresso?
+			fotografia visivel a infravermelhos
+			
+	OS: Linux
+		Suporta vários metodos de autenticaçao
+		Frameworok: Pluggablr Suthentication Modules
+			Permite autenticaçao configurabel, mas sem modificaçao das aplicaçoes
+			mecanismos 2fa
+			
+		Senhas: armazenadas num ficheiro (/etc/shadow)
+			Acesso restrito a root: shadow
+			Nao cifrado
+			
+	OS: Linux - Senhas Diretas
+		Dados da conta armazenado em /etc/passwd)
+		Credeniais em /etc/shadow)
+		Validaçao (via PAM)
+		
+Autenticaçao em sistemas distribuidos
+
+	Comum utilizar-se autenticaçao centralizada
+		Repositorio comum de credenciais de utilizadorez
+		Sistemas delegam autenticaçao nesse sistema
+		
+SSO: Single Sign On
+	Explora sistemas externos de confiança (TTP) para autenticaçao
+		EX: login pelo google/fb etc
+		
+	Serviçoes de AAA
+	
+	Pros: Reutilizaçao de credenciais para varios serviços
+	Contras: Requer mais recuros para o sistema de autenticaçao
+		Unico ponto de falha
+		Falha implica fodeu geral
+		Atrasos no processo de autenticaçao
+		
+	Requer agente que expoe utilzadores remonos nos sistemas locais
+	Pode fornecer info adicional do perfil
+	Sistemas que usam SSO tem de ser aprovisionados
+		aka Autorizados
+		
+SSO: LDAP - Lightweight Directory Access Protocol
+	Protocolo para manter um diretorio de informaçao
+		Diretorio hierarquico com info sobre os users, sistems e serviços
+	Acesso ao dir pode ter partes publicas e restritas
+	LDAP Bind: associa um sessao a u user
+	
+SSO: Kerberos
+	Protocolo de autenticaçao para ambientes de rede
+	Suporta autenticaçao mutua
+	Quarto entidafes de chave
+	
+	Utilizador envia pedidao ao AS com o seu ClientID
+	AS responde com 2 mensagens
+	Utilizador usa a sua chave para decifrar A			
+	Envia pedido ao TGS com 2 mensagens
+	TGS responde com 2 mensagens	
+		
+		
+		
+		
+		
+			
+			  
+ 	
+ 	

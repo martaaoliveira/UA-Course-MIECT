@@ -1,0 +1,102 @@
+IPv4
+
+Tipos de enderecamento:
+	Unicast -Apenas 1
+	BroadCast -Todos
+	MultiCast -Multiplos
+	Anycast -Apenas 1 de multiplos
+
+Endereco IPv4 - Identificador global unico de um interface (ligacao entre um host/router e a rede) de rede: 32 bits de comprimento - Network Prefix ; Host Number
+
+Interface - Cada Interface tem de ter pelo menos um endereco IP associado
+
+Enderecos IP Classful:
+	Espaco de enderecamento dividido em classes:
+		A - Prefixo de rede=8bits (começa por 0)
+		B - Prefixo de rede=16bits (comeca por 10)
+		C - Prefixo de rede=24bits (comeca por 110)
+
+		A - 0[NetId Bit 0-7][HostId Bit 8-31]
+		B - 10[NetId Bit 0-15][HostId Bit 16-31]
+		C - 110[NetId Bit 0-23][HostId Bit 24-31]
+
+	Varios Problemas:
+		Poucas gamas de enderecos para redes grandes
+		Flexibilidade limitada
+		Espaco de enderecamento Plano
+
+Mascaras
+	Utilizada para separar a parte da rede da parte do itnerface dos inderecos.
+	Bits
+		 = 1 -> Mesmo bit no endereco corresponde a identificador de rede
+		 = 2 -> Mesmo bit no endereco corresponde a identificador do host
+
+		 Ex: 
+		 	193.136.92.1 = 11000001.10001000.01011100.00000001
+		 	255.255.255.0 = 11111111.11111111.11111111.00000000, logo:
+		 	193.136.92 -> Rede
+		 	1 -> Interface do Host
+
+CIDR - Classless Interdomain Routing
+	Abandona a noca de classe
+	O comprimento do identificader de rede e arbitrario
+	O comprimento do identificador de rede deve ser fornecido com o endereco
+
+	Forneceu uma notacao diferente de representar as mascaras dos enderecos IPv4:
+		192.136.92.1 255.255.255.0 
+		=
+		192.136.92.1/24
+
+		/24 -> Os primeiros 24 bits correspondem a rede, enquanto que os restantes (32-24 =) 8 correspondem ao Host
+
+	Permite remover os zeros no final do identificador:
+		192.0.2.0/18 = 192.0.2/18
+
+	Permite a criaçao de sub-redes
+
+
+Agregaçao de redes IPv4: -ASK FOR HELP!!!-
+	Processo inverso da criacao de sub-redes:
+	Usado para obter um identificador de rede unico para multiplas (sub)redes IP:
+		193.136.96.9/24 + 193.136.93.0/24
+		Rede: 193.136.96 e 193.136.93
+			96 = 01011100
+			93 = 01011101
+
+			Como apenas o ultimo bit difere, alteramos a mascara:
+		Fica: 193.136.92.0/23
+
+Resolucao de Enderecos Fisicos:
+	ARP - Address Resolution Protocol
+	-Enviamos um ARP request em broadcast para a rede local
+	-Todas as maquinas recebem
+	-A maquina com o endereco ipv4 destino responde com um ARP reply diretamente para a maquina source (MAC destino = MAC que enviou o ARP request) com a indicacao do seu MAC
+	-Maquina origem atualzia a sua ARP table
+
+	A resolucao de enderecos MAC existe apenas dentro da mesma rede local. ARPs nao "atravessam" routers
+
+Encaminhamento para outra LAN
+	O primeiro salto e para o DEFAULT GATEWAY (para um router que faca a ligacao com outra rede)	
+
+Encaminhamento ESTATICO vs DINAMICO
+	Estatico:
+		-Define-se o next hop (proximo router do comainho) para atingir certa rede
+		-next hop dever sar o endereco do proximo router do caminho e pertencer a uma rede que o router ja conhece
+		-E necessaria a definicao de uma rota estatica para cada rede para a qual se pretende conectividade
+
+	Dinamico:
+		Pressupoe o uso de um protocolo de comunicacao entre os nos da rede de modo a determinar as redes existentes e os melhores caminhos (next hops) para as atingir
+
+		O encaminhamento dinamico e preferival mas em cenarios simples o estatico e aceitavel
+
+Fragmentacao e Reagrupamento em IPv4:
+	Em cada rede local existe um tamanho maximo de pacotes que pode ser transmitido.
+	Caso tentemos enviar um pacote, p.ex ICMP, com tamanho superior a este tamanho maximo, o pacote sera fragmentado a entrada e reagrupado a saida!
+
+	P.ex Mandando um pacote de tamanho 3000 bytes (sem contar com os cabecalhos) e tendo em conta que o tamanho maximo e 1518 bytes
+
+	O tamanho do pacote, como sao mandados 3000 bytes + os cabecalhos, exergue o tamanho maximo (1518). Logo o pacote vai ser fragmentado em varios para que possa ser enviado
+	
+	Eth header - 14 ; Ip Header - 20 ; ICMP Header - 8 ; CRC - 4 ;-> 1518- 46= 1472 -> TAMANHO MAXIMO DE DATA QUE PODEMOS MANDAR NO PRIMEIRO PACOTE (como o segundo pacote ja nao inclui o ICM Header, poderemos mandar 1472+8 = 1480 bytes de data, que ainda nao chega, logo no terceiro pacote e mandado o resto -> 3000-1480-1472 = 48)
+
+	O IPHeader inclui um FRAGMENT FLAG (indica o ultimofragmento para saber quando acaba) ; OFFSET ; ID

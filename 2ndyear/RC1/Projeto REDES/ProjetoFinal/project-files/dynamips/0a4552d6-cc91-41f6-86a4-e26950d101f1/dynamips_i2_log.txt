@@ -1,0 +1,19 @@
+Dec 14 22:32:42.953 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Dec 14 22:32:42.953 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52797.
+Dec 14 22:32:42.955 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 14 22:32:42.955 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\bjsil\GNS3\projects\ProjetoFinal\project-files\dynamips 
+Dec 14 22:32:42.955 GENERAL: working_dir=C:\Users\bjsil\GNS3\projects\ProjetoFinal\project-files\dynamips
+Dec 14 22:32:42.955 HYPERVISOR: exec_cmd: ethsw create Switch1 
+Dec 14 22:32:43.110 HYPERVISOR: exec_cmd: nio create_udp udp-0089f98a-1ab1-4cfe-8cc2-e36b309ec74b 10001 127.0.0.1 10000 
+Dec 14 22:32:43.111 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-0089f98a-1ab1-4cfe-8cc2-e36b309ec74b 
+Dec 14 22:32:43.127 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-0089f98a-1ab1-4cfe-8cc2-e36b309ec74b 1 
+Dec 14 22:32:43.158 HYPERVISOR: exec_cmd: nio create_udp udp-caf79a8f-3be8-47b0-923b-4936cab753ca 10002 127.0.0.1 10003 
+Dec 14 22:32:43.159 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-caf79a8f-3be8-47b0-923b-4936cab753ca 
+Dec 14 22:32:43.188 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-caf79a8f-3be8-47b0-923b-4936cab753ca 1 
+Dec 15 01:06:46.371 HYPERVISOR: exec_cmd: nio bind_filter udp-caf79a8f-3be8-47b0-923b-4936cab753ca 2 capture 
+Dec 15 01:06:46.371 HYPERVISOR: exec_cmd: nio setup_filter udp-caf79a8f-3be8-47b0-923b-4936cab753ca 2 en10mb C:\Users\bjsil\GNS3\projects\ProjetoFinal\project-files\captures\Switch1_Ethernet1_to_Router0_FastEthernet00.pcap 
+Dec 15 02:30:16.404 HYPERVISOR: exec_cmd: nio unbind_filter udp-caf79a8f-3be8-47b0-923b-4936cab753ca 2 
+Dec 15 02:36:01.256 HYPERVISOR: exec_cmd: ethsw delete Switch1 
+Dec 15 02:36:01.295 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 15 02:36:01.546 HYPERVISOR: Stopped.
+Dec 15 02:36:01.546 GENERAL: reset done.
