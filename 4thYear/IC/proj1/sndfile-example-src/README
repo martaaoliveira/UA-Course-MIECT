@@ -1,0 +1,14 @@
+To build:
+	make
+
+To test:
+	../sndfile-example-bin/wav_cp sample.wav copy.wav // copies "sample.wav" into "copy.wav"
+	../sndfile-example-bin/wav_hist sample.wav 0 // outputs the histogram of channel 0 (left)
+	../sndfile-example-bin/wav_dct sample.wav out.wav // generates a DCT "compressed" version
+	../sndfile-example-bin/wav_hist sample.wav 0 (0, 1, s or m) // generates the desired histogram of the audio file
+	../sndfile-example-bin/wav_quant sample.wav quant_sample 5 (desired bits to discard) // saves the quantized version of the version with the discard bits given
+	../sndfile-example-bin/wav_cmp sample.wav quant_sample // prints the signal-to-noise ratio (SNR) of the given audio file in relation to the original file, 
+															// as well as the maximum per sample absolute error
+	../sndfile-example-bin/wav_effects sample.wav <output_file> <effect> (<effect> is 's' for single echo or 'm' for multiple echo or 'r' for reverse or 'a' for amplitude modulation)
+	../sndfile-example-bin/encoder sample_bits.txt sample_bits_enc.bin	// converts a text file containing only 0s and 1s into the binary equivalent
+	../sndfile-example-bin/decoder sample_bit_enc.bin sample_bits_dec.txt // converts a binary file into a text file

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libimagecodec.a CMakeFiles/imagecodec.dir/ImageCodec.cpp.o
+/usr/bin/ranlib libimagecodec.a

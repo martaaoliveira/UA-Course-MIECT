@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/marta/Desktop/Universidade/IC/proj3/text-models-src/fcm.hpp
+string
+-
+map
+-
+
+/home/marta/Desktop/Universidade/IC/proj3/text-models-src/test_fcm.cpp
+fcm.hpp
+/home/marta/Desktop/Universidade/IC/proj3/text-models-src/fcm.hpp
+iostream
+-
+

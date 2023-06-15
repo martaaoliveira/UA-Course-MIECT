@@ -1,0 +1,16 @@
+Entropy Original Files 
+sample03.wav -> 13.2678
+sample04.wav -> 14.1619
+sample05.wav -> 12.4516
+
+Entropy Residuals of the Encoded Files (Lossless, PredMode=2)
+sample03.wav -> 10.3173
+sample04.wav -> 10.254
+sample05.wav -> 8.8012
+
+
+Entropy Residuals of the Encoded Files (Lossy, PredMode = 2, 2bit Quant)
+sample03.wav -> 8.33997
+sample04.wav -> 8.25614
+sample05.wav -> 6.9426
+

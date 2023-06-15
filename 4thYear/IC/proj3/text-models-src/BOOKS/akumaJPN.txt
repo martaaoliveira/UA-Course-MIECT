@@ -1,0 +1,619 @@
+﻿The Project Gutenberg EBook of Akuma, by Junichiro Tanizaki
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org
+
+
+Title: Akuma
+
+Author: Junichiro Tanizaki
+
+Release Date: October 3, 2011 [EBook #37605]
+
+Language: Japanese
+
+Character set encoding: UTF-8
+
+*** START OF THIS PROJECT GUTENBERG EBOOK AKUMA ***
+
+
+
+
+Produced by Sachiko Hill and Kaoru Tanaka
+
+
+
+
+Title: 惡魔 (Akuma)
+Author: 谷崎潤一郞 (Junichiro Tanizaki)
+Language: Japanese
+Character set encoding: UTF-8
+Produced by Sachiko Hill and Kaoru Tanaka.
+
+-------------------------------------------------------
+Notes on the signs in the text
+
+《...》 shows ruby (short runs of text alongside the
+base text to indicate pronunciation).
+Eg. 其《そ》
+
+｜ marks the start of a string of ruby-attached
+characters.
+Eg. 十三｜年目《ねんめ》
+
+※ represents a character that does not exist in the Unicode ideographs.
+
+［＃...］ explains the formatting of the original text or the structure of of an ideograph represented by ※.
+-------------------------------------------------------
+
+
+惡魔
+
+眞つ暗な箱根の山を越すときに、夜汽車の窓で山北の富士紡《ふじばう》の灯をちらりと見たが、やがて又｜佐伯《さへぎ》はうとうとと眠つてしまつた。其れから再び眼が覺めた時分には、もう短い夜がカラリと明け放れて、靑く晴れた品川の海の方から、爽やかな日光が、眞晝のやうにハツキリと室内へさし込み、乘客は總立ちになつて、棚の荷物を取り片附けて居る最中であつた。酒の力で漸く眠り通して來た苦しい夢の世界から、ぱつと一度に明るみへ照らし出された嬉しさのあまり、彼は思はず立ち上がつて日輪を合掌したいやうな氣持になつた。
+「あゝ、これで己もやうやう、生きながら東京へ來ることが出來た。」
+斯う思つて、ほつと一と息ついて、胸をさすつた。名古屋から東京へ來る迄の間に、彼は何度途中の停車場で下りたり、泊つたりしたか知れない。今度の旅行に限つて物の一時間も乘つて居ると、忽ち汽車が恐ろしくなる。さながら自分の衰弱した魂を恐喝するやうな勢で轟々《がう〳〵》と走つて行く車輪の響の凄じさ。グワラ〳〵グワラと消魂《けたたま》しい、氣狂ひじみた聲を立てゝ機關車が鐵橋の上だの隧道の中へ駈け込む時は、頭が惱亂して、膽が潰れて、今にも卒倒するやうな氣分に胸をわくわくさせた。彼は此の夏祖母が腦溢血で頓死《とんし》したのを見てから、平生大酒を呷《あふ》る自分の身が急に案じられ、何時《いつ》やられるかも知れないと云ふ恐怖に始終襲はれ通して居た。一旦汽車の中で其れを思ひ出すと、體中の血が一擧に腦天へ逆上して來て、顏が火のやうにほてり［＃「ほてり」に傍点］出す。
+「あツ、もう堪らん、死ぬ、死ぬ。」
+かう叫びながら、野を越え山を越えて走つて行く車室の窓枠にしがみ着くこともあつた。いくら心を落ち着かせようと焦つて見ても、强迫觀念が海嘯《つなみ》のやうに頭《あたま》の中を暴れ廻り、唯わけもなく五體が戰慄し、動悸が高まつて、今にも悶絕するかと危まれた。さうして次の下車驛へ來れば、眞つ靑な顏をして、命《いのち》から〴〵汽車を飛び下り、プラツトホームから一目散に戶外《おもて》へ駈け出して、始めてほつと我れに復つた。
+「ほんたうに命拾ひをした。もう五分も乘つて居れば、屹度己は死んだに違ひない。」
+などゝ腹の中で考へては、停車場附近の旅館で、一時間も二時間も、時としては一と晚も休養した後、十分神經の靜まるのを待つて、扨《さ》て再びこは〴〵汽車に乘つた。豐橋で泊まり、濱松で泊まり、昨日《きのふ》の夕方は一旦靜岡へ下車したものゝ、だんだん夜になると、不安と恐怖が宿屋の二階に迄もひたひたと押し寄せて來るので、又候《またぞろ》其處に居たたまらず、今度はあべこべに夜汽車の中へ逃げ込むや否や、一生懸命酒を呷つて寢てしまつたのである。
+「それでもまあ、よく無事に來られたものだ。」
+と思つて、彼は新橋驛の構内を步みながら、今しも自分を放免してくれた列車の姿を、いまいましさうに振り顧つた。靜岡から何十里の山河《さんか》を、馬鹿氣た速力で闇雲《やみくも》に駈け出して、散々原《さんざツぱら》人を嚇かし、勝手放題に唸り續けて來た怪物が、くたびれて、だらけて、始末の惡い長いからだを橫へながら、「水が一杯欲しい。」とでも云ひさうに、鼻の孔からふツふツと地響きのする程ため息をついて居る。何だかパツクの繪にあるやうに、機關車が欠伸《あくび》をしながら大きな意地の惡い眼をむき出して、コソコソ逃げて行く自分の後姿を嘲笑して居るかと思はれた。
+人々の右往《うわう》左往《さわう》するうす暗い石疊の構内を出で、正面の玄關から俥《くるま》に乘る時、彼は旅行鞄を兩股の間へ挿みながら、
+「おい、幌をかけてくれ。」
+かう云つて、停車場前の熱した廣い地面からまともにきらきらと反射する光線の刺戟に堪へかね、まぶしさうに兩眼をおさへた。
+漸く九月に這入つたばかりの東京は、まだ殘暑が酷しいらしかつた。夏の大都會に溢れて見える自然と人間の旺盛な活力―――急行列車の其れよりも更に凄じく逞しい勢の前に、佐伯はまざまざと面《おもて》を向けることが出來なかつた。劍《つるぎ》のやうな鐵路を走る電車の響、見渡す限り熱氣の充滿した空の輝き、銀色に燃えてもくもくと家並《やなみ》の後ろからせり［＃「せり」に傍点］上がる雲の塊、赭く乾いた地面の上を、强烈な日光を浴びて火の子の散るやうに步いて行く町の群衆、―――上を向いても、下を向いても、激しい色と光りとが弱い心を壓迫して、俥の上の彼は一刻も兩手を眼から放せなかつた。
+今迄ひたすら暗黑な夜の魔の手に惱まされて居た自分の神經が、もう白日の威力にさへも堪へ難くなつて來たかと思ふと、彼は生きがひのない心地がした。これから大學を卒業する迄四年の間、晝も夜も喧囂《けんがう》の騷ぎの絕えぬ烈しい巷《ちまた》に起き臥しして、小面倒な法律の書物や講義にいらいらした頭を泥《なづ》ませる事が出來るであらうか。岡山の六高に居た時分と違ひ、本郷の叔母の家へ預けられれば、再び以前のやうな自墮落《じだらく》な生活は送れまい。永らくの放蕩で、腦や體に滲み込んでゐるいろ〳〵の惡い病氣を直すにも、人知れず醫者の許に通つて、こつそりと服藥しなければなるまい。事によると、自分は此のまゝだんだん頭が腐つて行つて、廢人になるか、死んでしまふか、いづれ近いうちにきまりが着くのだらう。
+「ねえあなた、どうせ長生《ながい》きが出來ない位なら、わたしがうんと可愛がつて上げるから、いつそ二三年も落第して此處にいらつしやいよ。わざ〳〵東京へ野たれ死にをしに行かなくてもいゝぢやありませんか。」
+岡山で馴染みになつた藝者の蔦子《つたこ》が、眞顏で別れ際に說きすゝめた言葉を思ひ出すと、潤ひのない、乾涸《ひか》らびた悲しみが、胸に充ち滿ちて、やる瀨ない惱ましさを覺える。あの色の靑褪めた、感じの銳い、妖婦じみた蔦子が、時々狂人のやうに興奮する佐伯の顏をまぢまぢと眺めながら、よく將來を見透すやうな事を云つたが、殘酷な都會の刺戟に、肉を啄《つつ》かれ、骨をさいなまれ、いたいたしく傷けられて斃《たふ》れて居る自分の屍骸を、彼は實際見るやうな氣がした。さうして十本の指の間から、臆病らしい眼つきをして、市街の様子を垣間《かいま》見た。
+俥はいつか本郷の赤門前を走つて居る。二三年前に來た時とは大分變つて、新らしく取り擴げた左側の人道へ、五六人の工夫が、どろ〳〵に煮えた黑い漆《うるし》のやうなものを流しながら、コンクリートの路普請《みちぶしん》をして居る。大道に据ゑてある大きな鐵の桶の中から、赤熱されたコークスが炎天にいきり［＃「いきり」に傍点］を上げて、陽炎《かげろふ》のやうに燃えて居る。新調の角帽を冠つて、意氣揚々と通つて行く若い學生逹の風采には、佐伯のやうな悲慘《みじめ》な影は少しも見えない。
+「彼奴等は皆己の競爭者《ライヴアル》だ。見ろ、色つや［＃「色つや」に傍点］のいゝ頰《ほつ》ぺたをして如何にも希望に充ちたやうに往來を闊步して行くぢやないか。彼奴等は馬鹿だけれども、獸《けだもの》のやうな丈夫さうな骨骼を持つて居やがる。己はとても彼奴等に敵《かな》ひさうもない。」
+そんな事を考へて居るうちに、やがて「林」と肉太に記した、叔母の家の電燈の見える臺町の通りへ出た。門内に敷き詰めた砂礫の上を軋めきながら、俥が玄關の格子先に停ると、彼は漸く兩手を放して、駈け込むやうに土間へ入つた。
+「二三日前に立つたと云ふのに、今迄何をして居たのだい。」
+元氣の好い聲で云ひながら、叔母は佐伯を廊下傳ひに、一と先づ八疊ばかりの客間へ案内して、いろ〳〵と故國《くに》の樣子を聞いた。五十近い、小太りに肥つた、いつ見ても氣の若い女である。
+「ふむ、さうかい。………お父さんも今年は大分儲けたつて話ぢやないか。お金が儲かつたら家《うち》の普請でもするがいゝつて、お前樣《まへさん》から少《ち》つとさう云つておやり。ほんとにお前さん所ぐらゐがらん［＃「がらん」に傍点］として、古ぼけた穢《きたな》い家はありやしないよ。わたしや名古屋へ行く度每にさう云つてやるんだけれど、いづれ其のうちにとか何とか、長いことばかり云つて居るんだもの。此の間も博覽會の時に二三日泊まりに來いつて云つて寄越したから、わたしやさう云つてやつたのさ。えゝと、遊びに參り度きは山々に候へども、………兼ねがね御勸め申置き候御普請の儀、いまだ出來かね候うちは、地震が恐ろしくてとても御宅に逗留致し難く候つてね。ほんたうにお前さん冗談ぢやない。少し强い地震が搖つて御覽、あんな家《うち》は忽ちぴしやんこ［＃「ぴしやんこ」に傍点］になつちまふから。お父さんは頭が禿げて耄碌爺《まうろくぢい》さんになつて居るから好いが、叔母さんは色氣こそなくなつたものゝ、まだ命は中々惜しいからね。」
+佐伯は頓狂な話を聞きながら、にや〳〵と優柔不斷の笑ひ顏をして、頻りに團扇《うちは》を動かして居る叔母の、嬰兒《あかご》のやうにむくんだ手頸を見詰めて居たが、やがて自分も出された團扇を取つて煽ぎ始めた。
+家の中へ落ち着いて見ると、暑さは一《ひ》と入《しほ》であつた。風通しの好いやうにと、殘らず開け廣げた緣外の庭に、こんもりした二三本の背の高い楓と靑桐が日を遮つて、其の蔭に南天や躑躅《つつじ》が生ひ茂り、大きな八つ手の葉がそよ〳〵と動いて居る。濃い綠色の反射の爲めに、室内は薄暗くなつて、叔母の圓々した赭ら顏の頰の半面ばかりが、靑く光つて居る。戶外《おもて》の明る味から急に穴倉のやうな處へ引き摺り込まれた佐伯は、俯向《うつむ》き加減に眼瞼をぱちぱちさせながら、久留米絣の紺が汗に交つて、痩せた二の腕を病人のやうに染めて居るのを、いやな氣持で眺めて居た。多少神經が沈まると、俥の上で背負つて來た炎熱が今一時に發散するかとばかり滿身の皮膚を燃やして、上氣した顏が、眼の暈《くら》む程かツ［＃「かツ」に傍点］と火照《ほて》り始め、もの靜かな脂汗《あぶらあせ》が頸のまはりにぬるぬると滲み出た。
+のべつに獨《ひとり》で喋舌り立てゝ居た叔母は、ふと誰か唐紙《からかみ》の向うを通る跫音を聞き付けて、小首をかしげながら、
+「照ちやんかい。」
+と呼びかけたが、返事のないのに暫く考へた後、
+「照ちやんなら、ちよいと此處へお出でゞないか、謙さんがお前、漸く今頃名古屋からやつて來たんだよ。」
+かう云つて居るうちに襖が開いて從妹《いとこ》の照子が這入つて來た。
+佐伯は重苦しい頭を上げて、さやさやと衣擦れの音のする暗い奧の方を見た。今しがた出先から歸つて來た儘の姿であらう。東京風の粹な庇髮《ひさしがみ》に、茶格子《ちやがうし》の浴衣《ゆかた》の上へ派手な縮緬《ちりめん》の夏羽織を着て、座敷の中が狹くなりさうな、大柄な、すらりとした體を、窮屈らしくしなやかにかゞめながら、よく都會の處女が田舎出の男に挨拶する時のやうに、安心と誇りのほの見える態度で照子は佐伯に會釋《ゑしやく》をした。
+「どうしたい、赤坂の方は。お前で用が足りたのかい。」
+「えゝ、彼方《あちら》樣《さま》でさう仰つしやつて下さいますなら、其處はもう何でございます、ようく解つて居りますから決して御心配下さいませんやうにツてね。………」
+「さうだらう。其の筈なんだもの。一體鈴木があんなへま［＃「へま」に傍点］をやらなければ、元々かうはならなかつたんだからね。」
+「其れも左樣ですけれど、先方《さき》の人も隨分だわ。」
+「さうだともサ、………孰方《どちら》も孰方だあね。」
+親子は暫くこんな問答をした。薄馬鹿と云ふ噂のある、此の家の書生の鈴木が、何か又失策を演じたものらしい。別段今此の場で相談せずともの事だが、叔母は甥の前で、自分の娘の利巧らしい態度や話振を、一應見せて置きたいのであらう。
+「お母さんも亦、鈴木なんぞをお賴みなさらなければ好いのに、後で腹を立てたつて、仕樣がありませんよ。」
+照子はませた［＃「ませた」に傍点］調子で年增のやうな口を利いた。少し擦れ枯らしと云ふ所が見える。正面から庭のあかり［＃「あかり」に傍点］を受けて、光澤《つや》のない、面長い顏がほんのり匂つて居る。此の前逢つた時には、あどけない乙女の心持と、大きな骨格と、シツクリそぐはぬやうであつたが、今では其んな所はない。大きいなりに豐艶な肉附きへなよなよと餘裕が付いて、長い長い腕や項《うなじ》や脚のあたりは柔かい曲線を作り、たつぷりした着物迄が美にして大なる女の四肢を喜ぶやうに、素直に肌へ纏はつて居る。重々しい眼瞼《まぶた》の裏に冴えた大きい眼球のくるくると廻轉するのが見えて、生え揃つた睫毛《まつげ》の蔭から男好きのする瞳が、細く陰險に光つて居る。蒸し暑い部屋の暗がりに、厚味のある高い鼻や、蛞蝓《なめくぢ》のやうに潤んだ唇や、ゆたかな輪廓の顏と髮とが、まざまざと漂つて、病的な佐伯の官能を興奮させた。
+二三十分立つてから、彼は自分の居間と定められた二階の六疊へ上がつて行つた。さうして、行李や鞄を運んでくれた書生の鈴木が下りてしまふと、大の字になつて眉を顰めながら、庇の外の炎天をぼんやりと視詰めて居た。
+正午近い日光は靑空に漲つて、欄干の外に見晴らされる本郷小石川の高臺の、家も森も大地から蒸發する熱氣の中に朦々と打ち烟り、電車や人聲やいろ〳〵の噪音が一つになつて、遠い下の方からガヤガヤと響いて來る。何處へ逃げても、醜婦の如く附き纏ふ夏の恐れと苦しみを、まだ半月も堪《こら》へねばならないのかと思ひながら、彼ははんぺん［＃「はんぺん」に傍点］のやうな照子の足の恰好を胸に描いた。何だか自分の居る所が十二階のやうな、高い塔の頂邊《てつぺん》にある部屋かとも想像された。
+
+東京には二三度來たこともあるし、學校も未だ始まらないし、何を見に行く氣も起らずに、每日々々彼は二階でごろ寢をしながら、まづい煙草を吹かして居た。敷島を一本吸ふと、口中が不愉快に乾燥して、直ぐゲロゲロと物を嘔《は》きたくなる。それでも關《かま》はず、唇を歪めて、淚をぽろ〳〵とこぼして、剛情に煙を吸ひ込む。
+「まあ、えらい吸殻だこと、のべつに兄さんは召し上がるのね。」
+こんな事を云ひながら、照子は時々上がつて來て、煙草盆を眺めて居る。夕方、湯上がりなどには藍の雫のしたゝるやうな生々しい浴衣を着て來る。
+「頭が散步をして居る時には、煙草のステツキが入用ですからね。」
+と、佐伯はむづかしい顏をして、何やら解らない文句を並べる。
+「だつてお母さんが心配して居ましたよ。謙さんはあんなに煙草を吸つて、頭が惡くならなければ好いがつて。」
+「どうせ頭は惡くなつて居るんです。」
+「それでも御酒は上がらないやうですね。」
+「ふむ、………どうですか知らん。………叔母樣には内證だが、まあ此れを御覽なさい。」
+かう云つて、錠の下りて居る本箱の抽出しから、彼はウヰスキーの罎を取り出して見せる。
+「此れが僕の麻醉劑なんです。」
+「不眠症なら、お酒よりか睡り藥の方が利きますよ。妾も隨分内證で飮みましたつけ。」
+照子はこんな鹽梅《あんばい》に、どうかすると、一二時間も話し込んで下りて行く。
+暑さは日增しに薄らいだが、彼の頭は一向爽やかにならなかつた。後腦ががん〳〵［＃「がん〳〵」に傍点］痛んで、首から上が一塊の燒石のやうに上氣《のぼ》せ、每朝顔を洗ふ時には、頭の毛が拔けて、べつとりと濡れた頰へ着く。やけ［＃「やけ」に傍点］になつて、髮を挘ると、いくらでもバラバラ脫落する。腦溢血、心臓麻痺、發狂、………いろ〳〵の恐怖が鳩尾《みぞおち》の邊に落ち合つて、激しい動悸が全身に響き渡り、兩手の指先を始終わなわな顫はせて居た。
+それでも一週間目の朝からは、新調の制服制帽を着けて、彈力のない心を引き立たせ、不承々々に學校へ出掛けたが、三日も續けると、直ぐに飽き飽きしてしまひ、何の興味も起らなかつた。
+よく世間の學生逹は、あんなに席を爭つて敎室へ詰めかけ、無意義な講義を一生懸命筆記して居られるものだ。敎師の云ふ事を一言半句も逃すまいと筆を走らせ、默々として機械のやうに働いて居る奴等の顏は、朝から晚迄悲しげに蒼褪めて、二た眼と見られたもんぢやない。其れでも彼奴等は、結構得々として、自分逹が如何に見すぼらしく、如何にみじめ［＃「みじめ」に傍点］で、如何に不仕合せであるかと云ふ事を知らないのだらう。講師が講壇に立つて咳一咳《がいいちがい》、
+「………エヽ前囘に引き續きまして、………」
+とやり出すと、場内に充ち滿ちた頭臚《とうろ》が、ハツと机にうつむいて、ペンを持つた數百本の手が一齊にノートの上を走り出す。講義は人々の心を跳び越して、直ちに手から紙へ傳はる。行儀の惡い、不思議に粗末《ぞんざい》な、奇怪なのらくら［＃「のらくら」に傍点］した符號のやうな文字となつて紙へ傳はる。唯手ばかりが生きて働いて居る。あの廣い敎場の中が、水を打つたやうにシン［＃「シン」に傍点］として、凡べての腦髓が悉く死んで了つて、唯手ばかりが生きて居るのだ。手が恐ろしく馬鹿氣た勢で、盲目的にスタコラと字を書き續けたり、ガチガチとインキ壺へペンを衝込んだり、ぴらりと洋紙の頁を捲くつたりする音が聞える。
+「さあさあ早く氣狂ひにおなんなさい。誰でも早く氣狂ひになつた者が勝ちだ。可哀さうに皆さん、氣狂ひにさへなつて了へば、其んな苦勞はしないでも濟みます。」
+何處かで、こんな蔭口を利いて居る奴の聲も聞える。他人は知らないが、佐伯の耳には、屹度《きつと》此の蔭口を囁く奴が居るので、臆病な彼はとても怯えて居たゝまれなくなる。
+流石《さすが》に叔母の手前があるから、半日位は已むを得ず圖書館へ這入つたり、池の周圍をぶら附いたりした。家へ歸れば、相變らず二階で大の字になつて、岡山の藝者の事や、照子の事や、死の事や、性慾の事や、愚にも附かない種々雜多な問題を、考へるともなく胸に浮べた。どうかすると寢ころんだ儘枕元へ鏡を立てゝ、肌理《きめ》の粗い、骨ばつた目鼻立ちをしげしげと眺めながら、自分の運命を判ずるやうな眞似をした。さうして、恐ろしくなると急いで抽出しのウヰスキーを飮んだ。
+アルコールと一緖に、だんだん惡性の病毒が、腦や體を侵して來るやうであつた。東京へ出たらば、上手な醫者に診察して貰ひませうと思つて居たのだが、今更注射をする氣にも、賣藥を飮む氣にもなれなかつた。彼はもう骨を折つて健康を囘復する精力さへなくなつて居た。
+「謙さん、一緖に歌舞伎へ行かないかね。」
+などゝ、叔母はよく日曜に佐伯を誘つた。
+「折角ですが、僕は人の出さかる所へ行くと、何だか恐《こは》くなつていけませんから………實は少し頭が惡いんです。」
+かう云つて、彼は惱ましさうに頭を抱へて見せる。
+「何だね、意氣地のない。お前さんも行くだらうと思つて、態々日曜迄待つて居たんだのに、まあ好いから行つて御覽。まあさ、行つて御覽よ。」
+「いやだつて云ふのに、無理にお勸めしたつて駄目だわ。お母樣は自分ばかり呑氣で、ちつとも人の氣持が解らないんだもの。」
+と、傍から照子がたしなめる［＃「たしなめる」に傍点］やうなことを云ふ。
+「だけど、彼《あ》の人も少し變だね。」
+と、叔母は二階へ逃げて行く佐伯の後ろ姿を見送りながら、
+「猫や鼠ぢやあるまいし、人間が恐いなんて可笑《をか》しいぢやないか。」
+と、今度は照子に訴へる。
+「人の氣持だから、さう理責めには行かないわ。」
+「あれで岡山では大分放蕩をしたんださうだが、もう少し人間が碎けさうなものだね。尤も書生さんの道樂だから、知れて居るけれど、未だからつきし［＃「からつきし」に傍点］世馴れないぢやないか。」
+「謙さんだつて、妾だつて、學生のうちは皆《みんな》子供だわ。」
+照子は斯う云つて、皮肉な人の惡い眼つきをする。結局、親子は女中のお雪を伴れて、書生の鈴木に留守を賴んで出かけて行く。
+鈴木は每朝佐伯と同じ時刻に、辨當を下げて神田邊の私立大學へ通つて居た。家に居ると玄關脇の四疊半に籠つて、何を讀むのか頻りにコツコツ勉强するらしい。眉の迫つた、暗い顏をいつもむつつり［＃「むつつり」に傍点］させて、朝晚には風呂を沸かしたり、庭を掃いたり、大儀さうにのそのそ仕事をして居る。少し頭が低能で、不斷何を考へて居るのか要領を得ないが、叔母やお雪に一言｜叱言《こごと》を云はれゝば、表情の鈍い面を脹《ふく》らせ、疑深い、白い眼をぎよろりとさせて怒る事だけは必ず確かである。始終ぶつぶつと不平らしく獨語を云つて居る。
+「鈴木を見ると、家の中に魔者《まもの》が居るやうな氣がしますよ。」
+と、叔母の云つたのもの無理はない。馬鹿ではあるが、いやに陰險で煮え切らない所がある。あれでも幼い頃には一《ひ》と角《かど》の秀才で、叔父が生前に見込みを付けて家へ置いたのだが、將來立派な者にさへなれば、隨分照子の婿にもしてやると、ウツカリほのめかしたのを執念深く根に持つて、一生懸命勉强して居る間に、馬鹿になつて了つたのださうだ。いまだに照子の云ふことなら、腹を立てずに何でも聽く。屹度彼奴は照子に惚れて、Onanism　に沒頭した結果馬鹿になつたのに違ひない、と佐伯は思つた。鈴木ばかりか、自分も照子に接近してから、餘計神經が惱んで、馬鹿になつたやうに思はれる。實際彼の女と對談した後では五體が疲れる。彼の女は男の頭を騷き挘るやうな所があるらしい。………佐伯はそんな事を考へた。
+みしり、みしり、と梯子段《はしごだん》に重い跫音をさせて、ある晚鈴木が二階へ上がつて來た。もう九月の末の秋らしい夜で、何處かに蟋蟀《こほろぎ》がじいじい啼いて居る。叔母を始め、女逹は皆出かけて、ひつそりとした階下の柱時計のセコンドが、靜かにコチコチと聞えて居る。
+「何か御勉强中ですか。」
+と云ひながら、鈴木は其處へ据わつて、部屋の中をじろじろ見廻した。
+「いや。」
+と云つて、佐伯は居ずまひを直して、けげん［＃「けげん」に傍点］さうに鈴木の顏色を窺つた。めつたに自分に挨拶をした事もない、無口な男が、何用あつて、珍らしくも二階へ上がつて來たのだらう。………
+「大變夜が長くなりましたな。」
+曖昧な聞き取りにくい聲で、もぐもぐと物を云つたが、やがて鈴木はうつ向いてしまつた。毒々しい油を塗つた髮の毛が、電燈の下でてかてか［＃「てかてか」に傍点］して居る。頑丈な、眞黑な、生薑《しやうが》の根のやうな指先を、ピクリピクリ動かしつゝ默つて膝頭で拍子を取つて居る。何か相談があつて、家族の留守を幸ひに、やつて來たのだらうが、容易に切り出しさうもない。妙に重々しく壓へ付けられるやうで、佐伯は氣がいらいらして來た。全體何を云ふ積りで、もぢもぢと、いつ迄も考へて居るのだらう。話があるならさツさと喋舌《しやべ》るがいゝぢやないか。………と、腹の中で呟きたくなる。
+が、鈴木はなか〳〵喋舌り出さない。「あなたは其處で勉强して居るがいゝ。私は自分の勝手で此處に坐つて居るのだ。」と云はんばかりに、疊の目を睨みつゝ、上半身で貧乏搖すりをして居る。………夜は非常に靜かである。からりころり［＃「からりころり」に傍点］と冴えた下駄の音が聞えて、遙かに本郷通りの電車の軋めきが、鐘の餘韻のやうに殷々《いん〳〵》と響く。
+「甚だ突然ですが、少し其の、あなたに伺ひたい事があつて………」
+いよ〳〵何か云ひ始めた。相變らず疊を視詰めて、貧乏搖すりをして、
+「………他の事でもありませんが、實は照子さんの事に就いてなんです。」
+「はあどんな事だか、まあ云つて見給へ。」
+佐伯は出來るだけ輕快を裝つて、少し甲高《かんだか》い調子で云つたが、咽喉へ唾液《つば》が溜まつて居たものと見えて、ひしやげた［＃「ひしやげた」に傍点］やうな聲が出た。
+「それからもう一つ伺ひたいんですが、一體あなたが此の家へ入らつしやつたのはどう云ふ關係でございませう。」
+「どう云ふ關係と云つて、僕と此處とは親類同士だし、學校も近いから、都合が好いと思つたんです。」
+「唯其れだけですかなあ。あなたと照子さんとの間に、何か關係でもありはしませんか。親と親とが、結婚の約束を取り極めたとでも云ふやうな。」
+「別にそんな約束はありませんがね。」
+「さうですかなあ、何卒《どうぞ》本當の事を仰つしやつて下さい。」
+鈴木は胡散《うさん》臭《くさ》い眼つきをしながら、齒列《はなら》びの惡い口元でにた〳〵と不氣味に笑つて居る。
+「いゝや、全くですよ。」
+「まあ其れにしても、此れから先になつて、あなたが欲しいと仰つしやれば、結婚なさる事も出來さうだと思ひますが、………」
+「欲しいと云つたら、叔母は吳れるかも知れないけれど、當人が判りますまい。其れに僕は當分結婚なんかしませんよ。」
+佐伯は話をして居るうちに、だんだん癪に觸つて來て、何だか馬鹿が此方へも乘り移りさうな氣分になつた。大聲で怒鳴りつけてくれようかと思ふ程、胸先がムカムカしたが、ぢつと堪《こら》へて居る。其れに相手が愚鈍な腦髓を遺憾なく發揮するのを多少痛快にも感じて居る。
+「しかし結婚はどうでも、兎に角あなたは照子さんが御好きでせう。嫌ひと云ふ筈はありませんよ。どうも僕にはさう見えます。」
+「別段嫌ひぢやありません。」
+「いや好きでせう。或は戀していらつしやりはしませんか。其れが僕は伺ひたいのです。」
+かう云つて、鈴木は如何にも根性の惡さうな、佛頂面《ぶつちやうづら》をして、ぱちくりと眼瞬《まばた》きをしながら、思つて居る事を皆云はせなければ承知しないと云ふやうに、佐伯の一擧手一投足を監視して睨み付けて居る。
+「戀をしてゐるなんて、そんな事は決して。」
+と、佐伯はおづおづ辯解しかけたが、どうした加減か、中途で急に腹が立つて來た。
+「一體君は、そんな事をしつくどく［＃「しつくどく」に傍点］根堀り葉堀りしてどうするんだい。戀しようと戀しまいと僕の勝手ぢやないか、好い加減にし給へ、好い加減に。」
+喋舌つて居る間に、心臓がドキドキ鳴つて、かつ［＃「かつ」に傍点］と一時に血が頭へ上つて行くのが、自分にも判る。嚙み付くやうな怒罵を、不意に眞甲《まつかふ》から叩きつけられて、鈴木の脹《ふく》れつ面はだんだん險惡な相を崩し始め、遂には重苦しい、薄氣味のわるい笑顏になつて行く。
+「さうお怒りになつちや困りますなあ。僕は唯あなたに忠吿したいと思つたんです。照子さんは中々一通りの女ぢやありませんよ。不斷は猫を被つて居ますが、腹の中ではまるで男を馬鹿にし切つて居るんです。實は極《ご》く秘密の話なんですが、………」
+と、鈴木は一段聲をひそめ、膝を乘り出して、さも同感を求めるやうな口調で、
+「大槪お解りでせうが、彼《あ》の女はもう處女ぢやありませんよ。隨分いろいろな男の學生と關係したらしいんです。第一、僕とも以前に關係があつたんですから。………」
+さう云つて、暫く相手の返事を待つて居たが、佐伯が何とも云はないので、又話を續ける。
+「けれども全く美人には違ひありませんね。僕は彼の女の爲めなら、命を捨てゝもいゝ積りなんです。照子のお父樣が生きて居る時分に、確かに僕に吳れると云つたんです。實は話がさうなつて居たんですが、此の頃になつて、どうも母親の考が變つたらしく思はれるものですから、其れで先刻《さつき》あんな事をあなたに伺つて見ました。―――全體母親も良くありません。男親の極めて置いた約束を、今更｜反古《ほご》にするなんて、少し無法ぢやありませんか。先がさう云ふ了見なら、僕の方にも覺悟があります。なあに、照子の氣持は母親よりも僕の方が能く解つて居る。彼の女は非常に冷酷で、男を弄《もてあそ》ぶ氣にはなつても、惚れるなんて事はないのです。だから、うるさく附け廻はしてやれば、根負《こんま》けがして、誰とでも結婚するに極まつて居ますよ。」
+こんな事を、とぎれ〳〵に、ぶつぶつと繰り返して、いつ迄立つても止みさうもなかつたが、突然｜戶外《おもて》の格子がガラガラと開いて、三人の跫音がすると、
+「何卒今日の話は内分に願ひます。」
+かう云ひ捨てて、鈴木は大急ぎで下へ行つた。
+
+何でも十一時近くであらう、其れから一時間ばかり立つて、皆寢靜まつた頃に、
+「謙さん、まだお休みでないか。」
+と云ひながら、叔母がフランネルの寢間着の上へ羽織を引懸けて、上がつて來た。
+「先刻《さつき》鈴木が二階へ來やしないかい。」
+かう云つて、佐伯の凭れて居る机の角へ頰杖を衝いて、片手で懷から煙草入を出した。多少氣がゝりのやうな顏をして居る。
+「えゝ來ましたよ。」
+「さうだらう。何でも歸つてきた時に、ドヤドヤと二階から下りて來た樣子が變だつたから、行つて聞いて見ろツて、照子が云ふんだよ。めつたにお前さんなんぞには、ろくすつぱう［＃「ろくすつぱう」に傍点］口も利かないのに、可笑しいぢやないか。全體何だつて云ふの。」
+「愚にも附かない事ばかり。獨《ひとり》で喋舌つてゐるんですよ。ほんとに彼は大馬鹿だ。」
+珍らしく佐伯は、機嫌の好い聲で、すら〳〵と物を云つた。
+「又私の惡口ぢやないのかい。方々へ行つて、好い加減な事を觸れて步くんだから困つちまふよ。あれで、彼《あ》の男は馬鹿の癖になかなか小刀《こがたな》細工《ざいく》をするんだからね。―――いづれお前さんと照子とどうだとか云ふんだらう。」
+「さうなんです。」
+「そんなら、もう聞かないでも、大槪わかつて居らあね。若い男がちよいとでも照子と知り合ひになると、直ぐに彼奴は聞きに出かけるんだよ。彼奴の癖なんだからお前さん惡く思はないやうにね。」
+「別に何とも思つちや居ません。しかし彼《あ》れぢや叔母さんもお困りでせう。」
+「お困りにも、何にも………」
+と、眉を顰める拍子に、ぽんと灰吹《はひふき》へ煙管を叩いて、叔母は又語り續ける。
+「彼奴の爲めには、私は時々魘《うな》されますよ。叔父樣が亡《なくな》つてから、一度暇を出したんだけれど、其の時なんざ、私逹親子を恨んで、每日々々刃物を懷《ふところ》にして、家の周圍《まはり》をうろついてるツて騷ぎなんだらう。まあ私逹がどんなに酷い事でもしたやうで世間《せけん》體《てい》が惡いぢやないか。家へ入れてやらなければ、火附け位はしかねないし、仕方がないから、又引き取つてやつたあね。照子はなに鈴木は臆病だから、いつもの小刀細工で人を嚇かしてるんだツて、云ふけれど、私は、滿更さうでもあるまいと思ふ。なあに、あゝ云ふ奴が、今に屹度人殺しなんぞするんです。………」
+ふと、佐伯は、フランネルに包まれた、むくむくした叔母の體が、襟髮か何かをムズと摑まれて、殘酷にづでんどう［＃「づでんどう」に傍点］と引き摺り倒され、血だらけになつて、キヤツと悲鳴を揚げる所を想像した。あの懷に見えて居る、象の耳のやうにだらりと垂れた乳房の邊へ、グサツと刃物を突き立てたら、どんなだらう。不恰好に肥つた股の肉をヒクヒクさせ、大根のやうな手足を踏ん張つて、ひいひいばたばた［＃「ひいひいばたばた」に傍点］と大地を這ひ廻つた揚句、あの仔細らしい表情の中央《まんなか》にある眉間《みけん》を割られて、キユツと牛鍋の煮詰まつたやうに、息の根の止る所はどんなだらう。………
+ぼん［＃「ぼん」に傍点］と階下で時計が半を打つた。あたりがしんしん［＃「しんしん」に傍点］と更けて、大分寒さが沁み渡る。叔母は話に夢中になつて、頻りに煙草盆の灰の中を、雁首で搔き廻して居る。灰の山がいろいろの形に崩れて、時々螢ほどの炭火がちらちら見えるが、容易に煙草へ燃え移らない。
+「………だから私も心配でならない。照子だつて、いづれ其のうち婿を貰はなけりやならないけれど、又あの馬鹿が、何をするかも知れないと思ふと………」
+いつの間にか火を附けたと見えて、叔母の鼻の孔から、話と一緖に白い煙の塊がもくもく吐き出され、二人の間に漂ひながら、はびこつて行く。
+「それに照子が、緣談となると嫌な顏をするので、私も弱り切るのさ。謙さんからもちつとさう云つて見ておくれな。そりや私も隨分呑氣だけれど、彼の娘《こ》と來たら又一倍だからね。二十四にもなつて、一體まあどうする氣なんだらう。」
+叔母はいつもの元氣に似合はず、萎れ返つて、散々愚痴をこぼしたが、十二時が鳴ると話を切り上げ、
+「さう云ふ譯だから、鈴木が何と云つたつて、取り上げないでおくんなさい。あんな奴に掛り合ふと、しまひにはお前さん迄恨まれるからね。―――さあ〳〵遲くなつちまつた。謙さんもモウお休み。」
+かう云つて下りて行つた。
+
+明くる日の朝、佐伯が風呂場で顏を洗つて居ると、跣足《はだし》になつて庭を掃いて居た鈴木が、湯船の脇の木戶口から、のつそり［＃「のつそり」に傍点］這入つて來た。
+「お早う。」
+と、佐伯は少しギヨツとして、殊更機嫌を取るやうに聲をかけたが、何か非常に腹を立てゝ居るらしく、暫くは返事をせずに面を脹らして居る。
+「あなたは、昨夜の事をすつかり云附けましたね。―――お恍《とぼ》けになつたつていけません。僕はあれからまんぢり［＃「まんぢり」に傍点］ともしないで、樣子を聞いて居たんです。たしかに奧樣が二階へ上がつて行つて十二時過ぎまで話をして居ました。僕はもうあなたとも仇《かたき》同士《どうし》だから、此れからは決して口を利きませんよ。僕に何を云ひかけたつて無駄だから、何卒その積りで居て下さい。」
+かう云つて、ぷいと風呂場を出て行つたかと思ふと、何喰はぬ顏をして庭を掃いて居る。
+「とうとう己にも魔者が取り付いた。」
+佐伯は腹の中で斯う呟いた。彼奴は人が親切にしてやればやる程｜仇《かたき》だと思つて付け狙ふんだ。事に依ると己が彼奴に殺されるのかも知れない。如何に彼奴の爲めに利益を圖つて、成る可く照子にも近附かないやうにして、眞實を盡くせば盡くすほど、いよ〳〵彼奴は己を恨んで、揚句の果てに殺すのかも知れない。始終殺されまい、殺されまいと、氣を配りつゝ、逃げて廻つて居るうちに、だんだん自分が照子と戀に落ちて、矢張《やつぱり》殺されなければならないやうな運命に陷《はま》り込みはしないだらうか。………
+鈴木はまだ庭を掃いて居る。頑丈な、糞力のありさうな手に箒を握つて、臀端折りで庭を掃いて居る。あの體で押さへ付けられたら、己はとても身動きが出來まい。―――種々雜多な、取り止めのないもや〳〵とした恐怖が、佐伯の頭の中に騷いで居る。
+
+十月も半ばになつて、學校の講義は大分進んだが、彼のノートは一向厚くならなかつた。「なに每日出席しなくつてもいいんです。」とか、「今日は少し氣分が勝れない。」とか、だんだん圖々《づう〳〵》しい事を云つて、三日に上げず缺席するやうになつた。朝も非常に寢坊をした。暇さへあれば、蒲團にもぐり込んで、獸のやうな、何かに渴《かつ》ゑたやうな眼をぱつちりと開いて、天井を視詰めながら、うとうと［＃「うとうと」に傍点］と物を考へる。腦を循る血が、ヅキンヅキンと枕へ響き、眼の前に無數の泡粒がちらちらしたり、耳鳴りがしたりして、體の節々のほごれるやうな慵い、だるい日が續く。ちよいとごろ［＃「ごろ」に傍点］寢をした間にも、恐ろしく官能的な、奇怪な、荒唐な夢を無數に見る。さうして其れが眼を覺ました後迄も、感覺に殘つて居る。天氣の好い日は、南の窓から癪に觸る程冴え返つた靑空が、濁つた頭を覗き込んで居る。もう再び放蕩をしようと云ふ氣も起らない。こんな衰弱した體で、刺戟の强い、糜爛《びらん》した歡樂を二日も試みたら、屹度死んでしまふだらうと思はれる。
+照子は日に何度となく二階へ上がつて來る。あの大柄な女の平べつたい［＃「べつたい」に傍点］足で、寢て居る枕元をみしみし步かれると、佐伯は自分の體を踏み付けられるやうに感じた。
+「私が梯子段を上がる度每に、鈴木が可笑しな眼つきをするから、猶更意地になつてからかつてやるのよ。」
+かう云つて、照子は佐伯の眼の前へ坐りながら、
+「此の二三日｜感冐《かぜ》を引いちやつて。」
+と袂から手巾を出してちいちい［＃「ちいちい」に傍点］と洟《はな》を擤《か》んだ。
+「こんな女は、感冐を引くと、餘計 attractive になるものだ。」
+と思つて、佐伯は額越しに、照子の目鼻立ちを見上げた。寸の長い、たつぷりした顏が、喰ひ荒した喰べ物のやうに汚《よご》れて、唇の上がじめじめと赤く爛れて居る。生暖かい活氣と、强い底力のある息が、頭の上へ降つて來るのを佐伯は惱ましく感じながら、
+「ふむ、ふむ。」
+と、好い加減な返事をして、胸高に締めた鹽瀨の丸帶の、一呼吸每に顫へるのを、どんより［＃「どんより」に傍点］と眺めて居る。
+「兄さん――あなたは鈴木に捕まつてから、私が來るといやに氣色を惡くなさるのね。」
+かう云つて、照子は腰を下ろして、ぴしやんこ［＃「ぴしやんこ」に傍点］に坐り直した。
+湯へ這入らないせゐ［＃「せゐ」に傍点］であらう、膝の上へ投げ出した兩手の指が、稍《やや》黑《くろ》ずんで居る。あの面積の廣い掌《てのひら》が、今にも自分の顏の上を撫で廻しに來やしないかと、佐伯は思つた。
+「何だか僕は、彼奴に殺されるやうな氣がする。」
+「どうしてなの。何か殺されるやうな覺えがあつて？あなた迄恨まれる因緣《いんねん》はありやしないわ。」
+「そりや何も因緣はないさ。」
+佐伯は惶《あわ》てゝ取り消すやうに云つたが、何だか氣｜不味《まづ》い所があるので、照子の顏を見ないやうに話をつゞける。
+「けれども彼奴は、因緣なんぞなくつたつて、恨む時には恨むんだから抗《かな》はない。―――唯譯もなく殺されるやうな氣がするんだ。」
+「大丈夫よ、そんな事が出來る位な、ハキハキした人間ぢやないんですもの。―――けれども殺すとしたら、先づお母樣だわ。私を殺す氣にはとてもなれないらしい。」
+「そいつは判らないな。可愛さ餘つて憎さが百倍と云ふぢやないか。」
+「いゝえ、たしかに殺す筈はないの。いつか家を追ひ出された時だつて、お母樣ばかり嚇かして居るんですよ。私は夜晝《よるひる》平氣で戶外《おもて》へ出てやつたけれど、てんで傍へも寄り付いて來なかつたわ。………」
+照子はこつそりと前の方へ、蓋《かぶ》さるやうに乘り出して來る。
+「其れだのに兄さんが殺されるなんて、其んな事がありつこないわ。よしんば、二人の間にどんな事があつても………」
+佐伯は急に、何か物に怖れるやうな眼つきをして、
+「照ちやん僕は頭が痛いんだから、又話に來てくれないか。」
+と、いらいらした調子で、慳貪《けんどん》に云ひ放つた。
+
+間もなく照子と入れ代りに、女中のお雪が上がつて來て、何か部屋の中を、こそこそと捜して居る。
+「お孃さんが手巾をお忘れになつたさうですが、御存じございませんか知ら、何でも洟を擤んだ穢い物だから、持つて來てくれと仰つしやいますが。………」
+「忘れたのなら、其處いらにあるだらう。僕は氣がつかなかつたがね。」
+佐伯は無愛想な返事をすると、背中を向けて寢て了つた。それから、お雪が稍暫く捜《たづ》ねあぐんで下りて行つた頃、又むくむくと起き返つた。そして梯子段の方へ氣を配りながら、臆病らしく肩をすぼめて、蒲團の下から手巾を引き摺り出し、拇指と人差指で眼の前へ摘み上げた。
+四つに疊まれた手巾は、どす［＃「どす」に傍点］黑い板のやうに濡れて癒着《くつつ》いて、中を開けると、鼻感冐《はなかぜ》に特有な臭氣が發散した。水洟が滲み透して、くちやくちや［＃「くちやくちや」に傍点］になつた冷めたい布を、彼は兩手の間に挿んでぬるぬる［＃「ぬるぬる」に傍点］と擦《こす》つて見たり、ぴしやりと頰《ほつ》ぺたへ叩き付けたりして居たが、しまひに顰《しか》めツ面《つら》をして、犬のやうにぺろぺろ［＃「ぺろぺろ」に傍点］と舐め始めた。
+………此れが洟の味なんだ。何だかむつ［＃「むつ」に傍点］とした生臭い匂を舐めるやうで、淡い、鹽辛い味が、舌の先に殘るばかりだ。しかし、不思議に辛辣な、怪《け》しからぬ程面白い事を、己は見付け出したものだ。人間の歡樂世界の裏面に、こんな秘密な、奇妙な樂園が潜んで居るんだ。………彼は口中に溜る唾液を、思ひ切つて滾々と飮み下した。一種搔き挘られるやうな快感が、煙草の醉の如く腦味噌に浸潤して、ハツと氣狂ひの谷底へ、突き落されるやうな恐怖に追ひ立てられつゝ、夢中になつて、唯一生懸命ぺろぺろと舐める。
+やがて二三分立つと、彼は手巾を再びそつ［＃「そつ」に傍点］と蒲團の下へ押し込み、眼が眩《くるめ》くやうに惑亂された頭を抱へながら、憂鬱な暗澹とした物思ひに耽つた。己は斯うやつてだんだん照子に踏み躙られて行くのだ。彼の女は蜥蜴《とかげ》のやうに細長い、しなしな［＃「しなしな」に傍点］した體で、鈴木と一緖に己の運命の上へ黑雲の如く蓋《かぶ》さつて來るのだ。
+翌朝佐伯は床を離れると、早速手巾を洋服の内隱囊《うちがくし》へ入れて、こそこそと鈴木の前を逃げるやうに學校へ行つた。さうして便所の戶を堅く締めて、其の中でそつと擴げたり、池の汀の雜草の中に埋れて、野獸が人肉をしやぶる［＃「しやぶる」に傍点］やうにぺちやぺちや［＃「ぺちやぺちや」に傍点］とやる。やがて又何とも名狀し難い、淺ましい、不快な氣分に呪はれつつ、物凄い靑黑い顏をして、ふらりと家へ戾つて來る。其のうちに手巾は、水洟の糟も殘らず綺麗に黃色く乾上《ひあ》がつて、突張つてしまつた。
+「もう好い加減に降參しろ。」と云はんばかりに、照子は相變らず二階へ上がつて來ては、チクチクと佐伯の神經をつツ突く。あの銀の※［＃金扁に泉］《はりがね》に似た眼元に、媚びるやうな、冷やかすやうな微笑を泛べてぢり〳〵と肉薄されると、佐伯は手巾の一件を見破られるかと思はれて、避《よ》けて廻りながらも、存分に飜弄され、惱まされて行く。あの柔かさうに嵩張つた、すべ〳〵と四肢の發逹した肉體の下に、魂が押し潰されて、藻搔いても、焦つても、逃げやうのない重苦しさに、彼は哀れを乞ふが如き眼つきをしながら、
+「照子の淫婦奴！」
+と呻るやうな聲で怒號して見たくなるかと思へば、
+「いくら誘惑したつて、降參なんかするものか。己には彼奴にも鈴木にも知れないやうな、秘密な樂園があるんだ。」
+こんな負け惜しみを云つて、せゝら笑ふ氣持にもなつた。
+
+Transcriber's Notes
+
+本テキストは昭和三十三年中央公論社刊「谷崎潤一郎全集　第二巻」を定本にした。
+
+
+
+
+
+
+End of the Project Gutenberg EBook of Akuma, by Junichiro Tanizaki
+
+*** END OF THIS PROJECT GUTENBERG EBOOK AKUMA ***
+
+***** This file should be named 37605-0.txt or 37605-0.zip *****
+This and all associated files of various formats will be found in:
+        https://www.gutenberg.org/3/7/6/0/37605/
+
+Produced by Sachiko Hill and Kaoru Tanaka
+
+Updated editions will replace the previous one--the old editions
+will be renamed.
+
+Creating the works from public domain print editions means that no
+one owns a United States copyright in these works, so the Foundation
+(and you!) can copy and distribute it in the United States without
+permission and without paying copyright royalties.  Special rules,
+set forth in the General Terms of Use part of this license, apply to
+copying and distributing Project Gutenberg-tm electronic works to
+protect the PROJECT GUTENBERG-tm concept and trademark.  Project
+Gutenberg is a registered trademark, and may not be used if you
+charge for the eBooks, unless you receive specific permission.  If you
+do not charge anything for copies of this eBook, complying with the
+rules is very easy.  You may use this eBook for nearly any purpose
+such as creation of derivative works, reports, performances and
+research.  They may be modified and printed and given away--you may do
+practically ANYTHING with public domain eBooks.  Redistribution is
+subject to the trademark license, especially commercial
+redistribution.
+
+
+
+*** START: FULL LICENSE ***
+
+THE FULL PROJECT GUTENBERG LICENSE
+PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
+
+To protect the Project Gutenberg-tm mission of promoting the free
+distribution of electronic works, by using or distributing this work
+(or any other work associated in any way with the phrase "Project
+Gutenberg"), you agree to comply with all the terms of the Full Project
+Gutenberg-tm License (available with this file or online at
+https://gutenberg.org/license).
+
+
+Section 1.  General Terms of Use and Redistributing Project Gutenberg-tm
+electronic works
+
+1.A.  By reading or using any part of this Project Gutenberg-tm
+electronic work, you indicate that you have read, understand, agree to
+and accept all the terms of this license and intellectual property
+(trademark/copyright) agreement.  If you do not agree to abide by all
+the terms of this agreement, you must cease using and return or destroy
+all copies of Project Gutenberg-tm electronic works in your possession.
+If you paid a fee for obtaining a copy of or access to a Project
+Gutenberg-tm electronic work and you do not agree to be bound by the
+terms of this agreement, you may obtain a refund from the person or
+entity to whom you paid the fee as set forth in paragraph 1.E.8.
+
+1.B.  "Project Gutenberg" is a registered trademark.  It may only be
+used on or associated in any way with an electronic work by people who
+agree to be bound by the terms of this agreement.  There are a few
+things that you can do with most Project Gutenberg-tm electronic works
+even without complying with the full terms of this agreement.  See
+paragraph 1.C below.  There are a lot of things you can do with Project
+Gutenberg-tm electronic works if you follow the terms of this agreement
+and help preserve free future access to Project Gutenberg-tm electronic
+works.  See paragraph 1.E below.
+
+1.C.  The Project Gutenberg Literary Archive Foundation ("the Foundation"
+or PGLAF), owns a compilation copyright in the collection of Project
+Gutenberg-tm electronic works.  Nearly all the individual works in the
+collection are in the public domain in the United States.  If an
+individual work is in the public domain in the United States and you are
+located in the United States, we do not claim a right to prevent you from
+copying, distributing, performing, displaying or creating derivative
+works based on the work as long as all references to Project Gutenberg
+are removed.  Of course, we hope that you will support the Project
+Gutenberg-tm mission of promoting free access to electronic works by
+freely sharing Project Gutenberg-tm works in compliance with the terms of
+this agreement for keeping the Project Gutenberg-tm name associated with
+the work.  You can easily comply with the terms of this agreement by
+keeping this work in the same format with its attached full Project
+Gutenberg-tm License when you share it without charge with others.
+
+1.D.  The copyright laws of the place where you are located also govern
+what you can do with this work.  Copyright laws in most countries are in
+a constant state of change.  If you are outside the United States, check
+the laws of your country in addition to the terms of this agreement
+before downloading, copying, displaying, performing, distributing or
+creating derivative works based on this work or any other Project
+Gutenberg-tm work.  The Foundation makes no representations concerning
+the copyright status of any work in any country outside the United
+States.
+
+1.E.  Unless you have removed all references to Project Gutenberg:
+
+1.E.1.  The following sentence, with active links to, or other immediate
+access to, the full Project Gutenberg-tm License must appear prominently
+whenever any copy of a Project Gutenberg-tm work (any work on which the
+phrase "Project Gutenberg" appears, or with which the phrase "Project
+Gutenberg" is associated) is accessed, displayed, performed, viewed,
+copied or distributed:
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org
+
+1.E.2.  If an individual Project Gutenberg-tm electronic work is derived
+from the public domain (does not contain a notice indicating that it is
+posted with permission of the copyright holder), the work can be copied
+and distributed to anyone in the United States without paying any fees
+or charges.  If you are redistributing or providing access to a work
+with the phrase "Project Gutenberg" associated with or appearing on the
+work, you must comply either with the requirements of paragraphs 1.E.1
+through 1.E.7 or obtain permission for the use of the work and the
+Project Gutenberg-tm trademark as set forth in paragraphs 1.E.8 or
+1.E.9.
+
+1.E.3.  If an individual Project Gutenberg-tm electronic work is posted
+with the permission of the copyright holder, your use and distribution
+must comply with both paragraphs 1.E.1 through 1.E.7 and any additional
+terms imposed by the copyright holder.  Additional terms will be linked
+to the Project Gutenberg-tm License for all works posted with the
+permission of the copyright holder found at the beginning of this work.
+
+1.E.4.  Do not unlink or detach or remove the full Project Gutenberg-tm
+License terms from this work, or any files containing a part of this
+work or any other work associated with Project Gutenberg-tm.
+
+1.E.5.  Do not copy, display, perform, distribute or redistribute this
+electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg-tm License.
+
+1.E.6.  You may convert to and distribute this work in any binary,
+compressed, marked up, nonproprietary or proprietary form, including any
+word processing or hypertext form.  However, if you provide access to or
+distribute copies of a Project Gutenberg-tm work in a format other than
+"Plain Vanilla ASCII" or other format used in the official version
+posted on the official Project Gutenberg-tm web site (www.gutenberg.org),
+you must, at no additional cost, fee or expense to the user, provide a
+copy, a means of exporting a copy, or a means of obtaining a copy upon
+request, of the work in its original "Plain Vanilla ASCII" or other
+form.  Any alternate format must include the full Project Gutenberg-tm
+License as specified in paragraph 1.E.1.
+
+1.E.7.  Do not charge a fee for access to, viewing, displaying,
+performing, copying or distributing any Project Gutenberg-tm works
+unless you comply with paragraph 1.E.8 or 1.E.9.
+
+1.E.8.  You may charge a reasonable fee for copies of or providing
+access to or distributing Project Gutenberg-tm electronic works provided
+that
+
+- You pay a royalty fee of 20% of the gross profits you derive from
+     the use of Project Gutenberg-tm works calculated using the method
+     you already use to calculate your applicable taxes.  The fee is
+     owed to the owner of the Project Gutenberg-tm trademark, but he
+     has agreed to donate royalties under this paragraph to the
+     Project Gutenberg Literary Archive Foundation.  Royalty payments
+     must be paid within 60 days following each date on which you
+     prepare (or are legally required to prepare) your periodic tax
+     returns.  Royalty payments should be clearly marked as such and
+     sent to the Project Gutenberg Literary Archive Foundation at the
+     address specified in Section 4, "Information about donations to
+     the Project Gutenberg Literary Archive Foundation."
+
+- You provide a full refund of any money paid by a user who notifies
+     you in writing (or by e-mail) within 30 days of receipt that s/he
+     does not agree to the terms of the full Project Gutenberg-tm
+     License.  You must require such a user to return or
+     destroy all copies of the works possessed in a physical medium
+     and discontinue all use of and all access to other copies of
+     Project Gutenberg-tm works.
+
+- You provide, in accordance with paragraph 1.F.3, a full refund of any
+     money paid for a work or a replacement copy, if a defect in the
+     electronic work is discovered and reported to you within 90 days
+     of receipt of the work.
+
+- You comply with all other terms of this agreement for free
+     distribution of Project Gutenberg-tm works.
+
+1.E.9.  If you wish to charge a fee or distribute a Project Gutenberg-tm
+electronic work or group of works on different terms than are set
+forth in this agreement, you must obtain permission in writing from
+both the Project Gutenberg Literary Archive Foundation and Michael
+Hart, the owner of the Project Gutenberg-tm trademark.  Contact the
+Foundation as set forth in Section 3 below.
+
+1.F.
+
+1.F.1.  Project Gutenberg volunteers and employees expend considerable
+effort to identify, do copyright research on, transcribe and proofread
+public domain works in creating the Project Gutenberg-tm
+collection.  Despite these efforts, Project Gutenberg-tm electronic
+works, and the medium on which they may be stored, may contain
+"Defects," such as, but not limited to, incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other intellectual
+property infringement, a defective or damaged disk or other medium, a
+computer virus, or computer codes that damage or cannot be read by
+your equipment.
+
+1.F.2.  LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the "Right
+of Replacement or Refund" described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg-tm trademark, and any other party distributing a Project
+Gutenberg-tm electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees.  YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH 1.F.3.  YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+1.F.3.  LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from.  If you
+received the work on a physical medium, you must return the medium with
+your written explanation.  The person or entity that provided you with
+the defective work may elect to provide a replacement copy in lieu of a
+refund.  If you received the work electronically, the person or entity
+providing it to you may choose to give you a second opportunity to
+receive the work electronically in lieu of a refund.  If the second copy
+is also defective, you may demand a refund in writing without further
+opportunities to fix the problem.
+
+1.F.4.  Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you 'AS-IS' WITH NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+WARRANTIES OF MERCHANTIBILITY OR FITNESS FOR ANY PURPOSE.
+
+1.F.5.  Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of damages.
+If any disclaimer or limitation set forth in this agreement violates the
+law of the state applicable to this agreement, the agreement shall be
+interpreted to make the maximum disclaimer or limitation permitted by
+the applicable state law.  The invalidity or unenforceability of any
+provision of this agreement shall not void the remaining provisions.
+
+1.F.6.  INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg-tm electronic works in accordance
+with this agreement, and any volunteers associated with the production,
+promotion and distribution of Project Gutenberg-tm electronic works,
+harmless from all liability, costs and expenses, including legal fees,
+that arise directly or indirectly from any of the following which you do
+or cause to occur: (a) distribution of this or any Project Gutenberg-tm
+work, (b) alteration, modification, or additions or deletions to any
+Project Gutenberg-tm work, and (c) any Defect you cause.
+
+
+Section  2.  Information about the Mission of Project Gutenberg-tm
+
+Project Gutenberg-tm is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of computers
+including obsolete, old, middle-aged and new computers.  It exists
+because of the efforts of hundreds of volunteers and donations from
+people in all walks of life.
+
+Volunteers and financial support to provide volunteers with the
+assistance they need are critical to reaching Project Gutenberg-tm's
+goals and ensuring that the Project Gutenberg-tm collection will
+remain freely available for generations to come.  In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg-tm and future generations.
+To learn more about the Project Gutenberg Literary Archive Foundation
+and how your efforts and donations can help, see Sections 3 and 4
+and the Foundation web page at https://www.pglaf.org.
+
+
+Section 3.  Information about the Project Gutenberg Literary Archive
+Foundation
+
+The Project Gutenberg Literary Archive Foundation is a non profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service.  The Foundation's EIN or federal tax identification
+number is 64-6221541.  Its 501(c)(3) letter is posted at
+https://pglaf.org/fundraising.  Contributions to the Project Gutenberg
+Literary Archive Foundation are tax deductible to the full extent
+permitted by U.S. federal laws and your state's laws.
+
+The Foundation's principal office is located at 4557 Melan Dr. S.
+Fairbanks, AK, 99712., but its volunteers and employees are scattered
+throughout numerous locations.  Its business office is located at
+809 North 1500 West, Salt Lake City, UT 84116, (801) 596-1887, email
+business@pglaf.org.  Email contact links and up to date contact
+information can be found at the Foundation's web site and official
+page at https://pglaf.org
+
+For additional contact information:
+     Dr. Gregory B. Newby
+     Chief Executive and Director
+     gbnewby@pglaf.org
+
+
+Section 4.  Information about Donations to the Project Gutenberg
+Literary Archive Foundation
+
+Project Gutenberg-tm depends upon and cannot survive without wide
+spread public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine readable form accessible by the widest
+array of equipment including outdated equipment.  Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.
+
+The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States.  Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements.  We do not solicit donations in locations
+where we have not received written confirmation of compliance.  To
+SEND DONATIONS or determine the status of compliance for any
+particular state visit https://pglaf.org
+
+While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.
+
+International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States.  U.S. laws alone swamp our small staff.
+
+Please check the Project Gutenberg Web pages for current donation
+methods and addresses.  Donations are accepted in a number of other
+ways including including checks, online payments and credit card
+donations.  To donate, please visit: https://pglaf.org/donate
+
+
+Section 5.  General Information About Project Gutenberg-tm electronic
+works.
+
+Professor Michael S. Hart was the originator of the Project Gutenberg-tm
+concept of a library of electronic works that could be freely shared
+with anyone.  For thirty years, he produced and distributed Project
+Gutenberg-tm eBooks with only a loose network of volunteer support.
+
+
+Project Gutenberg-tm eBooks are often created from several printed
+editions, all of which are confirmed as Public Domain in the U.S.
+unless a copyright notice is included.  Thus, we do not necessarily
+keep eBooks in compliance with any particular paper edition.
+
+
+Most people start at our Web site which has the main PG search facility:
+
+     https://www.gutenberg.org
+
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.

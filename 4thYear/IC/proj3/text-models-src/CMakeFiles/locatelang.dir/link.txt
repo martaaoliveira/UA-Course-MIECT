@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -std=c++17 CMakeFiles/locatelang.dir/locateLang.cpp.o -o /home/bruno/Desktop/IC/proj3/text-models-bin/locatelang  libfcm.a 

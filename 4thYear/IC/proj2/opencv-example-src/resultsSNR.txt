@@ -1,0 +1,11 @@
+FILE: sample03.wav (Lossy encoding, PredMode = 2)
+BitsRemv    SNR
+1 bit   ->  71.9986 dB
+2 bits  ->  63.5509 dB
+3 bits  ->  56.5616 dB
+4 bits  ->  50.1023 dB
+5 bits  ->  43.863 dB
+7 bits  ->  31.6593 dB
+9 bits  ->  19.5806 dB
+11 bits ->  7.48592 dB
+13 bits ->  -4.91724 dB

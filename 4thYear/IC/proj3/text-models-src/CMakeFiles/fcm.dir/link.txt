@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfcm.a CMakeFiles/fcm.dir/fcm.cpp.o
+/usr/bin/ranlib libfcm.a

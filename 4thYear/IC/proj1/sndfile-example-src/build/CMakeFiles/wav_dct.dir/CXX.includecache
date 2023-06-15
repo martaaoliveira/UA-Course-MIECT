@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/bruno/Desktop/IC/sndfile-example-src/wav_dct.cpp
+iostream
+-
+vector
+-
+cmath
+-
+fftw3.h
+-
+sndfile.hh
+-
+

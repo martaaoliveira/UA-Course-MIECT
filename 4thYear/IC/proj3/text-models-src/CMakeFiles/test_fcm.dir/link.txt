@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -std=c++17 CMakeFiles/test_fcm.dir/test_fcm.cpp.o -o /home/bruno/Desktop/IC/proj3/text-models-bin/test_fcm  libfcm.a 

@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/marta/Desktop/Universidade/IC/proj2/opencv-example-src/BitStream.cpp
+iostream
+-
+fstream
+-
+BitStream.hpp
+/home/marta/Desktop/Universidade/IC/proj2/opencv-example-src/BitStream.hpp
+
+/home/marta/Desktop/Universidade/IC/proj2/opencv-example-src/BitStream.hpp
+iostream
+-
+fstream
+-
+string
+-
+stdlib.h
+-
+map
+-
+vector
+-
+

@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -std=c++17 CMakeFiles/test_audiocodec2.dir/test_audioCodec2.cpp.o -o /home/bruno/Desktop/IC/proj2/opencv-example-bin/test_audiocodec2  libaudiocodec.a libgolomb.a libbitstream.a -lsndfile 

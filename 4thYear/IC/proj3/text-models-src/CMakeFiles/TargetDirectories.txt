@@ -1,0 +1,8 @@
+/home/bruno/Desktop/IC/proj3/text-models-src/CMakeFiles/fcm.dir
+/home/bruno/Desktop/IC/proj3/text-models-src/CMakeFiles/test_fcm.dir
+/home/bruno/Desktop/IC/proj3/text-models-src/CMakeFiles/test_fcm_model.dir
+/home/bruno/Desktop/IC/proj3/text-models-src/CMakeFiles/lang.dir
+/home/bruno/Desktop/IC/proj3/text-models-src/CMakeFiles/findlang.dir
+/home/bruno/Desktop/IC/proj3/text-models-src/CMakeFiles/locatelang.dir
+/home/bruno/Desktop/IC/proj3/text-models-src/CMakeFiles/edit_cache.dir
+/home/bruno/Desktop/IC/proj3/text-models-src/CMakeFiles/rebuild_cache.dir

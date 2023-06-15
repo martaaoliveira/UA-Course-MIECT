@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -std=c++17 CMakeFiles/test_golomb.dir/test_golomb.cpp.o -o /home/bruno/Desktop/IC/proj2/opencv-example-bin/test_golomb  libbitstream.a libgolomb.a libbitstream.a 

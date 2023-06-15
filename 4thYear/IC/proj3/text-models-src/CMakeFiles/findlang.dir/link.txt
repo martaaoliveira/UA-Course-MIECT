@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -std=c++17 CMakeFiles/findlang.dir/findlang.cpp.o -o /home/bruno/Desktop/IC/proj3/text-models-bin/findlang  libfcm.a 

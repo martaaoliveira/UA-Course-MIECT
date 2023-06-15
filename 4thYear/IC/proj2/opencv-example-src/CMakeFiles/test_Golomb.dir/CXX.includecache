@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/marta/Desktop/Universidade/IC/proj2/opencv-example-src/BitStream.hpp
+iostream
+-
+fstream
+-
+string
+-
+stdlib.h
+-
+map
+-
+vector
+-
+
+/home/marta/Desktop/Universidade/IC/proj2/opencv-example-src/Golomb.hpp
+math.h
+-
+string
+-
+BitStream.hpp
+/home/marta/Desktop/Universidade/IC/proj2/opencv-example-src/BitStream.hpp
+
+/home/marta/Desktop/Universidade/IC/proj2/opencv-example-src/test_golomb.cpp
+Golomb.hpp
+/home/marta/Desktop/Universidade/IC/proj2/opencv-example-src/Golomb.hpp
+vector
+-
+

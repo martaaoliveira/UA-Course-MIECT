@@ -1,0 +1,10 @@
+/home/bruno/Desktop/IC/proj1/sndfile-example-src/CMakeFiles/wav_cp.dir
+/home/bruno/Desktop/IC/proj1/sndfile-example-src/CMakeFiles/wav_hist.dir
+/home/bruno/Desktop/IC/proj1/sndfile-example-src/CMakeFiles/wav_dct.dir
+/home/bruno/Desktop/IC/proj1/sndfile-example-src/CMakeFiles/wav_cmp.dir
+/home/bruno/Desktop/IC/proj1/sndfile-example-src/CMakeFiles/wav_quant.dir
+/home/bruno/Desktop/IC/proj1/sndfile-example-src/CMakeFiles/wav_effects.dir
+/home/bruno/Desktop/IC/proj1/sndfile-example-src/CMakeFiles/encoder.dir
+/home/bruno/Desktop/IC/proj1/sndfile-example-src/CMakeFiles/decoder.dir
+/home/bruno/Desktop/IC/proj1/sndfile-example-src/CMakeFiles/edit_cache.dir
+/home/bruno/Desktop/IC/proj1/sndfile-example-src/CMakeFiles/rebuild_cache.dir

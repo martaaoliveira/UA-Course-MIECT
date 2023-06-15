@@ -1,0 +1,13 @@
+/home/bruno/Desktop/IC/proj2/opencv-example-src/CMakeFiles/bitstream.dir
+/home/bruno/Desktop/IC/proj2/opencv-example-src/CMakeFiles/golomb.dir
+/home/bruno/Desktop/IC/proj2/opencv-example-src/CMakeFiles/audiocodec.dir
+/home/bruno/Desktop/IC/proj2/opencv-example-src/CMakeFiles/imagecodec.dir
+/home/bruno/Desktop/IC/proj2/opencv-example-src/CMakeFiles/copy_image.dir
+/home/bruno/Desktop/IC/proj2/opencv-example-src/CMakeFiles/ex_2.dir
+/home/bruno/Desktop/IC/proj2/opencv-example-src/CMakeFiles/test_golomb.dir
+/home/bruno/Desktop/IC/proj2/opencv-example-src/CMakeFiles/test_audiocodec.dir
+/home/bruno/Desktop/IC/proj2/opencv-example-src/CMakeFiles/test_audiocodec2.dir
+/home/bruno/Desktop/IC/proj2/opencv-example-src/CMakeFiles/test_golomb2.dir
+/home/bruno/Desktop/IC/proj2/opencv-example-src/CMakeFiles/test_imagecodec.dir
+/home/bruno/Desktop/IC/proj2/opencv-example-src/CMakeFiles/edit_cache.dir
+/home/bruno/Desktop/IC/proj2/opencv-example-src/CMakeFiles/rebuild_cache.dir
