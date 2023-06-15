@@ -1,0 +1,500 @@
+|Decoder_Parallel
+y[0] => m3.IN1
+y[0] => gateXOr2:xorc00.x0
+y[0] => gateXOr2:xorc10.x0
+y[0] => gateXOr2:xorc20.x0
+y[1] => gateXOr2:xorc00.x1
+y[1] => gateXOr2:xorc11.x0
+y[1] => gateXOr2:xorc21.x0
+y[2] => gateXOr2:xorc01.x0
+y[2] => gateXOr2:xorc10.x1
+y[2] => gateXOr2:xorc22.x0
+y[3] => gateXOr2:xorc01.x1
+y[3] => gateXOr2:xorc11.x1
+y[3] => gateXOr2:xorc23.x0
+y[4] => gateXOr2:xorc02.x0
+y[4] => gateXOr2:xorc12.x0
+y[4] => gateXOr2:xorc20.x1
+y[5] => gateXOr2:xorc02.x1
+y[5] => gateXOr2:xorc13.x0
+y[5] => gateXOr2:xorc21.x1
+y[6] => gateXOr2:xorc03.x0
+y[6] => gateXOr2:xorc12.x1
+y[6] => gateXOr2:xorc22.x1
+y[7] => gateXOr2:xorc03.x1
+y[7] => gateXOr2:xorc13.x1
+y[7] => gateXOr2:xorc23.x1
+m[0] <= gateAnd2:m_0.y
+m[1] <= gateAnd2:m_1.y
+m[2] <= gateAnd2:m_2.y
+m[3] <= m3.DB_MAX_OUTPUT_PORT_TYPE
+valid <= gateNOr3:Cvalid.y
+
+
+|Decoder_Parallel|gateXOr2:xorc00
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|gateXOr2:xorc01
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|gateXOr2:xorc02
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|gateXOr2:xorc03
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|gateXOr2:xorc10
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|gateXOr2:xorc11
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|gateXOr2:xorc12
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|gateXOr2:xorc13
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|gateXOr2:xorc20
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|gateXOr2:xorc21
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|gateXOr2:xorc22
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|gateXOr2:xorc23
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m0isOne
+c[0] => gateAnd2:and_01.x0
+c[0] => gateOr2:or_01.x0
+c[0] => gateNAnd2:nand_01.x0
+c[0] => gateNOr2:nor_01.x0
+c[1] => gateAnd2:and_01.x1
+c[1] => gateOr2:or_01.x1
+c[1] => gateNAnd2:nand_01.x1
+c[1] => gateNOr2:nor_01.x1
+c[2] => gateAnd2:and_23.x0
+c[2] => gateOr2:or_23.x0
+c[2] => gateNAnd2:nand_23.x0
+c[2] => gateNOr2:nor_23.x0
+c[3] => gateAnd2:and_23.x1
+c[3] => gateOr2:or_23.x1
+c[3] => gateNAnd2:nand_23.x1
+c[3] => gateNOr2:nor_23.x1
+mIsOne <= gateOr2:m_onef.y
+mError <= gateNOr2:m_Error.y
+
+
+|Decoder_Parallel|mC_decoder:m0isOne|gateAnd2:and_01
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m0isOne|gateAnd2:and_23
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m0isOne|gateOr2:or_01
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m0isOne|gateOr2:or_23
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m0isOne|gateAnd2:m_one1
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m0isOne|gateAnd2:m_one2
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m0isOne|gateOr2:m_onef
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m0isOne|gateNAnd2:nand_01
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m0isOne|gateNAnd2:nand_23
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m0isOne|gateNOr2:nor_01
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m0isOne|gateNOr2:nor_23
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m0isOne|gateAnd2:m_zero1
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m0isOne|gateAnd2:m_zero2
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m0isOne|gateOr2:m_zerof
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m0isOne|gateNOr2:m_Error
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m1isOne
+c[0] => gateAnd2:and_01.x0
+c[0] => gateOr2:or_01.x0
+c[0] => gateNAnd2:nand_01.x0
+c[0] => gateNOr2:nor_01.x0
+c[1] => gateAnd2:and_01.x1
+c[1] => gateOr2:or_01.x1
+c[1] => gateNAnd2:nand_01.x1
+c[1] => gateNOr2:nor_01.x1
+c[2] => gateAnd2:and_23.x0
+c[2] => gateOr2:or_23.x0
+c[2] => gateNAnd2:nand_23.x0
+c[2] => gateNOr2:nor_23.x0
+c[3] => gateAnd2:and_23.x1
+c[3] => gateOr2:or_23.x1
+c[3] => gateNAnd2:nand_23.x1
+c[3] => gateNOr2:nor_23.x1
+mIsOne <= gateOr2:m_onef.y
+mError <= gateNOr2:m_Error.y
+
+
+|Decoder_Parallel|mC_decoder:m1isOne|gateAnd2:and_01
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m1isOne|gateAnd2:and_23
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m1isOne|gateOr2:or_01
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m1isOne|gateOr2:or_23
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m1isOne|gateAnd2:m_one1
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m1isOne|gateAnd2:m_one2
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m1isOne|gateOr2:m_onef
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m1isOne|gateNAnd2:nand_01
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m1isOne|gateNAnd2:nand_23
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m1isOne|gateNOr2:nor_01
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m1isOne|gateNOr2:nor_23
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m1isOne|gateAnd2:m_zero1
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m1isOne|gateAnd2:m_zero2
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m1isOne|gateOr2:m_zerof
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m1isOne|gateNOr2:m_Error
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m2isOne
+c[0] => gateAnd2:and_01.x0
+c[0] => gateOr2:or_01.x0
+c[0] => gateNAnd2:nand_01.x0
+c[0] => gateNOr2:nor_01.x0
+c[1] => gateAnd2:and_01.x1
+c[1] => gateOr2:or_01.x1
+c[1] => gateNAnd2:nand_01.x1
+c[1] => gateNOr2:nor_01.x1
+c[2] => gateAnd2:and_23.x0
+c[2] => gateOr2:or_23.x0
+c[2] => gateNAnd2:nand_23.x0
+c[2] => gateNOr2:nor_23.x0
+c[3] => gateAnd2:and_23.x1
+c[3] => gateOr2:or_23.x1
+c[3] => gateNAnd2:nand_23.x1
+c[3] => gateNOr2:nor_23.x1
+mIsOne <= gateOr2:m_onef.y
+mError <= gateNOr2:m_Error.y
+
+
+|Decoder_Parallel|mC_decoder:m2isOne|gateAnd2:and_01
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m2isOne|gateAnd2:and_23
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m2isOne|gateOr2:or_01
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m2isOne|gateOr2:or_23
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m2isOne|gateAnd2:m_one1
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m2isOne|gateAnd2:m_one2
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m2isOne|gateOr2:m_onef
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m2isOne|gateNAnd2:nand_01
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m2isOne|gateNAnd2:nand_23
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m2isOne|gateNOr2:nor_01
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m2isOne|gateNOr2:nor_23
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m2isOne|gateAnd2:m_zero1
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m2isOne|gateAnd2:m_zero2
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m2isOne|gateOr2:m_zerof
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|mC_decoder:m2isOne|gateNOr2:m_Error
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|gateNOr3:Cvalid
+x0 => y.IN0
+x1 => y.IN1
+x2 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|gateAnd2:m_0
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|gateAnd2:m_1
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|gateAnd2:m_2
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|gateXOr4:d_0
+x0 => y.IN0
+x1 => y.IN1
+x2 => y.IN1
+x3 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|gateXOr4:d_1
+x0 => y.IN0
+x1 => y.IN1
+x2 => y.IN1
+x3 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|gateXOr4:d_2
+x0 => y.IN0
+x1 => y.IN1
+x2 => y.IN1
+x3 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|gateNOr3:d
+x0 => y.IN0
+x1 => y.IN1
+x2 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder_Parallel|gateXOr2:checkY0
+x0 => y.IN0
+x1 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

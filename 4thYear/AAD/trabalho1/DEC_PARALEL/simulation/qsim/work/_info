@@ -1,0 +1,103 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/bjsil/OneDrive/Ambiente de Trabalho/AAD/assignment1/HAD_T2G4/DEC/simulation/qsim
+Edecoder_parallel
+Z1 w1668111111
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 3HQPc5MVbmOPN?>a5EBYj2
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 jZ]H46BQLgIP5mfRTO`3B1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 ^Ch;U@;bMk1;>A2B<UV`k2
+!i122 52
+R0
+Z9 8Decoder_Parallel.vho
+Z10 FDecoder_Parallel.vho
+l0
+L37 1
+VNz@38`P:;h@JBR3L?=7YY2
+!s100 hBW]WVf<;B>D935zH_=:Z3
+Z11 OV;C;2020.1;71
+32
+Z12 !s110 1668111112
+!i10b 1
+Z13 !s108 1668111112.000000
+Z14 !s90 -work|work|Decoder_Parallel.vho|
+Z15 !s107 Decoder_Parallel.vho|
+!i113 1
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 16 decoder_parallel 0 22 Nz@38`P:;h@JBR3L?=7YY2
+!i122 52
+l152
+L69 824
+V`5ICe7gP]Q2L>>L8ET8mm3
+!s100 g><W9SS@U6KbHC_iOjhmm1
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Edecoder_parallel_vhd_vec_tst
+Z18 w1668111109
+R6
+R7
+!i122 53
+R0
+Z19 8Waveform.vwf.vht
+Z20 FWaveform.vwf.vht
+l0
+L32 1
+V991SVQD38fHCK?PCRBHMc0
+!s100 nXHR>8SKlMTADLZcI<EfC3
+R11
+32
+R12
+!i10b 1
+R13
+Z21 !s90 -work|work|Waveform.vwf.vht|
+Z22 !s107 Waveform.vwf.vht|
+!i113 1
+R16
+R17
+Adecoder_parallel_arch
+R6
+R7
+Z23 DEx4 work 28 decoder_parallel_vhd_vec_tst 0 22 991SVQD38fHCK?PCRBHMc0
+!i122 53
+l55
+Z24 L34 154
+Z25 VnJ@iC^^EXI5UHD[O_RTlV3
+Z26 !s100 H6HYX]A3M3zOZ?_Z986fJ1
+R11
+32
+R12
+!i10b 1
+R13
+R21
+R22
+!i113 1
+R16
+R17

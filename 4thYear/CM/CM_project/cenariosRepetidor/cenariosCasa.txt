@@ -1,0 +1,6 @@
+Medicoes casa (Bruno)
+
+cenario1: dois pc's perto do router
+cenario2: um pc perto e outro no quarto
+cenario3: igual cenario2 com extensor meo
+cenario4: igual cenario2 com repetidor

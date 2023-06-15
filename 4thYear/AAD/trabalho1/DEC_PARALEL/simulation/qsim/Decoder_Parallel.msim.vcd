@@ -1,0 +1,645 @@
+$comment
+	File created using the following command:
+		vcd file Decoder_Parallel.msim.vcd -direction
+$end
+$date
+	Thu Nov 10 20:11:52 2022
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module decoder_parallel_vhd_vec_tst $end
+$var wire 1 ! c_d $end
+$var wire 1 " c_y0 $end
+$var wire 1 # f_c $end
+$var wire 1 $ m [3] $end
+$var wire 1 % m [2] $end
+$var wire 1 & m [1] $end
+$var wire 1 ' m [0] $end
+$var wire 1 ( m3c $end
+$var wire 1 ) valid $end
+$var wire 1 * y [7] $end
+$var wire 1 + y [6] $end
+$var wire 1 , y [5] $end
+$var wire 1 - y [4] $end
+$var wire 1 . y [3] $end
+$var wire 1 / y [2] $end
+$var wire 1 0 y [1] $end
+$var wire 1 1 y [0] $end
+
+$scope module i1 $end
+$var wire 1 2 gnd $end
+$var wire 1 3 vcc $end
+$var wire 1 4 unknown $end
+$var wire 1 5 devoe $end
+$var wire 1 6 devclrn $end
+$var wire 1 7 devpor $end
+$var wire 1 8 ww_devoe $end
+$var wire 1 9 ww_devclrn $end
+$var wire 1 : ww_devpor $end
+$var wire 1 ; ww_y [7] $end
+$var wire 1 < ww_y [6] $end
+$var wire 1 = ww_y [5] $end
+$var wire 1 > ww_y [4] $end
+$var wire 1 ? ww_y [3] $end
+$var wire 1 @ ww_y [2] $end
+$var wire 1 A ww_y [1] $end
+$var wire 1 B ww_y [0] $end
+$var wire 1 C ww_m [3] $end
+$var wire 1 D ww_m [2] $end
+$var wire 1 E ww_m [1] $end
+$var wire 1 F ww_m [0] $end
+$var wire 1 G ww_valid $end
+$var wire 1 H ww_c_d $end
+$var wire 1 I ww_c_y0 $end
+$var wire 1 J ww_f_c $end
+$var wire 1 K ww_m3c $end
+$var wire 1 L \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 M \y[3]~input_o\ $end
+$var wire 1 N \y[2]~input_o\ $end
+$var wire 1 O \xorc01|y~combout\ $end
+$var wire 1 P \y[6]~input_o\ $end
+$var wire 1 Q \y[7]~input_o\ $end
+$var wire 1 R \xorc03|y~combout\ $end
+$var wire 1 S \y[1]~input_o\ $end
+$var wire 1 T \xorc11|y~combout\ $end
+$var wire 1 U \y[0]~input_o\ $end
+$var wire 1 V \y[5]~input_o\ $end
+$var wire 1 W \xorc13|y~combout\ $end
+$var wire 1 X \y[4]~input_o\ $end
+$var wire 1 Y \xorc12|y~combout\ $end
+$var wire 1 Z \m1isOne|m_Error|y~0_combout\ $end
+$var wire 1 [ \xorc00|y~combout\ $end
+$var wire 1 \ \xorc02|y~combout\ $end
+$var wire 1 ] \xorc23|y~combout\ $end
+$var wire 1 ^ \xorc22|y~combout\ $end
+$var wire 1 _ \xorc21|y~combout\ $end
+$var wire 1 ` \xorc20|y~combout\ $end
+$var wire 1 a \m2isOne|m_Error|y~0_combout\ $end
+$var wire 1 b \m_0|y~combout\ $end
+$var wire 1 c \m1isOne|m_onef|y~0_combout\ $end
+$var wire 1 d \m0isOne|m_Error|y~0_combout\ $end
+$var wire 1 e \m_1|y~combout\ $end
+$var wire 1 f \m_2|y~combout\ $end
+$var wire 1 g \d_0|y~combout\ $end
+$var wire 1 h \d_1|y~0_combout\ $end
+$var wire 1 i \checkY0|y~combout\ $end
+$var wire 1 j \d_2|y~combout\ $end
+$var wire 1 k \m3~0_combout\ $end
+$var wire 1 l \Cvalid|y~0_combout\ $end
+$var wire 1 m \d|y~0_combout\ $end
+$var wire 1 n \f_check~0_combout\ $end
+$var wire 1 o \ALT_INV_y[7]~input_o\ $end
+$var wire 1 p \ALT_INV_y[6]~input_o\ $end
+$var wire 1 q \ALT_INV_y[5]~input_o\ $end
+$var wire 1 r \ALT_INV_y[4]~input_o\ $end
+$var wire 1 s \ALT_INV_y[3]~input_o\ $end
+$var wire 1 t \ALT_INV_y[2]~input_o\ $end
+$var wire 1 u \ALT_INV_y[1]~input_o\ $end
+$var wire 1 v \ALT_INV_y[0]~input_o\ $end
+$var wire 1 w \d|ALT_INV_y~0_combout\ $end
+$var wire 1 x \Cvalid|ALT_INV_y~0_combout\ $end
+$var wire 1 y \d_2|ALT_INV_y~combout\ $end
+$var wire 1 z \d_0|ALT_INV_y~combout\ $end
+$var wire 1 { \d_1|ALT_INV_y~0_combout\ $end
+$var wire 1 | \checkY0|ALT_INV_y~combout\ $end
+$var wire 1 } \m_1|ALT_INV_y~combout\ $end
+$var wire 1 ~ \m0isOne|m_Error|ALT_INV_y~0_combout\ $end
+$var wire 1 !! \m1isOne|m_onef|ALT_INV_y~0_combout\ $end
+$var wire 1 "! \m1isOne|m_Error|ALT_INV_y~0_combout\ $end
+$var wire 1 #! \xorc13|ALT_INV_y~combout\ $end
+$var wire 1 $! \xorc12|ALT_INV_y~combout\ $end
+$var wire 1 %! \xorc11|ALT_INV_y~combout\ $end
+$var wire 1 &! \m2isOne|m_Error|ALT_INV_y~0_combout\ $end
+$var wire 1 '! \xorc23|ALT_INV_y~combout\ $end
+$var wire 1 (! \xorc22|ALT_INV_y~combout\ $end
+$var wire 1 )! \xorc21|ALT_INV_y~combout\ $end
+$var wire 1 *! \xorc20|ALT_INV_y~combout\ $end
+$var wire 1 +! \xorc03|ALT_INV_y~combout\ $end
+$var wire 1 ,! \xorc02|ALT_INV_y~combout\ $end
+$var wire 1 -! \xorc00|ALT_INV_y~combout\ $end
+$var wire 1 .! \xorc01|ALT_INV_y~combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0"
+0#
+0(
+1)
+02
+13
+x4
+15
+16
+17
+18
+19
+1:
+1G
+1H
+0I
+0J
+0K
+xL
+0M
+1N
+1O
+0P
+1Q
+1R
+1S
+1T
+0U
+0V
+1W
+1X
+1Y
+0Z
+1[
+1\
+1]
+1^
+1_
+1`
+0a
+1b
+1c
+0d
+1e
+1f
+1g
+1h
+0i
+1j
+0k
+0l
+0m
+0n
+0o
+1p
+1q
+0r
+1s
+0t
+0u
+1v
+1w
+1x
+0y
+0z
+0{
+1|
+0}
+1~
+0!!
+1"!
+0#!
+0$!
+0%!
+1&!
+0'!
+0(!
+0)!
+0*!
+0+!
+0,!
+0-!
+0.!
+1*
+0+
+0,
+1-
+0.
+1/
+10
+01
+1;
+0<
+0=
+1>
+0?
+1@
+1A
+0B
+0C
+1D
+1E
+1F
+0$
+1%
+1&
+1'
+$end
+#100000
+1+
+1,
+1.
+11
+1B
+1?
+1=
+1<
+1P
+1V
+1M
+1U
+0v
+0s
+0q
+0p
+0R
+0Y
+0^
+0W
+0\
+0_
+0O
+0T
+0]
+0h
+0[
+0`
+1k
+1*!
+1-!
+1{
+1'!
+1%!
+1.!
+1)!
+1,!
+1#!
+1(!
+1$!
+1+!
+0c
+1m
+0b
+0f
+0w
+1!!
+1C
+1K
+0e
+1$
+1(
+1}
+0D
+0F
+0H
+0m
+0'
+0%
+1w
+0!
+0E
+0&
+1H
+1!
+#220000
+0,
+0.
+0*
+00
+0A
+0?
+0=
+0;
+0Q
+0V
+0M
+0S
+1u
+1s
+1q
+1o
+1R
+1\
+1O
+1[
+0-!
+0.!
+0,!
+0+!
+1b
+1F
+1'
+#320000
+1,
+10
+0+
+0/
+1A
+0@
+1=
+0<
+0P
+1V
+0N
+1S
+0u
+1t
+0q
+1p
+0R
+1Y
+1W
+0\
+0O
+1T
+0[
+1h
+0{
+1-!
+0%!
+1.!
+1,!
+0#!
+0$!
+1+!
+1c
+0b
+1m
+0w
+0!!
+1e
+0}
+0F
+0H
+0m
+0'
+1w
+0!
+1E
+1&
+1H
+1!
+#410000
+0,
+00
+1.
+1*
+0A
+1?
+0=
+1;
+1Q
+0V
+1M
+0S
+1u
+0s
+1q
+0o
+1R
+1\
+1O
+1[
+0-!
+0.!
+0,!
+0+!
+1b
+1F
+1'
+#510000
+10
+0*
+1/
+0-
+1A
+1@
+0>
+0;
+0Q
+0X
+1N
+1S
+0u
+0t
+1r
+1o
+0R
+0W
+1]
+0Y
+0\
+1`
+0O
+1^
+0T
+0[
+1_
+0h
+1{
+0)!
+1-!
+1%!
+0(!
+1.!
+0*!
+1,!
+1$!
+0'!
+1#!
+1+!
+0c
+0b
+1f
+1m
+0w
+1!!
+0e
+1}
+1D
+0F
+0H
+0m
+0'
+1%
+1w
+0!
+0E
+0&
+1H
+1!
+#630000
+00
+1*
+1,
+0.
+0A
+0?
+1=
+1;
+1Q
+1V
+0M
+0S
+1u
+1s
+0q
+0o
+1R
+1\
+1O
+1[
+0-!
+0.!
+0,!
+0+!
+1b
+1F
+1'
+#710000
+10
+0,
+0/
+1+
+1A
+0@
+0=
+1<
+1P
+0V
+0N
+1S
+0u
+1t
+1q
+0p
+0R
+1Y
+1W
+0\
+0O
+1T
+0[
+1h
+0{
+1-!
+0%!
+1.!
+1,!
+0#!
+0$!
+1+!
+1c
+0b
+1m
+0w
+0!!
+1e
+0}
+0F
+0H
+0m
+0'
+1w
+0!
+1E
+1&
+1H
+1!
+#800000
+00
+1,
+0*
+1.
+0A
+1?
+1=
+0;
+0Q
+1V
+1M
+0S
+1u
+0s
+0q
+1o
+1R
+1\
+1O
+1[
+0-!
+0.!
+0,!
+0+!
+1b
+1F
+1'
+#920000
+0,
+0.
+0+
+01
+0B
+0?
+0=
+0<
+0P
+0V
+0M
+0U
+1v
+1s
+1q
+1p
+0R
+0Y
+0^
+0W
+0\
+0_
+0O
+0T
+0]
+0h
+0[
+0`
+0k
+1*!
+1-!
+1{
+1'!
+1%!
+1.!
+1)!
+1,!
+1#!
+1(!
+1$!
+1+!
+0c
+1m
+0b
+0f
+0w
+1!!
+0C
+0K
+0e
+0$
+0(
+1}
+0D
+0F
+0H
+0m
+0'
+0%
+1w
+0!
+0E
+0&
+1H
+1!
+#1000000
