@@ -1,0 +1,19 @@
+programming          11      12, 6   HORIZONTAL_LEFT
+java                 4        9, 1   HORIZONTAL_RIGHT
+words                5       11,11   DIAGONAL_UP_LEFT
+lines                5        5, 5   VERTICAL_UP
+civil                5        6,11   HORIZONTAL_RIGHT
+test                 4        2, 8   VERTICAL_DOWN
+stack                5        1, 1   VERTICAL_DOWN
+s t a c k . . . . . . . 
+. . . . . g . t e s t . 
+. . . . . n . . . . . . 
+. . . . . i . . . . . . 
+s e n i l m . . . . . . 
+. . . . . m . . . . c . 
+. . . . . a s . . . i . 
+. . . . . r . d . . v . 
+j . . . . g . . r . i . 
+a . . . . o . . . o l . 
+v . . . . r . . . . w . 
+a . . . . p . . . . . . 

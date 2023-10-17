@@ -1,0 +1,19 @@
+PROGRAMMING     11     1,7   DOWN
+WORDS           5      8,1   UP
+LINES           5      6,5   DOWN
+CIVIL           5      11,2   UP
+STACK           5      8,6   UP
+JAVA            4      2,2   DOWNRIGHT
+TEST            4      6,10   DOWN
+
+. . . . . . P . . . . 
+. J . . . . R . . . . 
+. . A . . . O . . . . 
+S . . V . K G . . . . 
+D . . . A C R . . . . 
+R . . . L A A . . T . 
+O L . . I T M . . E . 
+W I . . N S M . . S . 
+. V . . E . I . . T . 
+. I . . S . N . . . . 
+. C . . . . G . . . . 

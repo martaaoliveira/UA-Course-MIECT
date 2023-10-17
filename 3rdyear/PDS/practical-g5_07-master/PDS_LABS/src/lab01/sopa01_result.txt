@@ -1,0 +1,20 @@
+PROGRAMMING     11    12,6        up
+JAVA            4     9,1        down
+WORDS           5     0,2        upright
+LINES           5     5,5        left
+CIVIL           5     6,11       down
+TEST            4     2,8        right
+STACK           5     1,1        right
+. . W. . . . . . . . . . 
+. STACK. . . . . . . 
+. . . . . . G. TEST. 
+. . . . . . N. . . . . . 
+. . . . . . I. . . . . . 
+. SENILM. . . . . . 
+. . . . . . M. . . . C. 
+. . . . . . A. . . . I. 
+. . . . . . R. . . . V. 
+. J. . . . G. . . . I. 
+. A. . . . O. . . . L. 
+. V. . . . R. . . . . . 
+. A. . . . P. . . . . . 
