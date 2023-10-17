@@ -1,0 +1,40 @@
+{
+	"empresas" : [
+		{
+			"nome": "Dias e Machado",
+			"morada": "Rua Sobe e Desce",
+			"nif": "369369369",
+			"cae": "96396",
+			"contacto": "913699669",
+			"email": "dias_machado@gmail.com",
+			"regioes": "Açores",
+			"cidades": "Ponta Delgada",
+			"website": "diasemachado.pt"
+		},
+		
+		{
+			"nome": "Grupo Hoteleiro Serra e Mar",
+			"morada": "Marco de Canaveses",
+			"nif": "123456789",
+			"cae": "12345",
+			"contacto": "963547254",
+			"email": "serramar@hotmail.com",
+			"regioes": "Norte",
+			"cidades": "Porto",
+			"website": "serraemar.pt"
+		},
+
+		{
+			"nome": "Restaurante Açúcar e Canela",
+			"morada": "Avenida 25 de Abril",
+			"nif": "1456987523",
+			"cae": "54329",
+			"contacto": "924567158",
+			"email": "acucar_canela@sapo.pt",
+			"regioes": "Centro",
+			"cidades": "Aveiro",
+			"website": "restauranteacucarcanela.pt"
+		}
+	
+	]
+}

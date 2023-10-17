@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "537054634839",
+    "project_id": "peci-sgd",
+    "storage_bucket": "peci-sgd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537054634839:android:bba87f3aac3132aee09412",
+        "android_client_info": {
+          "package_name": "com.example.ssd_frontend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537054634839-39c253hvfa1oc9tot5lovg0jspj8aok5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBe5YfELF08QNkzzhZjTH3a-R3J-Qt_dcs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537054634839-39c253hvfa1oc9tot5lovg0jspj8aok5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
