@@ -1,0 +1,20 @@
+Classe java.util.calendar
+
+Padrões de construção:
+
+Classe abstrata para manipular uma data e/ou tempo.
+
+A classe java.util.Calendar implementa o padrão Factory Method:
+	->são delegadas a responsabilidade de criar objetos a uma classe separada.
+	->Esta classe usa metodos estaticos para instanciar objetos e dependendo desse objeto são retornados instância de subclasses que tratam desse tipo de objet em vez de usar diretamente o construtor.
+	
+	->Dessa forma, um objeto pode ser reutilizado ao contrario quando usamos o operador "new".
+	
+	->Existem funções específicas para criar um dado objeto por exemplo:
+
+		<getInstance()> retorna uma instância de um dos subtipos de Calendar, dependendo da localização e fuso horário do sistema que está a ser executado
+
+A classe java.util.Calendar também implementa o padrão Singleton:
+	->O construtor da classe é declarado como privado, o que impede que outras classes a instanciem a classe diretamente.
+	->A classe possui um método estático getInstance() que retorna uma única instância da classe Calendar.
+	->O método getInstance() usa um campo estático static para armazenar e retornar a única instância da classe Calendar.

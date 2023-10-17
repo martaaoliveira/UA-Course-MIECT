@@ -1,0 +1,12 @@
+This is a great text generator. 
+It does two things: it saves you from having to deal with every single line of text you may encounter but also allows you to quickly create, edit, republish, share and more! 
+Not only does it solve a few problems of the web's standard library, but it is a great way to write code without making the Web a dull, boring experience.
+The most interesting bit to me about the text generator is the number of characters that are added to each line of text as you type. 
+Even though the generator does not use CSS to represent their form and formatting, using a small number of different markup elements makes for an easy and easy process. 
+What we are doing here is allowing JavaScript to represent as little as possible within the form so as not to become an awkward time consuming experience for you.
+
+How to start writing JavaScript using the text generator:
+With your JavaScript installed you can start writing your first code in an interesting way:
+// <script src="//github.com/daniel-pau/trurojs.js"></script> export class Trurojs { display: block; constructor(private constructor($twice, function(){return this.twice.width();})->before(){return this.twice.innerHTML();}()); }
+
+The input in the prototype class does not have to be the same as the text in the document or the document DOM. 

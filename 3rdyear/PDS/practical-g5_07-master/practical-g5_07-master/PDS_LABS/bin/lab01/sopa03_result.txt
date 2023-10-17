@@ -1,0 +1,17 @@
+AVEIRO          6     1,1        right
+AVEIRO          6     4,5        right
+LARA            4     10,7        right
+MARTA           5     11,4        right
+STUDY           5     8,1        right
+. . . . . . . . . . . . 
+. AVEIRO. . . . . 
+. . . . . . . . . . . . 
+. . . . . . . . . . . . 
+. . . . . AVEIRO. 
+. . . . . . . . . . . . 
+. . . . . . . . . . . . 
+. . . . . . . . . . . . 
+. STUDY. . . . . . 
+. . . . . . . . . . . . 
+. . . . . . . LARA. 
+. . . . MARTA. . . 

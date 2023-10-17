@@ -1,0 +1,14 @@
+java.io.InputStream: 
+A classe InputStream define o método (abstrato) read() que é um exemplo do padrão Template Method. Vão existor várias implementações específicas do método read() nas subclasses, como FileInputStream, ByteArrayInputStream etc. 
+
+
+java.io.OutputStream: 
+A classe OutputStream define o método (abstrato) write(). Mais uma vez, existem várias implementações do método write() nas suas subclasses, como FileOutputStream, ByteArrayOutputStream etc. Cada uma dessas subclasses tem uma implementação específica do método write().
+
+
+java.io.Reader: 
+Esta classe para leitura de caracteres define o método (abstrato) read(), que é um exemplo do padrão Template Method. As subclasses como FileReader, BufferedReader, StringReader, etc., têm a sua própria implementação do método read(). A estrutura do processo de leitura é mantida em Reader, mas as subclasses determinam exatamente como os dados são lidos.
+
+Portanto, o padrão Template Method é um padrão comportamental que define o 'esqueleto' de um algoritmo fornecendo uma abstração para as subclasses. Fica a responsabilidade de cada subclasse redefinir as etapas de um algoritmo sem alterar a estrutura dele.
+
+
