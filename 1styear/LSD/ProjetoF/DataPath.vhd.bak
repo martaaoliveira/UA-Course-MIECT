@@ -1,0 +1,15 @@
+library ieee;
+use ieee.std_logic_1164.ALL;
+
+
+entity DataPath is
+PORT(
+
+	clk     : in  std_logic;
+   reset   : in  std_logic;
+ 		 
+end DataPath;
+
+
+
+architecture behavioral of DataPath is

@@ -1,0 +1,21 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+entity Mux8_1 is
+port(sel : in std_logic;
+input0 : in std_logic_vector(7 downto 0);
+input1 : in std_logic_vector(7 downto 0);
+muxOut : out std_logic_vector(7 downto 0));
+end Mux8_1;
+
+
+architecture Behavioral of Mux8_1 is
+begin
+process(sel, input0, input1)
+begin
+if (sel = '0') then
+muxOut <= input0;
+else
+muxOut <= input1;
+end if;
+end process;
+end Behavioral;

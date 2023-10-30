@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Apr 16 11:33:32 2020
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : ShiftRegister_Demo
+Top-level Entity Name : ShiftRegister4
+Family : Cyclone IV E
+Total logic elements : 4
+    Total combinational functions : 0
+    Dedicated logic registers : 4
+Total registers : 4
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

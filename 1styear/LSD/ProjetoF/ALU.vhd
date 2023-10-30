@@ -1,0 +1,120 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+
+
+entity ALU is
+
+port(operation : in std_logic_vector(3 downto 0);
+op1 : in std_logic_vector(7 downto 0);
+op2 : in std_logic_vector(7 downto 0);
+shAmount2 : in std_logic_vector(3 downto 0);
+res : out std_logic_vector(7 downto 0));
+
+end ALU;
+
+
+
+architecture Behavioral of ALU is
+
+signal s_multResS : std_logic_vector(15 downto 0);
+signal s_multResC : std_logic_vector(15 downto 0);
+signal s_shAmount2 : integer;
+
+
+
+begin
+
+s_multResS <= std_logic_vector(unsigned(op1) * unsigned(op2));
+s_multResC <= std_logic_vector(signed(op1) * signed(op2));
+s_shAmount2 <= to_integer(unsigned(op2));
+
+process(operation, op1, op2,s_multResS,s_multResC,s_shAmount2)
+begin
+case operation is
+
+when "0000" => -- Addition
+   res <=  std_logic_vector(unsigned(op1) + unsigned(op2));
+	
+  when "0001" => -- Subtraction
+   res <=  std_logic_vector(unsigned(op1) - unsigned(op2)); 
+	
+when "0010" => --And
+ res <= op1 and op2;
+ 
+when "0011" => -- or
+  res <= op1 or op2;
+  
+when "0100" => -- Xor
+   res <= op1 xor op2;
+	
+when "0101" => -- NOR
+   res <= op1 nor op2;
+	
+	
+when "0110" =>
+		res <= s_multResS(7 downto 0);
+			
+when "0111" =>
+		res <= s_multResC(7 downto 0);
+	
+	
+	
+when "1000" => --  Shift left
+   res <=  std_logic_vector(shift_left(unsigned(op1), s_shAmount2));
+	
+when "1001" => -- Shift Right
+   res<= std_logic_vector(shift_right(unsigned(op1), s_shAmount2));
+
+when "1010" => 
+	res<= std_logic_vector(shift_right(signed(op1), s_shAmount2));
+	
+when "1011" => -- Equal comparison   
+ if(unsigned(op1)  = unsigned(op2)) then
+   res <= "00000001";
+ else
+  res <= "00000000" ;
+  end if;
+	
+
+when "1100" => -- comparison
+  if(signed(op1)< signed(op2)) then
+    res <= "00000001" ;
+   else
+   res <= "00000000";
+   end if; 
+
+when "1101" => -- comparison
+   if(unsigned(op1) < unsigned(op2)) then
+    res <= "00000001";
+   else
+   res <= "00000000";
+   end if;
+	
+  
+	
+when "1110" => -- comparison  
+	if(signed(op1) > signed(op2)) then
+    res <= "00000001" ;
+   else
+    res <= "00000000" ;
+   end if;
+	
+when "1111"  => -- comparison  
+		if(unsigned(op1) > unsigned(op2)) then
+			res <= "00000001" ;
+		else
+			res <= "00000000" ;
+		end if;
+when others => res <= (others => '0');
+	
+end case;
+end process;
+ 
+
+ 
+end Behavioral;
+
+
+

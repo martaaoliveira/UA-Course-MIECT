@@ -1,0 +1,10 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity RAM_1P_16_8_Tb is
+end RAM_1P_16_8_Tb;
+
+architecture Stimulus of RAM_1P_16_8_Tb is
+	signal s_clk, s_writeEnable    : std_logic;
+	signal s_address 				    : std_logic_vector(3 downto 0);
+	signal s_writeData, s_ReadData : std_logic_vector(7 downto 0);

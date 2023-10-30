@@ -1,0 +1,41 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+
+entity ALU_Tb is
+end ALU_Tb;
+
+architecture Stimulus of ALU_Tb is
+	signal s_operation, s_shAmount2 : std_logic_vector(3 downto 0);
+	signal s_op1, s_op2 		: std_logic_vector(7 downto 0);
+	signal s_res				: std_logic_vector(7 downto 0);
+	
+	
+begin
+	uut : entity work.ALU(Behavioral)
+		port map(operation		=> s_operation,
+					op1		=> s_op1,
+					op2		=> s_op2,
+					shAmount2 => s_shAmount2,
+					res		=> s_res);
+	 
+	stim_process : process
+	begin
+		s_op1 <= "00000001";
+		s_op2 <= "00000010";
+		s_operation <= "0000";
+		wait for 50 ns;
+		
+		s_op1 <= "10011010";
+		s_op2 <= "00000001";
+		s_operation  <= "1000";
+		wait for 50 ns;
+		
+		
+--		s_op1 <= "00000010";
+--		s_op2 <= "00000001";
+--		s_operation  <= "0001";
+--		wait for 50 ns;
+--		
+	end process;
+end Stimulus;

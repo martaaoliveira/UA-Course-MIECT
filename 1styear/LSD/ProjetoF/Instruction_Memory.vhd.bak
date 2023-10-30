@@ -1,0 +1,36 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+
+
+entity Instruction_Memory is
+port (
+ RI: in std_logic;
+ RA : in std_logic(15 downto 0);
+ RD: out  std_logic_vector(15 downto 0));
+end Instruction_Memory;
+
+
+
+architecture Behavioral of Instruction_Memory is
+signal mem_offset: std_logic_vector(2 downto 0);
+
+begin
+		if RI = '1' then
+			case mem_offset is
+				when 	"000000" => RD <= "001000" & "00001" & "00001" & x"0005"; -- addi $1, $1, 5
+				when 	"000001" => RD <= "101011" & "00000" & "00001" & x"0000"; -- sw $1, 0($0)
+				when 	"000010" => RD <= "100101" & "00000" & "00010" & x"0000"; -- lw $2, 0($0)
+				when 	"000011" => RD <= "001000" & "00010" & "00100" & x"0005"; -- addi $4, $2, 5
+				when 	"000100" => RD <= "101011" & "00000" & "00100" & x"0008"; -- sw $4, 8($0)
+				when 	others  => RD <= (others => 'X');
+			end case;
+    		end if;
+  	end process; 
+
+
+
+
+ 
+end Behavioral;

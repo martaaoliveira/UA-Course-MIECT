@@ -1,0 +1,9 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+
+entity ROM_16_8 is
+port(address : in std_logic_vector(3 downto 0);
+dataOut : out std_logic_vector(7 downto 0));
+end ROM_16_8;

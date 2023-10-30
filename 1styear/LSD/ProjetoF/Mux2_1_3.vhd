@@ -1,0 +1,21 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity Mux2_1_3 is --multiplexer RegDst
+port(sel : in std_logic;
+dataln0 : in std_logic_vector(2 downto 0);
+dataln1 : in std_logic_vector(2 downto 0);
+y : out std_logic_vector(2 downto 0));
+end Mux2_1_3;
+
+architecture Behavioral of Mux2_1_3 is
+begin
+process(sel, dataln0, dataln1)
+begin
+if (sel = '0') then
+y <= dataln0;
+else
+y <= dataln1;
+end if;
+end process;
+end Behavioral;

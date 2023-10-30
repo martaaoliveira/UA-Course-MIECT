@@ -1,0 +1,11 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+
+
+port(	writeClk		: in std_logic;
+	writeEnable : in std_logic;
+	writeData	: in std_logic_vector((wordLen-1) downto 0);
+	address		: in std_logic_vector(potencia2_nWords-1 downto 0);
+	readData		: out std_logic_vector((wordLen-1) downto 0));
