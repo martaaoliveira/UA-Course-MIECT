@@ -24,11 +24,28 @@ def waitforEnter(fstop=False):
             input("Press ENTER to continue.")
             
 ## -- 3 -- ##
+
+# features: É a matriz de características (ou atributos) onde cada linha representa uma observação e cada coluna representa um atributo específico.
+# oClass: É a matriz de classes correspondentes a cada observação em features.
+# f1index e f2index: São os índices dos atributos que você deseja plotar um contra o ou
+
+# f1index representa o índice do atributo que será plotado no eixo x do gráfico.
+# f2index representa o índice do atributo que será plotado no eixo y do gráfico.
+
 def plotFeatures(features,oClass,f1index=0,f2index=1):
     nObs,nFea=features.shape
     colors=['b','g','r']
+    #blue BROWSING
+    #green for YOUTUBE
+    #RED for Mining
+
     for i in range(nObs):
         plt.plot(features[i,f1index],features[i,f2index],'o'+colors[int(oClass[i])])
+
+    # Adicionar nomes aos eixos e título
+    plt.xlabel(f'Feature {f1index}')
+    plt.ylabel(f'Feature {f2index}')
+    plt.title(f'Gráfico de Features {f1index} vs {f2index}')
 
     plt.show()
     waitforEnter()
@@ -56,6 +73,8 @@ def distance(c,p):
     #return(np.sqrt(np.sum(np.square((p-c)/c))))
 
 ########### Main Code #############
+
+
 Classes={0:'Browsing',1:'YouTube',2:'Mining'}
 plt.ion()
 nfig=1
@@ -65,25 +84,90 @@ features_browsing=np.loadtxt("BrowsingAllF.dat")
 features_yt=np.loadtxt("YouTubeAllF.dat")
 features_mining=np.loadtxt("MiningAllF.dat")
 
+#It assigns class labels (0 for browsing, 1 for YouTube, and 2 for mining) to the respective datasets
+#cada classe vai conter:mean, median and standard deviation  and also the silence periods features(mean median and deviation) for upload and download therefore: 6*2
 oClass_browsing=np.ones((len(features_browsing),1))*0
 oClass_yt=np.ones((len(features_yt),1))*1
 oClass_mining=np.ones((len(features_mining),1))*2
 
+# empilhar esses arrays verticalmente usando np.vstack(), você cria um único conjunto de features que combina todas essas fontes de dados verticalmente. 
+#resulta num conjunto de features que contém todos os dados dessas diferentes fontes combinados verticalmente.
 features=np.vstack((features_yt,features_browsing,features_mining))
+#print("features\n")
+#print(features)
+#print("\n")
+#print("oclass\n")
+#um único array oClass que contém todas as classes correspondentes às observações do conjunto de dados combinado features.
 oClass=np.vstack((oClass_yt,oClass_browsing,oClass_mining))
+#print(oClass)
 
+# Features
+# [[1.69263e+05 0.00000e+00 4.88981e+05 ... 6.20000e+01 2.00000e+00
+#   1.00000e+00]
+#  [1.67420e+05 0.00000e+00 4.84743e+05 ... 5.90000e+01 3.00000e+00
+#   1.00000e+00]
+#  [1.55259e+05 0.00000e+00 4.63472e+05 ... 5.80000e+01 3.00000e+00
+#   1.00000e+00]
+#  ...
+#  [9.60000e+01 0.00000e+00 3.93000e+02 ... 4.50000e+01 5.00000e+00
+#   2.00000e+00]
+#  [9.60000e+01 0.00000e+00 3.93000e+02 ... 4.60000e+01 5.00000e+00
+#   2.00000e+00]
+#  [9.30000e+01 0.00000e+00 3.90000e+02 ... 4.60000e+01 5.00000e+00
+#   2.00000e+00]]
+
+# oclass
+
+# [[1.]
+#  [1.]
+#  [1.]
+#  [1.]
+#  [1.]
+#  [1.]
+#  [1.]
+#  [1.]
+#  [1.]
+#  [1.]
+#  [1.]
+#  [1.]
+#  [1.]
+#.....
+
+# Upload                  | Download    
+# m      m    d    m m d    m   m   d   m  m d 
+# 169263 0 488981 62 2 1   4912 0 13927 62 2 1
+#....
+#...
 print('Train Silence Features Size:',features.shape)
 plt.figure(2)
-plotFeatures(features,oClass,4,10)
-plt.figure(3)
-plotFeatures(features,oClass,0,7)
-plt.figure(4)
-plotFeatures(features,oClass,2,8)
+plotFeatures(features,oClass,4,10) #mediana silencio upload vs mediana silencio download
+#Youtube tem poucos periodos de silencio. Poucos pontos, medianas proximas umas das outras
+#Browsing, muitos pontos variadas, muita descrepancia valores silencio entre janelas de obs
+#Mining alguma (nao tanto como browsing) descrepancia valores silencio
 
+# plt.figure(3)
+# plotFeatures(features,oClass,0,7) #? comparar media com desvio?
+
+#plt.figure(4)
+#plotFeatures(features,oClass,2,8) #desvio upload e download
+#Youtube tem poucos periodos de silencio. Poucos pontos, medias proximas umas das outras
+#Browsing, muitos pontos variadas, muita descrepancia valores silencio
+#Mining alguma (nao tanto como browsing) descrepancia valores silencio
+
+plt.figure(5)
+plotFeatures(features,oClass,3,9) #Comparar media silencio upload com media silencio download
+
+plt.figure(6)                       
+plotFeatures(features,oClass,0,6) ##Comparar media upload vs media download
+
+
+#divisão do conjunto de dados em dados de treino e de teste. 
 
 ## -- 3 -- ##
 #:i
+#Define a percentagem dos dados originais que serão usados para TREINO (50% neste caso).
 percentage=0.5
+#pB, pYT, pM: Calculam o tamanho do conjunto de treino para cada categoria (Browsing, YouTube e Mining) com base na percentagem definida.
 pB=int(len(features_browsing)*percentage)
 trainFeatures_browsing=features_browsing[:pB,:]
 pYT=int(len(features_yt)*percentage)
@@ -91,10 +175,12 @@ trainFeatures_yt=features_yt[:pYT,:]
 pM=int(len(features_mining)*percentage)
 trainFeatures_mining=features_mining[:pYT,:]
 
+#i2train: Concatena os conjuntos de TREINO das categorias de Browsing e YouTube (SEM MINING) para serem usados em modelos de classificação.
 i2train=np.vstack((trainFeatures_browsing,trainFeatures_yt))
 o2trainClass=np.vstack((oClass_browsing[:pB],oClass_yt[:pYT]))
 
 #:ii
+#Concatena os dados de TREINO das categorias de Browsing, YouTube E MINING para serem usados em algum modelo de classificação.
 i3Ctrain=np.vstack((trainFeatures_browsing,trainFeatures_yt,trainFeatures_mining))
 o3trainClass=np.vstack((oClass_browsing[:pB],oClass_yt[:pYT],oClass_mining[:pM]))
 
@@ -102,17 +188,20 @@ o3trainClass=np.vstack((oClass_browsing[:pB],oClass_yt[:pYT],oClass_mining[:pM])
 testFeatures_browsing=features_browsing[pB:,:]
 testFeatures_yt=features_yt[pYT:,:]
 testFeatures_mining=features_mining[pM:,:]
-
+#Fornecer ao modelos os dados de TESTE
 i3Atest=np.vstack((testFeatures_browsing,testFeatures_yt,testFeatures_mining))
 o3testClass=np.vstack((oClass_browsing[pB:],oClass_yt[pYT:],oClass_mining[pM:]))
 
 ## -- 4 -- ##
+# O K-Means é um algoritmo de agrupamento muito comum e simples, usado para particionar um conjunto de dados em clusters. 
+# Ele opera de maneira iterativa para atribuir cada ponto de dados a um dos K clusters, onde K é um número pré-definido pelo usuário.
 print('\n-- Clustreing with K-Means --')
 kmeans = KMeans(n_clusters=3, random_state=0, n_init="auto")
 i3Ctrain=np.vstack((trainFeatures_browsing,trainFeatures_yt,trainFeatures_mining))
 #i3Ctrain = StandardScaler().fit_transform(i3Ctrain)
 labels= kmeans.fit_predict(i3Ctrain)
 
+#Browsing está no Cluster 1, YouTube no Cluster 0 e 2 e Mining no Cluster 1
 for i in range(len(labels)):
     print('Obs: {:2} ({}): K-Means Cluster Label: -> {}'.format(i,Classes[o3testClass[i][0]],labels[i]))
     
@@ -219,3 +308,7 @@ LT=clf.predict(i3CtestN)
 nObsTest,nFea=i3CtestN.shape
 for i in range(nObsTest):
     print('Obs: {:2} ({:<8}): Classification->{}'.format(i,Classes[o3testClass[i][0]],Classes[LT[i]]))
+
+
+# Wait for user input before exiting
+waitforEnter(fstop=True)

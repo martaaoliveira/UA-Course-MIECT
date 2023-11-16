@@ -31,9 +31,9 @@ def extractStatsAdv(data,threshold=0):
     silence,activity=extratctSilenceActivity(data,threshold)
     
     if len(silence)>0:
-        silence_faux=np.array([len(silence),np.mean(silence),np.std(silence)])
+        silence_faux=np.array([len(silence),np.mean(silence),np.std(silence)]) #  se houver silencio
     else:
-        silence_faux=np.zeros(3)
+        silence_faux=np.zeros(3) #se nao houver silencio 
         
     # if len(activity)>0:
         # activity_faux=np.array([len(activity),np.mean(activity),np.std(activity)])
