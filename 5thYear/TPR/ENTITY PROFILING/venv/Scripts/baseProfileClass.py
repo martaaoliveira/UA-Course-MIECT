@@ -13,6 +13,7 @@ from sklearn import svm
 import time
 import sys
 import warnings
+
 warnings.filterwarnings('ignore')
 
 
@@ -49,7 +50,8 @@ def plotFeatures(features,oClass,f1index=0,f2index=1):
 
     plt.show()
     waitforEnter()
-    
+
+
 def logplotFeatures(features,oClass,f1index=0,f2index=1):
     nObs,nFea=features.shape
     colors=['b','g','r']
@@ -133,9 +135,9 @@ oClass=np.vstack((oClass_yt,oClass_browsing,oClass_mining))
 #  [1.]
 #.....
 
-# Upload                  | Download    
-# m      m    d    m m d    m   m   d   m  m d 
-# 169263 0 488981 62 2 1   4912 0 13927 62 2 1
+# Upload           Silencio  | Download     Silencio   
+# m  m  d           m  m  d    m   m  d     m  m d 
+# 169263 0 488981   62 2 1    4912 0 13927  62 2 1
 #....
 #...
 print('Train Silence Features Size:',features.shape)
@@ -145,8 +147,6 @@ plotFeatures(features,oClass,4,10) #mediana silencio upload vs mediana silencio 
 #Browsing, muitos pontos variadas, muita descrepancia valores silencio entre janelas de obs
 #Mining alguma (nao tanto como browsing) descrepancia valores silencio
 
-# plt.figure(3)
-# plotFeatures(features,oClass,0,7) #? comparar media com desvio?
 
 #plt.figure(4)
 #plotFeatures(features,oClass,2,8) #desvio upload e download
@@ -192,21 +192,38 @@ testFeatures_mining=features_mining[pM:,:]
 i3Atest=np.vstack((testFeatures_browsing,testFeatures_yt,testFeatures_mining))
 o3testClass=np.vstack((oClass_browsing[pB:],oClass_yt[pYT:],oClass_mining[pM:]))
 
-## -- 4 -- ##
+# -- 4 -- ##
 # O K-Means é um algoritmo de agrupamento muito comum e simples, usado para particionar um conjunto de dados em clusters. 
 # Ele opera de maneira iterativa para atribuir cada ponto de dados a um dos K clusters, onde K é um número pré-definido pelo usuário.
+# usar 4 clusters para separar melhor os comportamentos 
+
 print('\n-- Clustreing with K-Means --')
 kmeans = KMeans(n_clusters=3, random_state=0, n_init="auto")
 i3Ctrain=np.vstack((trainFeatures_browsing,trainFeatures_yt,trainFeatures_mining))
-#i3Ctrain = StandardScaler().fit_transform(i3Ctrain)
+i3Ctrain = StandardScaler().fit_transform(i3Ctrain)
 labels= kmeans.fit_predict(i3Ctrain)
 
-#Browsing está no Cluster 1, YouTube no Cluster 0 e 2 e Mining no Cluster 1
+
+
+#Browsing está no Cluster 1, YouTube no Cluster 0 e 2 e Mining no Cluster 1 -> 
 for i in range(len(labels)):
     print('Obs: {:2} ({}): K-Means Cluster Label: -> {}'.format(i,Classes[o3testClass[i][0]],labels[i]))
-    
+
+
+
 ## -- 5 -- ##
+#browsing{0,1}
+#Youtube{1,4,3,-1,5}
+#Mining {6}
 print('\n-- Clustreing with DBSCAN --')
+#é um algoritmo de agrupamento baseado em densidade que é especialmente útil quando os clusters têm diferentes densidades ou formatos. 
+# Ele identifica clusters com base na densidade dos pontos em torno deles.
+# Eps (epsilon): É a distância máxima entre dois pontos para que sejam considerados no mesmo cluster.
+# MinPts: É o número mínimo de pontos dentro do raio eps para formar um cluster.
+
+#Os pontos de dados podem ter densidades diferentes dentro de cada tipo de pacote. 
+# Por exemplo, no YouTube, pode haver áreas mais densas de pontos (mais observações em determinadas regiões), o que leva a mais clusters.
+
 i3Ctrain=np.vstack((trainFeatures_browsing,trainFeatures_yt,trainFeatures_mining))
 i3Ctrain = StandardScaler().fit_transform(i3Ctrain)
 db = DBSCAN(eps=0.5, min_samples=10).fit(i3Ctrain)
