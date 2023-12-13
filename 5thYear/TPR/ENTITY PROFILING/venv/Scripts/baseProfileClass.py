@@ -195,7 +195,7 @@ o3testClass=np.vstack((oClass_browsing[pB:],oClass_yt[pYT:],oClass_mining[pM:]))
 # -- 4 -- ##
 # O K-Means é um algoritmo de agrupamento muito comum e simples, usado para particionar um conjunto de dados em clusters. 
 # Ele opera de maneira iterativa para atribuir cada ponto de dados a um dos K clusters, onde K é um número pré-definido pelo usuário.
-# usar 4 clusters para separar melhor os comportamentos 
+# Deviamos usar 4 clusters para separar melhor os comportamentos 
 
 print('\n-- Clustreing with K-Means --')
 kmeans = KMeans(n_clusters=3, random_state=0, n_init="auto")
@@ -212,9 +212,8 @@ for i in range(len(labels)):
 
 
 ## -- 5 -- ##
-#browsing{0,1}
-#Youtube{1,4,3,-1,5}
-#Mining {6}
+
+
 print('\n-- Clustreing with DBSCAN --')
 #é um algoritmo de agrupamento baseado em densidade que é especialmente útil quando os clusters têm diferentes densidades ou formatos. 
 # Ele identifica clusters com base na densidade dos pontos em torno deles.
@@ -224,8 +223,13 @@ print('\n-- Clustreing with DBSCAN --')
 #Os pontos de dados podem ter densidades diferentes dentro de cada tipo de pacote. 
 # Por exemplo, no YouTube, pode haver áreas mais densas de pontos (mais observações em determinadas regiões), o que leva a mais clusters.
 
+#browsing{0,1}
+#Youtube{1,4,3,-1,5}
+#Mining {6}
+
+
 i3Ctrain=np.vstack((trainFeatures_browsing,trainFeatures_yt,trainFeatures_mining))
-i3Ctrain = StandardScaler().fit_transform(i3Ctrain)
+i3Ctrain = StandardScaler().fit_transform(i3Ctrain) #NORMALIZAÇÂO DE DADOS
 db = DBSCAN(eps=0.5, min_samples=10).fit(i3Ctrain)
 labels = db.labels_
 
@@ -234,10 +238,25 @@ for i in range(len(labels)):
 
 ## -- 7 -- ##
 
+# No contexto de clustering, um centróide é o ponto médio ou representativo de um cluster. 
+# Para calcular um centróide, são utilizadas as features dos pontos que pertencem a esse cluster, e o centróide é definido como o ponto médio dessas features.
+
 i2train=np.vstack((trainFeatures_browsing,trainFeatures_yt))
 #scaler = MaxAbsScaler().fit(i2train)
 #i2train=scaler.transform(i2train)
 
+#
+#  calcuclar e representar os "centros" dos clusters das duas primeiras classes(yotube e browsing) no conjunto de treinamento. 
+# Esses centróides podem ser usados posteriormente em análises, como detecção de anomalias ou para visualização da distribuição dos clusters nos dados.
+
+#  {0: array([7.78770423e+03, 0.00000000e+00, 3.75927958e+04, 3.75563380e+01,
+#        6.73943662e+00, 7.50704225e+00, 6.59063380e+02, 0.00000000e+00,
+#        3.00565493e+03, 3.77253521e+01, 6.76056338e+00, 7.47887324e+00]), 1: array([1.42990317e+05, 4.17605634e+00, 3.92501880e+05, 5.42253521e+01,
+#        2.83802817e+00, 2.04225352e+00, 4.50634507e+03, 3.23239437e+00,
+#        1.20347887e+04, 5.43309859e+01, 2.82394366e+00, 2.02816901e+00])}
+
+#
+#
 centroids={}
 for c in range(2):  # Only the first two classes
     pClass=(o2trainClass==c).flatten()
@@ -264,6 +283,9 @@ for i in range(nObsTest):
 
 ## -- 8 -- ##
 
+# #
+# As Support Vector Machines (SVMs) do tipo One-Class 
+# são uma variação especial de SVMs que são usadas para problemas de detecção de anomalias ou para aprendizado de uma única classe. 
 print('\n-- Anomaly Detection based on One Class Support Vector Machines--')
 i2train=np.vstack((trainFeatures_browsing,trainFeatures_yt))
 i3Atest=np.vstack((testFeatures_browsing,testFeatures_yt,testFeatures_mining))
