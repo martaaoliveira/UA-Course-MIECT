@@ -1,0 +1,1373 @@
+TRACE::2024-05-16.17:09:45::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:45::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:45::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:45::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:45::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:45::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:45::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-05-16.17:09:45::SCWPlatform::Opened new HwDB with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:45::SCWWriter::formatted JSON is {
+	"platformName":	"mb_design_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_design_wrapper",
+	"platHandOff":	"C:/CR/axi_stream/mb_design_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_design_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2024-05-16.17:09:45::SCWWriter::formatted JSON is {
+	"platformName":	"mb_design_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_design_wrapper",
+	"platHandOff":	"C:/CR/axi_stream/mb_design_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_design_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_design_wrapper",
+	"systems":	[{
+			"systemName":	"mb_design_wrapper",
+			"systemDesc":	"mb_design_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_design_wrapper"
+		}]
+}
+TRACE::2024-05-16.17:09:45::SCWPlatform::Boot application domains not present, creating them
+TRACE::2024-05-16.17:09:45::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2024-05-16.17:09:45::SCWWriter::formatted JSON is {
+	"platformName":	"mb_design_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_design_wrapper",
+	"platHandOff":	"C:/CR/axi_stream/mb_design_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_design_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_design_wrapper",
+	"systems":	[{
+			"systemName":	"mb_design_wrapper",
+			"systemDesc":	"mb_design_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_design_wrapper"
+		}]
+}
+TRACE::2024-05-16.17:09:45::SCWWriter::formatted JSON is {
+	"platformName":	"mb_design_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_design_wrapper",
+	"platHandOff":	"C:/CR/axi_stream/mb_design_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_design_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_design_wrapper",
+	"systems":	[{
+			"systemName":	"mb_design_wrapper",
+			"systemDesc":	"mb_design_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_design_wrapper"
+		}]
+}
+TRACE::2024-05-16.17:09:46::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:46::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:46::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:46::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:46::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:46::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:46::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:46::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:46::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:46::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:46::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:46::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:46::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:46::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:46::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:46::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:46::SCWDomain::checking for install qemu data   : 
+TRACE::2024-05-16.17:09:46::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:46::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:46::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:46::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:46::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:46::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:46::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:46::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:46::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:46::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:46::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:46::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:46::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:46::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:46::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:46::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:46::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:46::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:46::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:46::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:46::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:46::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:46::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:46::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:46::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:46::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-05-16.17:09:46::SCWMssOS::No sw design opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:46::SCWMssOS::mss does not exists at C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:46::SCWMssOS::Creating sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:46::SCWMssOS::Adding the swdes entry, created swdb C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:46::SCWMssOS::updating the scw layer changes to swdes at   C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:46::SCWMssOS::Writing mss at C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:46::SCWMssOS::Completed writing the mss file at C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2024-05-16.17:09:46::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2024-05-16.17:09:46::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2024-05-16.17:09:46::SCWMssOS::Completed writing the mss file at C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2024-05-16.17:09:46::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2024-05-16.17:09:51::SCWMssOS::Saving the mss changes C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:51::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name system
+TRACE::2024-05-16.17:09:51::SCWMssOS::Writing the mss file completed C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:51::SCWMssOS::Commit changes completed.
+TRACE::2024-05-16.17:09:51::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:51::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:51::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:51::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:09:51::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:51::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:51::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:51::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:51::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:09:51::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:51::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:51::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:51::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:51::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:09:51::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:51::SCWWriter::formatted JSON is {
+	"platformName":	"mb_design_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_design_wrapper",
+	"platHandOff":	"C:/CR/axi_stream/mb_design_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_design_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_design_wrapper",
+	"systems":	[{
+			"systemName":	"mb_design_wrapper",
+			"systemDesc":	"mb_design_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_design_wrapper",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"f2bdf6665a79d43ddee25223fa190829",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2024-05-16.17:09:51::SCWPlatform::Started generating the artifacts platform mb_design_wrapper
+TRACE::2024-05-16.17:09:51::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-05-16.17:09:51::SCWPlatform::Started generating the artifacts for system configuration mb_design_wrapper
+LOG::2024-05-16.17:09:51::SCWSystem::Checking the domain standalone_microblaze_0
+LOG::2024-05-16.17:09:51::SCWSystem::Not a boot domain 
+LOG::2024-05-16.17:09:51::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2024-05-16.17:09:51::SCWDomain::Generating domain artifcats
+TRACE::2024-05-16.17:09:51::SCWMssOS::Generating standalone artifcats
+TRACE::2024-05-16.17:09:51::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-05-16.17:09:51::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:51::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:51::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:51::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:09:51::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:51::SCWMssOS::Completed writing the mss file at C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2024-05-16.17:09:51::SCWMssOS::Mss edits present, copying mssfile into export location C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:51::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-05-16.17:09:51::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-05-16.17:09:51::SCWDomain::Skipping the build for domain :  standalone_microblaze_0
+TRACE::2024-05-16.17:09:51::SCWMssOS::skipping the bsp build ... 
+TRACE::2024-05-16.17:09:51::SCWMssOS::Copying to export directory.
+TRACE::2024-05-16.17:09:51::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-05-16.17:09:51::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-05-16.17:09:51::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2024-05-16.17:09:51::SCWSystem::Completed Processing the sysconfig mb_design_wrapper
+LOG::2024-05-16.17:09:51::SCWPlatform::Completed generating the artifacts for system configuration mb_design_wrapper
+TRACE::2024-05-16.17:09:51::SCWPlatform::Started preparing the platform 
+TRACE::2024-05-16.17:09:51::SCWSystem::Writing the bif file for system config mb_design_wrapper
+TRACE::2024-05-16.17:09:51::SCWSystem::dir created 
+TRACE::2024-05-16.17:09:51::SCWSystem::Writing the bif 
+TRACE::2024-05-16.17:09:51::SCWPlatform::Started writing the spfm file 
+TRACE::2024-05-16.17:09:51::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-05-16.17:09:51::SCWPlatform::Completed generating the platform
+TRACE::2024-05-16.17:09:51::SCWMssOS::Saving the mss changes C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:51::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-05-16.17:09:51::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-05-16.17:09:51::SCWMssOS::Commit changes completed.
+TRACE::2024-05-16.17:09:51::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:51::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:51::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:51::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:09:51::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:51::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:51::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:51::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:51::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:09:51::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:51::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:51::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:51::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:51::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:51::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:09:51::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:51::SCWWriter::formatted JSON is {
+	"platformName":	"mb_design_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_design_wrapper",
+	"platHandOff":	"C:/CR/axi_stream/mb_design_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_design_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_design_wrapper",
+	"systems":	[{
+			"systemName":	"mb_design_wrapper",
+			"systemDesc":	"mb_design_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_design_wrapper",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"f2bdf6665a79d43ddee25223fa190829",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-05-16.17:09:51::SCWPlatform::updated the xpfm file.
+TRACE::2024-05-16.17:09:52::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:52::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:52::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:52::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:52::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:52::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:09:52::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:52::SCWMssOS::Saving the mss changes C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:52::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-05-16.17:09:52::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-05-16.17:09:52::SCWMssOS::Commit changes completed.
+TRACE::2024-05-16.17:09:52::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:52::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:52::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:52::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:52::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:52::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:09:52::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:52::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:52::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:52::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:52::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:52::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:52::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:09:52::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:52::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:52::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:52::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:52::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:52::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:52::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:09:52::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:52::SCWWriter::formatted JSON is {
+	"platformName":	"mb_design_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_design_wrapper",
+	"platHandOff":	"C:/CR/axi_stream/mb_design_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_design_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_design_wrapper",
+	"systems":	[{
+			"systemName":	"mb_design_wrapper",
+			"systemDesc":	"mb_design_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_design_wrapper",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"f2bdf6665a79d43ddee25223fa190829",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-05-16.17:09:52::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:52::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:52::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:52::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:52::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:52::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:09:52::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:52::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:52::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:52::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:52::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:52::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:52::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:52::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:09:52::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:53::SCWMssOS::Saving the mss changes C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:53::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-05-16.17:09:53::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-05-16.17:09:53::SCWMssOS::Commit changes completed.
+TRACE::2024-05-16.17:09:53::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:53::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:53::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:53::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:09:53::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:53::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:53::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:53::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:53::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:09:53::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:53::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:53::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:53::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:53::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:09:53::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:53::SCWWriter::formatted JSON is {
+	"platformName":	"mb_design_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_design_wrapper",
+	"platHandOff":	"C:/CR/axi_stream/mb_design_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_design_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_design_wrapper",
+	"systems":	[{
+			"systemName":	"mb_design_wrapper",
+			"systemDesc":	"mb_design_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_design_wrapper",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"f2bdf6665a79d43ddee25223fa190829",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2024-05-16.17:09:53::SCWPlatform::Started generating the artifacts platform mb_design_wrapper
+TRACE::2024-05-16.17:09:53::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-05-16.17:09:53::SCWPlatform::Started generating the artifacts for system configuration mb_design_wrapper
+LOG::2024-05-16.17:09:53::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2024-05-16.17:09:53::SCWDomain::Generating domain artifcats
+TRACE::2024-05-16.17:09:53::SCWMssOS::Generating standalone artifcats
+TRACE::2024-05-16.17:09:53::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-05-16.17:09:53::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:53::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:53::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:53::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:09:53::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:53::SCWMssOS::Completed writing the mss file at C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2024-05-16.17:09:53::SCWMssOS::Mss edits present, copying mssfile into export location C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:53::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-05-16.17:09:53::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-05-16.17:09:53::SCWDomain::Building the domain as part of full build :  standalone_microblaze_0
+TRACE::2024-05-16.17:09:53::SCWMssOS::skipping the bsp build ... 
+TRACE::2024-05-16.17:09:53::SCWMssOS::Copying to export directory.
+TRACE::2024-05-16.17:09:53::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-05-16.17:09:53::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-05-16.17:09:53::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2024-05-16.17:09:53::SCWSystem::Completed Processing the sysconfig mb_design_wrapper
+LOG::2024-05-16.17:09:53::SCWPlatform::Completed generating the artifacts for system configuration mb_design_wrapper
+TRACE::2024-05-16.17:09:53::SCWPlatform::Started preparing the platform 
+TRACE::2024-05-16.17:09:53::SCWSystem::Writing the bif file for system config mb_design_wrapper
+TRACE::2024-05-16.17:09:53::SCWSystem::dir created 
+TRACE::2024-05-16.17:09:53::SCWSystem::Writing the bif 
+TRACE::2024-05-16.17:09:53::SCWPlatform::Started writing the spfm file 
+TRACE::2024-05-16.17:09:53::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-05-16.17:09:53::SCWPlatform::Completed generating the platform
+TRACE::2024-05-16.17:09:53::SCWMssOS::Saving the mss changes C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:53::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-05-16.17:09:53::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-05-16.17:09:53::SCWMssOS::Commit changes completed.
+TRACE::2024-05-16.17:09:53::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:53::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:53::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:53::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:09:53::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:53::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:53::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:53::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:53::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:09:53::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:53::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:09:53::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:09:53::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:09:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:09:53::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:53::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:09:53::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:09:53::SCWWriter::formatted JSON is {
+	"platformName":	"mb_design_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_design_wrapper",
+	"platHandOff":	"C:/CR/axi_stream/mb_design_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_design_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_design_wrapper",
+	"systems":	[{
+			"systemName":	"mb_design_wrapper",
+			"systemDesc":	"mb_design_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_design_wrapper",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"f2bdf6665a79d43ddee25223fa190829",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-05-16.17:09:53::SCWPlatform::updated the xpfm file.
+LOG::2024-05-16.17:10:44::SCWPlatform::Started generating the artifacts platform mb_design_wrapper
+TRACE::2024-05-16.17:10:44::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-05-16.17:10:44::SCWPlatform::Started generating the artifacts for system configuration mb_design_wrapper
+LOG::2024-05-16.17:10:44::SCWSystem::Checking the domain standalone_microblaze_0
+LOG::2024-05-16.17:10:44::SCWSystem::Not a boot domain 
+LOG::2024-05-16.17:10:44::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2024-05-16.17:10:44::SCWDomain::Generating domain artifcats
+TRACE::2024-05-16.17:10:44::SCWMssOS::Generating standalone artifcats
+TRACE::2024-05-16.17:10:44::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-05-16.17:10:44::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:10:44::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:10:44::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:10:44::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:10:44::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:10:44::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:10:44::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:10:44::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:10:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:10:44::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:10:44::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:10:44::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:10:44::SCWMssOS::Completed writing the mss file at C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2024-05-16.17:10:44::SCWMssOS::Mss edits present, copying mssfile into export location C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:10:44::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-05-16.17:10:44::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-05-16.17:10:44::SCWDomain::Building the domain as part of full build :  standalone_microblaze_0
+TRACE::2024-05-16.17:10:44::SCWMssOS::doing bsp build ... 
+TRACE::2024-05-16.17:10:44::SCWMssOS::System Command Ran  C: & cd  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp & make 
+TRACE::2024-05-16.17:10:44::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2024-05-16.17:10:44::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2024-05-16.17:10:44::SCWMssOS::make -j 10 --no-print-directory par_libs
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-05-16.17:10:45::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-05-16.17:10:45::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_16/src"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-05-16.17:10:45::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-05-16.17:10:45::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_9/src"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-05-16.17:10:45::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-05-16.17:10:45::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_15/src"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_15/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2024-05-16.17:10:45::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2024-05-16.17:10:45::SCWMssOS:: -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v8_0/src"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::make -C microblaze_0/libsrc/standalone_v8_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2024-05-16.17:10:45::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2024-05-16.17:10:45::SCWMssOS::-Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::"Running Make include in microblaze_0/libsrc/tmrctr_v4_9/src"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2024-05-16.17:10:45::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2024-05-16.17:10:45::SCWMssOS::l -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_7/src"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2024-05-16.17:10:45::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2024-05-16.17:10:45::SCWMssOS::all -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_8/src"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-05-16.17:10:45::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2024-05-16.17:10:45::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_16/src"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_16/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-05-16.17:10:45::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2024-05-16.17:10:45::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::"Running Make libs in microblaze_0/libsrc/gpio_v4_9/src"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-05-16.17:10:45::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2024-05-16.17:10:45::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::"Running Make libs in microblaze_0/libsrc/intc_v3_15/src"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v8_0/src"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_15/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2024-05-16.17:10:45::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -W
+TRACE::2024-05-16.17:10:45::SCWMssOS::extra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::make -C microblaze_0/libsrc/standalone_v8_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2024-05-16.17:10:45::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2024-05-16.17:10:45::SCWMssOS::ll -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::"Running Make libs in microblaze_0/libsrc/tmrctr_v4_9/src"
+
+TRACE::2024-05-16.17:10:45::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2024-05-16.17:10:45::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+TRACE::2024-05-16.17:10:45::SCWMssOS::Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-16.17:10:46::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_7/src"
+
+TRACE::2024-05-16.17:10:46::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2024-05-16.17:10:46::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2024-05-16.17:10:46::SCWMssOS:: -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-16.17:10:48::SCWMssOS::"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+TRACE::2024-05-16.17:10:48::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2024-05-16.17:10:48::SCWMssOS::make --no-print-directory archive
+
+TRACE::2024-05-16.17:10:48::SCWMssOS::mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+TRACE::2024-05-16.17:10:48::SCWMssOS::/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+TRACE::2024-05-16.17:10:48::SCWMssOS::ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+TRACE::2024-05-16.17:10:48::SCWMssOS::/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+TRACE::2024-05-16.17:10:48::SCWMssOS::aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+TRACE::2024-05-16.17:10:48::SCWMssOS::e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+TRACE::2024-05-16.17:10:48::SCWMssOS::aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+TRACE::2024-05-16.17:10:48::SCWMssOS::laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+TRACE::2024-05-16.17:10:48::SCWMssOS::he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+TRACE::2024-05-16.17:10:48::SCWMssOS::lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+TRACE::2024-05-16.17:10:48::SCWMssOS::_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+TRACE::2024-05-16.17:10:48::SCWMssOS::microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+TRACE::2024-05-16.17:10:48::SCWMssOS::/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaz
+TRACE::2024-05-16.17:10:48::SCWMssOS::e_0/lib/xbram_selftest.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xgpio.o microblaze_0/lib/xgpio_extra.o microblaze_0/li
+TRACE::2024-05-16.17:10:48::SCWMssOS::b/xgpio_g.o microblaze_0/lib/xgpio_intr.o microblaze_0/lib/xgpio_selftest.o microblaze_0/lib/xgpio_sinit.o microblaze_0/lib/xil
+TRACE::2024-05-16.17:10:48::SCWMssOS::_assert.o microblaze_0/lib/xil_cache.o microblaze_0/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_me
+TRACE::2024-05-16.17:10:48::SCWMssOS::m.o microblaze_0/lib/xil_misc_psreset_api.o microblaze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/x
+TRACE::2024-05-16.17:10:48::SCWMssOS::il_testcache.o microblaze_0/lib/xil_testio.o microblaze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xintc.
+TRACE::2024-05-16.17:10:48::SCWMssOS::o microblaze_0/lib/xintc_g.o microblaze_0/lib/xintc_intr.o microblaze_0/lib/xintc_l.o microblaze_0/lib/xintc_options.o microbla
+TRACE::2024-05-16.17:10:48::SCWMssOS::ze_0/lib/xintc_selftest.o microblaze_0/lib/xinterrupt_wrap.o microblaze_0/lib/xio.o microblaze_0/lib/xplatform_info.o microblaz
+TRACE::2024-05-16.17:10:48::SCWMssOS::e_0/lib/xtmrctr.o microblaze_0/lib/xtmrctr_g.o microblaze_0/lib/xtmrctr_intr.o microblaze_0/lib/xtmrctr_l.o microblaze_0/lib/xt
+TRACE::2024-05-16.17:10:48::SCWMssOS::mrctr_options.o microblaze_0/lib/xtmrctr_selftest.o microblaze_0/lib/xtmrctr_sinit.o microblaze_0/lib/xtmrctr_stats.o microblaz
+TRACE::2024-05-16.17:10:48::SCWMssOS::e_0/lib/xuartlite.o microblaze_0/lib/xuartlite_g.o microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/xuartlite_l.o microblaze_
+TRACE::2024-05-16.17:10:48::SCWMssOS::0/lib/xuartlite_selftest.o microblaze_0/lib/xuartlite_sinit.o microblaze_0/lib/xuartlite_stats.o
+
+TRACE::2024-05-16.17:10:48::SCWMssOS::'Finished building libraries'
+
+TRACE::2024-05-16.17:10:48::SCWMssOS::Copying to export directory.
+TRACE::2024-05-16.17:10:48::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-05-16.17:10:48::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-05-16.17:10:48::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2024-05-16.17:10:48::SCWSystem::Completed Processing the sysconfig mb_design_wrapper
+LOG::2024-05-16.17:10:48::SCWPlatform::Completed generating the artifacts for system configuration mb_design_wrapper
+TRACE::2024-05-16.17:10:48::SCWPlatform::Started preparing the platform 
+TRACE::2024-05-16.17:10:48::SCWSystem::Writing the bif file for system config mb_design_wrapper
+TRACE::2024-05-16.17:10:48::SCWSystem::dir created 
+TRACE::2024-05-16.17:10:48::SCWSystem::Writing the bif 
+TRACE::2024-05-16.17:10:48::SCWPlatform::Started writing the spfm file 
+TRACE::2024-05-16.17:10:48::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-05-16.17:10:48::SCWPlatform::Completed generating the platform
+TRACE::2024-05-16.17:10:48::SCWMssOS::Saving the mss changes C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:10:48::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-05-16.17:10:48::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-05-16.17:10:48::SCWMssOS::Commit changes completed.
+TRACE::2024-05-16.17:10:48::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:10:48::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:10:48::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:10:48::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:10:48::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:10:48::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:10:48::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:10:48::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:10:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:10:48::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:10:48::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:10:48::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:10:48::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:10:48::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:10:48::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:10:48::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:10:48::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:10:48::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:10:48::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:10:48::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:10:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:10:48::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:10:48::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:10:48::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:10:48::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:10:48::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:10:48::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:10:48::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:10:48::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:10:48::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:10:48::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:10:48::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:10:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:10:48::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:10:48::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:10:48::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:10:48::SCWWriter::formatted JSON is {
+	"platformName":	"mb_design_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_design_wrapper",
+	"platHandOff":	"C:/CR/axi_stream/mb_design_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_design_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_design_wrapper",
+	"systems":	[{
+			"systemName":	"mb_design_wrapper",
+			"systemDesc":	"mb_design_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_design_wrapper",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"f2bdf6665a79d43ddee25223fa190829",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-05-16.17:10:48::SCWPlatform::updated the xpfm file.
+TRACE::2024-05-16.17:10:50::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:10:50::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:10:50::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:10:50::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-16.17:10:50::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-16.17:10:50::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-16.17:10:50::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2024-05-16.17:10:50::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2024-05-16.17:10:50::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-16.17:10:50::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-16.17:10:50::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-16.17:10:50::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-23.17:52:40::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-23.17:52:40::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-23.17:52:40::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-05-23.17:52:40::SCWPlatform::Opened new HwDB with name mb_design_wrapper
+TRACE::2024-05-23.17:52:40::SCWReader::Active system found as  mb_design_wrapper
+TRACE::2024-05-23.17:52:40::SCWReader::Handling sysconfig mb_design_wrapper
+TRACE::2024-05-23.17:52:40::SCWDomain::checking for install qemu data   : 
+TRACE::2024-05-23.17:52:40::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-23.17:52:40::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-23.17:52:40::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper
+TRACE::2024-05-23.17:52:40::SCWPlatform::Opened existing hwdb mb_design_wrapper
+TRACE::2024-05-23.17:52:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-23.17:52:40::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-23.17:52:40::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-23.17:52:40::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper
+TRACE::2024-05-23.17:52:40::SCWPlatform::Opened existing hwdb mb_design_wrapper
+TRACE::2024-05-23.17:52:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-23.17:52:40::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-23.17:52:40::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-23.17:52:40::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper
+TRACE::2024-05-23.17:52:40::SCWPlatform::Opened existing hwdb mb_design_wrapper
+TRACE::2024-05-23.17:52:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-23.17:52:40::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-23.17:52:40::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-23.17:52:40::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper
+TRACE::2024-05-23.17:52:40::SCWPlatform::Opened existing hwdb mb_design_wrapper
+TRACE::2024-05-23.17:52:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-23.17:52:40::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-23.17:52:40::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-05-23.17:52:40::SCWMssOS::No sw design opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-23.17:52:40::SCWMssOS::mss exists loading the mss file  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-23.17:52:40::SCWMssOS::Opened the sw design from mss  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-23.17:52:40::SCWMssOS::Adding the swdes entry C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name system
+TRACE::2024-05-23.17:52:40::SCWMssOS::updating the scw layer about changes
+TRACE::2024-05-23.17:52:40::SCWMssOS::Opened the sw design.  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-23.17:52:40::SCWMssOS::Saving the mss changes C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-23.17:52:40::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-05-23.17:52:40::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-05-23.17:52:40::SCWMssOS::Commit changes completed.
+TRACE::2024-05-23.17:52:40::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-05-23.17:52:40::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-05-23.17:52:40::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-23.17:52:40::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-23.17:52:40::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper
+TRACE::2024-05-23.17:52:40::SCWPlatform::Opened existing hwdb mb_design_wrapper
+TRACE::2024-05-23.17:52:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-23.17:52:40::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-23.17:52:40::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-23.17:52:40::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-23.17:52:40::SCWReader::No isolation master present  
+LOG::2024-05-23.17:52:40::SCWPlatform::Started generating the artifacts platform mb_design_wrapper
+TRACE::2024-05-23.17:52:40::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-05-23.17:52:40::SCWPlatform::Started generating the artifacts for system configuration mb_design_wrapper
+LOG::2024-05-23.17:52:40::SCWSystem::Checking the domain standalone_microblaze_0
+LOG::2024-05-23.17:52:40::SCWSystem::Not a boot domain 
+LOG::2024-05-23.17:52:40::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2024-05-23.17:52:40::SCWDomain::Generating domain artifcats
+TRACE::2024-05-23.17:52:40::SCWMssOS::Generating standalone artifcats
+TRACE::2024-05-23.17:52:40::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-05-23.17:52:40::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-23.17:52:40::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:40::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-23.17:52:40::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper
+TRACE::2024-05-23.17:52:40::SCWPlatform::Opened existing hwdb mb_design_wrapper
+TRACE::2024-05-23.17:52:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-23.17:52:40::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-23.17:52:40::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-23.17:52:40::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-23.17:52:40::SCWMssOS::Completed writing the mss file at C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2024-05-23.17:52:40::SCWMssOS::Mss edits present, copying mssfile into export location C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-23.17:52:40::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-05-23.17:52:40::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-05-23.17:52:40::SCWDomain::Building the domain as part of full build :  standalone_microblaze_0
+TRACE::2024-05-23.17:52:40::SCWMssOS::doing bsp build ... 
+TRACE::2024-05-23.17:52:40::SCWMssOS::System Command Ran  C: & cd  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp & make 
+TRACE::2024-05-23.17:52:41::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2024-05-23.17:52:41::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2024-05-23.17:52:41::SCWMssOS::make -j 10 --no-print-directory par_libs
+
+TRACE::2024-05-23.17:52:42::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+TRACE::2024-05-23.17:52:42::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-05-23.17:52:42::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-05-23.17:52:42::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-23.17:52:42::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_16/src"
+
+TRACE::2024-05-23.17:52:42::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-05-23.17:52:42::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-05-23.17:52:42::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-23.17:52:42::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_9/src"
+
+TRACE::2024-05-23.17:52:42::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2024-05-23.17:52:42::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2024-05-23.17:52:42::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-23.17:52:42::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_15/src"
+
+TRACE::2024-05-23.17:52:42::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_15/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2024-05-23.17:52:42::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2024-05-23.17:52:42::SCWMssOS:: -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-23.17:52:42::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v8_0/src"
+
+TRACE::2024-05-23.17:52:42::SCWMssOS::make -C microblaze_0/libsrc/standalone_v8_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2024-05-23.17:52:42::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2024-05-23.17:52:42::SCWMssOS::-Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-23.17:52:42::SCWMssOS::"Running Make include in microblaze_0/libsrc/tmrctr_v4_9/src"
+
+TRACE::2024-05-23.17:52:42::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2024-05-23.17:52:42::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2024-05-23.17:52:42::SCWMssOS::l -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-23.17:52:42::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_7/src"
+
+TRACE::2024-05-23.17:52:42::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2024-05-23.17:52:42::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2024-05-23.17:52:42::SCWMssOS::all -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-23.17:52:43::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_8/src"
+
+TRACE::2024-05-23.17:52:43::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-05-23.17:52:43::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2024-05-23.17:52:43::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-23.17:52:43::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_16/src"
+
+TRACE::2024-05-23.17:52:43::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_16/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-05-23.17:52:43::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2024-05-23.17:52:43::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-23.17:52:43::SCWMssOS::"Running Make libs in microblaze_0/libsrc/gpio_v4_9/src"
+
+TRACE::2024-05-23.17:52:43::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2024-05-23.17:52:43::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2024-05-23.17:52:43::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-23.17:52:43::SCWMssOS::"Running Make libs in microblaze_0/libsrc/intc_v3_15/src"
+
+TRACE::2024-05-23.17:52:43::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_15/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2024-05-23.17:52:43::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -W
+TRACE::2024-05-23.17:52:43::SCWMssOS::extra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-23.17:52:43::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v8_0/src"
+
+TRACE::2024-05-23.17:52:43::SCWMssOS::make -C microblaze_0/libsrc/standalone_v8_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2024-05-23.17:52:43::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2024-05-23.17:52:43::SCWMssOS::ll -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-23.17:52:43::SCWMssOS::"Running Make libs in microblaze_0/libsrc/tmrctr_v4_9/src"
+
+TRACE::2024-05-23.17:52:43::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2024-05-23.17:52:43::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+TRACE::2024-05-23.17:52:43::SCWMssOS::Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-23.17:52:43::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_7/src"
+
+TRACE::2024-05-23.17:52:43::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2024-05-23.17:52:43::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2024-05-23.17:52:43::SCWMssOS:: -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2024-05-23.17:52:43::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2024-05-23.17:52:43::SCWMssOS::make --no-print-directory archive
+
+TRACE::2024-05-23.17:52:43::SCWMssOS::mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+TRACE::2024-05-23.17:52:43::SCWMssOS::/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+TRACE::2024-05-23.17:52:43::SCWMssOS::ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+TRACE::2024-05-23.17:52:43::SCWMssOS::/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+TRACE::2024-05-23.17:52:43::SCWMssOS::aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+TRACE::2024-05-23.17:52:43::SCWMssOS::e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+TRACE::2024-05-23.17:52:43::SCWMssOS::aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+TRACE::2024-05-23.17:52:43::SCWMssOS::laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+TRACE::2024-05-23.17:52:43::SCWMssOS::he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+TRACE::2024-05-23.17:52:43::SCWMssOS::lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+TRACE::2024-05-23.17:52:43::SCWMssOS::_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+TRACE::2024-05-23.17:52:43::SCWMssOS::microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+TRACE::2024-05-23.17:52:43::SCWMssOS::/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaz
+TRACE::2024-05-23.17:52:43::SCWMssOS::e_0/lib/xbram_selftest.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xgpio.o microblaze_0/lib/xgpio_extra.o microblaze_0/li
+TRACE::2024-05-23.17:52:43::SCWMssOS::b/xgpio_g.o microblaze_0/lib/xgpio_intr.o microblaze_0/lib/xgpio_selftest.o microblaze_0/lib/xgpio_sinit.o microblaze_0/lib/xil
+TRACE::2024-05-23.17:52:43::SCWMssOS::_assert.o microblaze_0/lib/xil_cache.o microblaze_0/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_me
+TRACE::2024-05-23.17:52:43::SCWMssOS::m.o microblaze_0/lib/xil_misc_psreset_api.o microblaze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/x
+TRACE::2024-05-23.17:52:43::SCWMssOS::il_testcache.o microblaze_0/lib/xil_testio.o microblaze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xintc.
+TRACE::2024-05-23.17:52:43::SCWMssOS::o microblaze_0/lib/xintc_g.o microblaze_0/lib/xintc_intr.o microblaze_0/lib/xintc_l.o microblaze_0/lib/xintc_options.o microbla
+TRACE::2024-05-23.17:52:43::SCWMssOS::ze_0/lib/xintc_selftest.o microblaze_0/lib/xinterrupt_wrap.o microblaze_0/lib/xio.o microblaze_0/lib/xplatform_info.o microblaz
+TRACE::2024-05-23.17:52:43::SCWMssOS::e_0/lib/xtmrctr.o microblaze_0/lib/xtmrctr_g.o microblaze_0/lib/xtmrctr_intr.o microblaze_0/lib/xtmrctr_l.o microblaze_0/lib/xt
+TRACE::2024-05-23.17:52:43::SCWMssOS::mrctr_options.o microblaze_0/lib/xtmrctr_selftest.o microblaze_0/lib/xtmrctr_sinit.o microblaze_0/lib/xtmrctr_stats.o microblaz
+TRACE::2024-05-23.17:52:43::SCWMssOS::e_0/lib/xuartlite.o microblaze_0/lib/xuartlite_g.o microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/xuartlite_l.o microblaze_
+TRACE::2024-05-23.17:52:43::SCWMssOS::0/lib/xuartlite_selftest.o microblaze_0/lib/xuartlite_sinit.o microblaze_0/lib/xuartlite_stats.o
+
+TRACE::2024-05-23.17:52:44::SCWMssOS::'Finished building libraries'
+
+TRACE::2024-05-23.17:52:45::SCWMssOS::Copying to export directory.
+TRACE::2024-05-23.17:52:45::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-05-23.17:52:45::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-05-23.17:52:45::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2024-05-23.17:52:45::SCWSystem::Completed Processing the sysconfig mb_design_wrapper
+LOG::2024-05-23.17:52:45::SCWPlatform::Completed generating the artifacts for system configuration mb_design_wrapper
+TRACE::2024-05-23.17:52:45::SCWPlatform::Started preparing the platform 
+TRACE::2024-05-23.17:52:45::SCWSystem::Writing the bif file for system config mb_design_wrapper
+TRACE::2024-05-23.17:52:45::SCWSystem::dir created 
+TRACE::2024-05-23.17:52:45::SCWSystem::Writing the bif 
+TRACE::2024-05-23.17:52:45::SCWPlatform::Started writing the spfm file 
+TRACE::2024-05-23.17:52:45::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-05-23.17:52:45::SCWPlatform::Completed generating the platform
+TRACE::2024-05-23.17:52:45::SCWMssOS::Saving the mss changes C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-23.17:52:45::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-05-23.17:52:45::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-05-23.17:52:45::SCWMssOS::Commit changes completed.
+TRACE::2024-05-23.17:52:45::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:45::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:45::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:45::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-23.17:52:45::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:45::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-23.17:52:45::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper
+TRACE::2024-05-23.17:52:45::SCWPlatform::Opened existing hwdb mb_design_wrapper
+TRACE::2024-05-23.17:52:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-23.17:52:45::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-23.17:52:45::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-23.17:52:45::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-23.17:52:45::SCWWriter::formatted JSON is {
+	"platformName":	"mb_design_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_design_wrapper",
+	"platHandOff":	"C:/CR/axi_stream/mb_design_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_design_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_design_wrapper",
+	"systems":	[{
+			"systemName":	"mb_design_wrapper",
+			"systemDesc":	"mb_design_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_design_wrapper",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.0",
+					"mssFile":	"",
+					"md5Digest":	"f2bdf6665a79d43ddee25223fa190829",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-05-23.17:52:45::SCWPlatform::updated the xpfm file.
+TRACE::2024-05-23.17:52:46::SCWPlatform::Trying to open the hw design at C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:46::SCWPlatform::DSA given C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:46::SCWPlatform::DSA absoulate path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:46::SCWPlatform::DSA directory C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw
+TRACE::2024-05-23.17:52:46::SCWPlatform:: Platform Path C:/CR/workspace_reverseEndianness/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2024-05-23.17:52:46::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2024-05-23.17:52:46::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper
+TRACE::2024-05-23.17:52:46::SCWPlatform::Opened existing hwdb mb_design_wrapper
+TRACE::2024-05-23.17:52:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-23.17:52:46::SCWMssOS::Checking the sw design at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2024-05-23.17:52:46::SCWMssOS::DEBUG:  swdes dump  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2024-05-23.17:52:46::SCWMssOS::Sw design exists and opened at  C:/CR/workspace_reverseEndianness/mb_design_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss

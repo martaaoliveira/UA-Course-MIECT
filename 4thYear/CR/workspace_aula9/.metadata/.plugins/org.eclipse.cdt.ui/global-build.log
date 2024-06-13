@@ -1,0 +1,33 @@
+Nothing to build in platform 'mb_design_wrapper'
+
+19:01:58 **** Incremental Build of configuration Debug for project proj7 ****
+make all 
+'Building file: ../src/CountDownTimerHW_polling.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/CountDownTimerHW_polling.o" -IC:/CR/workspace_aula9/mb_design_wrapper/export/mb_design_wrapper/sw/mb_design_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/CountDownTimerHW_polling.d" -MT"src/CountDownTimerHW_polling.o" -o "src/CountDownTimerHW_polling.o" "../src/CountDownTimerHW_polling.c"
+../src/CountDownTimerHW_polling.c: In function 'SetCountDownTimer':
+../src/CountDownTimerHW_polling.c:263:9: warning: enumeration value 'Stopped' not handled in switch [-Wswitch]
+  263 |         switch(fsmState)
+      |         ^~~~~~
+../src/CountDownTimerHW_polling.c:263:9: warning: enumeration value 'Started' not handled in switch [-Wswitch]
+'Finished building: ../src/CountDownTimerHW_polling.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/CR/workspace_aula9/mb_design_wrapper/export/mb_design_wrapper/sw/mb_design_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: proj7.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/CR/workspace_aula9/mb_design_wrapper/export/mb_design_wrapper/sw/mb_design_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "proj7.elf"  ./src/CountDownTimerHW_polling.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: proj7.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size proj7.elf  |tee "proj7.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10688	    352	   3104	  14144	   3740	proj7.elf
+'Finished building: proj7.elf.size'
+' '
+19:02:03 **** Incremental Build of configuration Debug for project proj7_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

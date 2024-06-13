@@ -1,0 +1,11 @@
+{
+    "idf.portWin": "COM4",
+    "idf.adapterTargetName": "esp32c3",
+    "idf.openOcdConfigs": [
+        "board/esp32c3-builtin.cfg"
+    ],
+    "idf.flashType": "UART",
+    "files.associations": {
+        "temp_sensor_tc74.h": "c"
+    }
+}

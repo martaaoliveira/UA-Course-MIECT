@@ -1,0 +1,21 @@
+17:52:46 **** Build of configuration Debug for project AXISStreamApp ****
+make all 
+'Building file: ../src/ReverseEndianness.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ReverseEndianness.o" -IC:/CR/workspace_reverseEndianness/mb_design_wrapper/export/mb_design_wrapper/sw/mb_design_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ReverseEndianness.d" -MT"src/ReverseEndianness.o" -o "src/ReverseEndianness.o" "../src/ReverseEndianness.c"
+'Finished building: ../src/ReverseEndianness.c'
+' '
+'Building target: AXISStreamApp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/CR/workspace_reverseEndianness/mb_design_wrapper/export/mb_design_wrapper/sw/mb_design_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "AXISStreamApp.elf"  ./src/ReverseEndianness.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: AXISStreamApp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size AXISStreamApp.elf  |tee "AXISStreamApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  15340	   1392	  34916	  51648	   c9c0	AXISStreamApp.elf
+'Finished building: AXISStreamApp.elf.size'
+' '
+
+17:52:56 Build Finished (took 9s.616ms)
+

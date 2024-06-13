@@ -1,0 +1,71 @@
+18:51:54 DEBUG : Logs will be stored at 'C:/CR/workspace_aula9/IDE.log'.
+18:51:57 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\CR\workspace_aula9\temp_xsdb_launch_script.tcl
+18:51:57 INFO  : Registering command handlers for Vitis TCF services
+18:51:59 INFO  : Platform repository initialization has completed.
+18:52:07 INFO  : XSCT server has started successfully.
+18:52:07 INFO  : Successfully done setting XSCT server connection channel  
+18:52:07 INFO  : plnx-install-location is set to ''
+18:52:07 INFO  : Successfully done query RDI_DATADIR 
+18:52:07 INFO  : Successfully done setting workspace for the tool. 
+18:53:09 DEBUG : Logs will be stored at 'C:/CR/workspace_aula9/IDE.log'.
+18:53:11 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\CR\workspace_aula9\temp_xsdb_launch_script.tcl
+18:53:12 INFO  : Registering command handlers for Vitis TCF services
+18:53:13 INFO  : Platform repository initialization has completed.
+18:53:14 INFO  : XSCT server has started successfully.
+18:53:14 INFO  : plnx-install-location is set to ''
+18:53:14 INFO  : Successfully done setting XSCT server connection channel  
+18:53:14 INFO  : Successfully done query RDI_DATADIR 
+18:53:14 INFO  : Successfully done setting workspace for the tool. 
+18:53:41 INFO  : Result from executing command 'getProjects': mb_design_wrapper
+18:53:41 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+18:53:42 WARN  : An unexpected exception occurred in the module 'platform project logging'
+18:53:44 INFO  : Platform 'mb_design_wrapper' is added to custom repositories.
+18:53:51 INFO  : Platform 'mb_design_wrapper' is added to custom repositories.
+18:56:53 INFO  : Result from executing command 'getProjects': mb_design_wrapper
+18:56:53 INFO  : Result from executing command 'getPlatforms': mb_design_wrapper|C:/CR/workspace_aula9/mb_design_wrapper/export/mb_design_wrapper/mb_design_wrapper.xpfm;xilinx_vck190_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+18:56:54 INFO  : Checking for BSP changes to sync application flags for project 'proj7'...
+18:57:32 INFO  : Result from executing command 'getProjects': mb_design_wrapper
+18:57:32 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+18:57:34 INFO  : Checking for BSP changes to sync application flags for project 'proj7'...
+18:57:40 INFO  : Checking for BSP changes to sync application flags for project 'proj7'...
+19:00:01 INFO  : Checking for BSP changes to sync application flags for project 'proj7'...
+19:00:05 INFO  : Checking for BSP changes to sync application flags for project 'proj7'...
+19:01:21 INFO  : Checking for BSP changes to sync application flags for project 'proj7'...
+19:01:44 INFO  : Checking for BSP changes to sync application flags for project 'proj7'...
+19:01:58 INFO  : Checking for BSP changes to sync application flags for project 'proj7'...
+19:02:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:02:40 INFO  : Jtag cable 'Digilent Nexys4 210274505291A' is selected.
+19:02:40 INFO  : 'jtag frequency' command is executed.
+19:02:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505291A" && level==0 && jtag_device_ctx=="jsn-Nexys4-210274505291A-13631093-0"}' command is executed.
+19:02:42 INFO  : Device configured successfully with "C:/CR/workspace_aula9/proj7/_ide/bitstream/mb_design_wrapper.bit"
+19:02:42 INFO  : Context for processor 'microblaze_0' is selected.
+19:02:42 INFO  : Hardware design and registers information is loaded from 'C:/CR/workspace_aula9/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa'.
+19:02:42 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:02:42 INFO  : Context for processor 'microblaze_0' is selected.
+19:02:42 INFO  : System reset is completed.
+19:02:45 INFO  : 'after 3000' command is executed.
+19:02:45 INFO  : Context for processor 'microblaze_0' is selected.
+19:02:45 INFO  : The application 'C:/CR/workspace_aula9/proj7/Debug/proj7.elf' is downloaded to processor 'microblaze_0'.
+19:02:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505291A" && level==0 && jtag_device_ctx=="jsn-Nexys4-210274505291A-13631093-0"}
+fpga -file C:/CR/workspace_aula9/proj7/_ide/bitstream/mb_design_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/CR/workspace_aula9/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/CR/workspace_aula9/proj7/Debug/proj7.elf
+----------------End of Script----------------
+
+19:02:46 INFO  : Context for processor 'microblaze_0' is selected.
+19:02:46 INFO  : 'con' command is executed.
+19:02:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+19:02:46 INFO  : Launch script is exported to file 'C:\CR\workspace_aula9\proj7_system\_ide\scripts\systemdebugger_proj7_system_standalone.tcl'
+19:03:26 INFO  : Disconnected from the channel tcfchan#3.

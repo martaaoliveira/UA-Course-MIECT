@@ -1,0 +1,294 @@
+17:07:43 DEBUG : Logs will be stored at 'C:/CR/workspace_reverseEndianness/IDE.log'.
+17:07:46 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\CR\workspace_reverseEndianness\temp_xsdb_launch_script.tcl
+17:07:46 INFO  : Registering command handlers for Vitis TCF services
+17:07:47 INFO  : Platform repository initialization has completed.
+17:07:57 INFO  : XSCT server has started successfully.
+17:08:00 INFO  : Successfully done setting XSCT server connection channel  
+17:08:00 INFO  : plnx-install-location is set to ''
+17:08:00 INFO  : Successfully done query RDI_DATADIR 
+17:08:00 INFO  : Successfully done setting workspace for the tool. 
+17:09:51 INFO  : Result from executing command 'getProjects': mb_design_wrapper
+17:09:51 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+17:09:53 WARN  : An unexpected exception occurred in the module 'platform project logging'
+17:09:54 INFO  : Platform 'mb_design_wrapper' is added to custom repositories.
+17:10:00 INFO  : Platform 'mb_design_wrapper' is added to custom repositories.
+17:10:48 INFO  : Result from executing command 'getProjects': mb_design_wrapper
+17:10:48 INFO  : Result from executing command 'getPlatforms': mb_design_wrapper|C:/CR/workspace_reverseEndianness/mb_design_wrapper/export/mb_design_wrapper/mb_design_wrapper.xpfm;xilinx_vck190_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+17:10:50 INFO  : Checking for BSP changes to sync application flags for project 'AXISStreamApp'...
+17:11:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:11:07 INFO  : Jtag cable 'Digilent Nexys4 210274505291A' is selected.
+17:11:07 INFO  : 'jtag frequency' command is executed.
+17:11:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505291A" && level==0 && jtag_device_ctx=="jsn-Nexys4-210274505291A-13631093-0"}' command is executed.
+17:11:09 INFO  : Device configured successfully with "C:/CR/workspace_reverseEndianness/AXISStreamApp/_ide/bitstream/mb_design_wrapper.bit"
+17:11:09 INFO  : Context for processor 'microblaze_0' is selected.
+17:11:09 INFO  : Hardware design and registers information is loaded from 'C:/CR/workspace_reverseEndianness/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa'.
+17:11:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:11:09 INFO  : Context for processor 'microblaze_0' is selected.
+17:11:09 INFO  : System reset is completed.
+17:11:12 INFO  : 'after 3000' command is executed.
+17:11:12 INFO  : Context for processor 'microblaze_0' is selected.
+17:11:12 INFO  : The application 'C:/CR/workspace_reverseEndianness/AXISStreamApp/Debug/AXISStreamApp.elf' is downloaded to processor 'microblaze_0'.
+17:11:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505291A" && level==0 && jtag_device_ctx=="jsn-Nexys4-210274505291A-13631093-0"}
+fpga -file C:/CR/workspace_reverseEndianness/AXISStreamApp/_ide/bitstream/mb_design_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/CR/workspace_reverseEndianness/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/CR/workspace_reverseEndianness/AXISStreamApp/Debug/AXISStreamApp.elf
+----------------End of Script----------------
+
+17:11:12 INFO  : Context for processor 'microblaze_0' is selected.
+17:11:12 INFO  : 'con' command is executed.
+17:11:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:11:12 INFO  : Launch script is exported to file 'C:\CR\workspace_reverseEndianness\AXISStreamApp_system\_ide\scripts\debugger_axisstreamapp-default.tcl'
+17:26:12 INFO  : Checking for BSP changes to sync application flags for project 'AXISStreamApp'...
+17:26:27 INFO  : Checking for BSP changes to sync application flags for project 'AXISStreamApp'...
+17:27:30 INFO  : Disconnected from the channel tcfchan#2.
+17:27:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:27:31 INFO  : Jtag cable 'Digilent Nexys4 210274505291A' is selected.
+17:27:31 INFO  : 'jtag frequency' command is executed.
+17:27:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505291A" && level==0 && jtag_device_ctx=="jsn-Nexys4-210274505291A-13631093-0"}' command is executed.
+17:27:33 INFO  : Device configured successfully with "C:/CR/workspace_reverseEndianness/AXISStreamApp/_ide/bitstream/mb_design_wrapper.bit"
+17:27:33 INFO  : Context for processor 'microblaze_0' is selected.
+17:27:33 INFO  : Hardware design and registers information is loaded from 'C:/CR/workspace_reverseEndianness/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa'.
+17:27:33 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:27:33 INFO  : Context for processor 'microblaze_0' is selected.
+17:27:33 INFO  : System reset is completed.
+17:27:36 INFO  : 'after 3000' command is executed.
+17:27:36 INFO  : Context for processor 'microblaze_0' is selected.
+17:27:37 INFO  : The application 'C:/CR/workspace_reverseEndianness/AXISStreamApp/Debug/AXISStreamApp.elf' is downloaded to processor 'microblaze_0'.
+17:27:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505291A" && level==0 && jtag_device_ctx=="jsn-Nexys4-210274505291A-13631093-0"}
+fpga -file C:/CR/workspace_reverseEndianness/AXISStreamApp/_ide/bitstream/mb_design_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/CR/workspace_reverseEndianness/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/CR/workspace_reverseEndianness/AXISStreamApp/Debug/AXISStreamApp.elf
+----------------End of Script----------------
+
+17:27:37 INFO  : Context for processor 'microblaze_0' is selected.
+17:27:37 INFO  : 'con' command is executed.
+17:27:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:27:37 INFO  : Launch script is exported to file 'C:\CR\workspace_reverseEndianness\AXISStreamApp_system\_ide\scripts\systemdebugger_axisstreamapp_system_standalone.tcl'
+17:35:12 INFO  : Checking for BSP changes to sync application flags for project 'AXISStreamApp'...
+17:35:18 INFO  : Disconnected from the channel tcfchan#3.
+17:35:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:35:18 INFO  : Jtag cable 'Digilent Nexys4 210274505291A' is selected.
+17:35:18 INFO  : 'jtag frequency' command is executed.
+17:35:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505291A" && level==0 && jtag_device_ctx=="jsn-Nexys4-210274505291A-13631093-0"}' command is executed.
+17:35:20 INFO  : Device configured successfully with "C:/CR/workspace_reverseEndianness/AXISStreamApp/_ide/bitstream/mb_design_wrapper.bit"
+17:35:20 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:20 INFO  : Hardware design and registers information is loaded from 'C:/CR/workspace_reverseEndianness/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa'.
+17:35:20 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:35:20 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:20 INFO  : System reset is completed.
+17:35:23 INFO  : 'after 3000' command is executed.
+17:35:23 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:23 INFO  : The application 'C:/CR/workspace_reverseEndianness/AXISStreamApp/Debug/AXISStreamApp.elf' is downloaded to processor 'microblaze_0'.
+17:35:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505291A" && level==0 && jtag_device_ctx=="jsn-Nexys4-210274505291A-13631093-0"}
+fpga -file C:/CR/workspace_reverseEndianness/AXISStreamApp/_ide/bitstream/mb_design_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/CR/workspace_reverseEndianness/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/CR/workspace_reverseEndianness/AXISStreamApp/Debug/AXISStreamApp.elf
+----------------End of Script----------------
+
+17:35:23 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:23 INFO  : 'con' command is executed.
+17:35:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:35:23 INFO  : Launch script is exported to file 'C:\CR\workspace_reverseEndianness\AXISStreamApp_system\_ide\scripts\systemdebugger_axisstreamapp_system_standalone.tcl'
+17:35:32 INFO  : Checking for BSP changes to sync application flags for project 'AXISStreamApp'...
+17:35:34 INFO  : Checking for BSP changes to sync application flags for project 'AXISStreamApp'...
+17:35:37 INFO  : Disconnected from the channel tcfchan#4.
+17:35:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:35:37 INFO  : Jtag cable 'Digilent Nexys4 210274505291A' is selected.
+17:35:37 INFO  : 'jtag frequency' command is executed.
+17:35:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505291A" && level==0 && jtag_device_ctx=="jsn-Nexys4-210274505291A-13631093-0"}' command is executed.
+17:35:40 INFO  : Device configured successfully with "C:/CR/workspace_reverseEndianness/AXISStreamApp/_ide/bitstream/mb_design_wrapper.bit"
+17:35:40 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:40 INFO  : Hardware design and registers information is loaded from 'C:/CR/workspace_reverseEndianness/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa'.
+17:35:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:35:40 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:40 INFO  : System reset is completed.
+17:35:43 INFO  : 'after 3000' command is executed.
+17:35:43 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:43 INFO  : The application 'C:/CR/workspace_reverseEndianness/AXISStreamApp/Debug/AXISStreamApp.elf' is downloaded to processor 'microblaze_0'.
+17:35:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505291A" && level==0 && jtag_device_ctx=="jsn-Nexys4-210274505291A-13631093-0"}
+fpga -file C:/CR/workspace_reverseEndianness/AXISStreamApp/_ide/bitstream/mb_design_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/CR/workspace_reverseEndianness/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/CR/workspace_reverseEndianness/AXISStreamApp/Debug/AXISStreamApp.elf
+----------------End of Script----------------
+
+17:35:43 INFO  : Context for processor 'microblaze_0' is selected.
+17:35:43 INFO  : 'con' command is executed.
+17:35:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:35:43 INFO  : Launch script is exported to file 'C:\CR\workspace_reverseEndianness\AXISStreamApp_system\_ide\scripts\systemdebugger_axisstreamapp_system_standalone.tcl'
+17:37:34 INFO  : Checking for BSP changes to sync application flags for project 'AXISStreamApp'...
+17:37:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:37:37 INFO  : Disconnected from the channel tcfchan#5.
+17:37:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+17:37:37 ERROR : null
+17:37:49 INFO  : Checking for BSP changes to sync application flags for project 'AXISStreamApp'...
+17:37:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:37:54 INFO  : Jtag cable 'Digilent Nexys4 210274505291A' is selected.
+17:37:54 INFO  : 'jtag frequency' command is executed.
+17:37:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505291A" && level==0 && jtag_device_ctx=="jsn-Nexys4-210274505291A-13631093-0"}' command is executed.
+17:37:56 INFO  : Device configured successfully with "C:/CR/workspace_reverseEndianness/AXISStreamApp/_ide/bitstream/mb_design_wrapper.bit"
+17:37:57 INFO  : Context for processor 'microblaze_0' is selected.
+17:37:57 INFO  : Hardware design and registers information is loaded from 'C:/CR/workspace_reverseEndianness/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa'.
+17:37:57 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:37:57 INFO  : Context for processor 'microblaze_0' is selected.
+17:37:57 INFO  : System reset is completed.
+17:38:00 INFO  : 'after 3000' command is executed.
+17:38:00 INFO  : Context for processor 'microblaze_0' is selected.
+17:38:00 INFO  : The application 'C:/CR/workspace_reverseEndianness/AXISStreamApp/Debug/AXISStreamApp.elf' is downloaded to processor 'microblaze_0'.
+17:38:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505291A" && level==0 && jtag_device_ctx=="jsn-Nexys4-210274505291A-13631093-0"}
+fpga -file C:/CR/workspace_reverseEndianness/AXISStreamApp/_ide/bitstream/mb_design_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/CR/workspace_reverseEndianness/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/CR/workspace_reverseEndianness/AXISStreamApp/Debug/AXISStreamApp.elf
+----------------End of Script----------------
+
+17:38:00 INFO  : Context for processor 'microblaze_0' is selected.
+17:38:00 INFO  : 'con' command is executed.
+17:38:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:38:00 INFO  : Launch script is exported to file 'C:\CR\workspace_reverseEndianness\AXISStreamApp_system\_ide\scripts\systemdebugger_axisstreamapp_system_standalone.tcl'
+18:07:40 INFO  : Disconnected from the channel tcfchan#6.
+18:44:45 DEBUG : Logs will be stored at 'C:/CR/workspace_reverseEndianness/IDE.log'.
+18:44:46 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\CR\workspace_reverseEndianness\temp_xsdb_launch_script.tcl
+18:44:49 INFO  : Registering command handlers for Vitis TCF services
+18:44:50 INFO  : XSCT server has started successfully.
+18:44:50 INFO  : Platform repository initialization has completed.
+18:44:53 INFO  : Successfully done setting XSCT server connection channel  
+18:44:53 INFO  : plnx-install-location is set to ''
+18:44:53 INFO  : Successfully done query RDI_DATADIR 
+18:44:53 INFO  : Successfully done setting workspace for the tool. 
+14:50:34 DEBUG : Logs will be stored at 'C:/CR/workspace_reverseEndianness/IDE.log'.
+14:50:35 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\CR\workspace_reverseEndianness\temp_xsdb_launch_script.tcl
+14:50:41 INFO  : Registering command handlers for Vitis TCF services
+14:50:43 INFO  : Platform repository initialization has completed.
+14:50:48 INFO  : XSCT server has started successfully.
+14:50:55 INFO  : Successfully done setting XSCT server connection channel  
+14:50:55 INFO  : plnx-install-location is set to ''
+14:50:55 INFO  : Successfully done query RDI_DATADIR 
+14:50:55 INFO  : Successfully done setting workspace for the tool. 
+17:01:44 DEBUG : Logs will be stored at 'C:/CR/workspace_reverseEndianness/IDE.log'.
+17:01:45 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\CR\workspace_reverseEndianness\temp_xsdb_launch_script.tcl
+17:01:49 INFO  : Registering command handlers for Vitis TCF services
+17:01:50 INFO  : Platform repository initialization has completed.
+17:01:54 INFO  : XSCT server has started successfully.
+17:01:54 INFO  : Successfully done setting XSCT server connection channel  
+17:01:54 INFO  : plnx-install-location is set to ''
+17:02:00 INFO  : Successfully done setting workspace for the tool. 
+17:02:00 INFO  : Successfully done query RDI_DATADIR 
+17:51:58 DEBUG : Logs will be stored at 'C:/CR/workspace_reverseEndianness/IDE.log'.
+17:51:59 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\CR\workspace_reverseEndianness\temp_xsdb_launch_script.tcl
+17:52:02 INFO  : Registering command handlers for Vitis TCF services
+17:52:03 INFO  : Platform repository initialization has completed.
+17:52:04 INFO  : XSCT server has started successfully.
+17:52:07 INFO  : Successfully done setting XSCT server connection channel  
+17:52:07 INFO  : plnx-install-location is set to ''
+17:52:07 INFO  : Successfully done query RDI_DATADIR 
+17:52:07 INFO  : Successfully done setting workspace for the tool. 
+17:52:45 INFO  : Result from executing command 'getProjects': mb_design_wrapper
+17:52:45 INFO  : Result from executing command 'getPlatforms': mb_design_wrapper|C:/CR/workspace_reverseEndianness/mb_design_wrapper/export/mb_design_wrapper/mb_design_wrapper.xpfm;xilinx_vck190_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|D:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+17:52:46 INFO  : Checking for BSP changes to sync application flags for project 'AXISStreamApp'...
+17:53:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:53:03 INFO  : Jtag cable 'Digilent Nexys4 210274505291A' is selected.
+17:53:03 INFO  : 'jtag frequency' command is executed.
+17:53:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505291A" && level==0 && jtag_device_ctx=="jsn-Nexys4-210274505291A-13631093-0"}' command is executed.
+17:53:05 INFO  : Device configured successfully with "C:/CR/workspace_reverseEndianness/AXISStreamApp/_ide/bitstream/mb_design_wrapper.bit"
+17:53:05 INFO  : Context for processor 'microblaze_0' is selected.
+17:53:05 INFO  : Hardware design and registers information is loaded from 'C:/CR/workspace_reverseEndianness/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa'.
+17:53:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:53:05 INFO  : Context for processor 'microblaze_0' is selected.
+17:53:05 INFO  : System reset is completed.
+17:53:08 INFO  : 'after 3000' command is executed.
+17:53:08 INFO  : Context for processor 'microblaze_0' is selected.
+17:53:08 INFO  : The application 'C:/CR/workspace_reverseEndianness/AXISStreamApp/Debug/AXISStreamApp.elf' is downloaded to processor 'microblaze_0'.
+17:53:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274505291A" && level==0 && jtag_device_ctx=="jsn-Nexys4-210274505291A-13631093-0"}
+fpga -file C:/CR/workspace_reverseEndianness/AXISStreamApp/_ide/bitstream/mb_design_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/CR/workspace_reverseEndianness/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/CR/workspace_reverseEndianness/AXISStreamApp/Debug/AXISStreamApp.elf
+----------------End of Script----------------
+
+17:53:09 INFO  : Context for processor 'microblaze_0' is selected.
+17:53:09 INFO  : 'con' command is executed.
+17:53:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:53:09 INFO  : Launch script is exported to file 'C:\CR\workspace_reverseEndianness\AXISStreamApp_system\_ide\scripts\debugger_axisstreamapp-default.tcl'
+17:59:15 INFO  : Disconnected from the channel tcfchan#2.
+18:31:12 DEBUG : Logs will be stored at 'C:/CR/workspace_reverseEndianness/IDE.log'.
+18:31:13 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\CR\workspace_reverseEndianness\temp_xsdb_launch_script.tcl
+18:31:17 INFO  : XSCT server has started successfully.
+18:31:17 INFO  : plnx-install-location is set to ''
+18:31:17 INFO  : Successfully done setting XSCT server connection channel  
+18:31:17 INFO  : Successfully done setting workspace for the tool. 
+18:31:18 INFO  : Successfully done query RDI_DATADIR 
+18:31:18 INFO  : Registering command handlers for Vitis TCF services
+18:31:19 INFO  : Platform repository initialization has completed.

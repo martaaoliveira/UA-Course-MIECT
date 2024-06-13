@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "spiffs.h": "c"
+    },
+    "idf.portWin": "COM4",
+    "idf.adapterTargetName": "esp32c3",
+    "idf.openOcdConfigs": [
+        "board/esp32c3-builtin.cfg"
+    ]
+}
