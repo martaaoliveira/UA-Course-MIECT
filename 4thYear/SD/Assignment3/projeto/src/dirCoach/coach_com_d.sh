@@ -1,0 +1,1 @@
+java clientSide.main.ClientTheGameCoach l040101-ws10.ua.pt 22254 logger

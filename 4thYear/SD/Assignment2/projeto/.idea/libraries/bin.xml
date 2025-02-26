@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="bin">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/dirGeneralRepo.zip!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dirBench.zip!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dirContestants.zip!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dirPlayground.zip!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dirRefereeSite.zip!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dirReferee.zip!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dirCoach.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

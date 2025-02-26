@@ -1,0 +1,1 @@
+javadoc -d doc -classpath ../lib/genclass.jar */*.java 

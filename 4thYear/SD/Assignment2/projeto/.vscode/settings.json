@@ -1,0 +1,11 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "lib/*.jar"
+    ],
+    "workbench.preferredLightColorTheme": "Default Light Modern",
+    "window.autoDetectColorScheme": true,
+    "workbench.colorTheme": "Default Dark Modern"
+}
